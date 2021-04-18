@@ -11,8 +11,15 @@
             "homepage": "https://skyraptor.eu/"
         }
     ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://pkg.skyraptor.eu"
+        }
+    ],
     "require": {
-        "illuminate/support": "^8.0"
+        "illuminate/support": "^8.0",
+        "squadms/foundation": "dev-master"
     },
     "autoload": {
         "psr-4": {
