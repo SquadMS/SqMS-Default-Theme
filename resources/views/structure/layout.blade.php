@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>SquadMS</title>
+        <title>{{ config('app.name', 'SquadMS') }}</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -13,22 +13,19 @@
         <link href="{{ mix('css/app.css', 'themes/squadms-default-theme') }}" rel="stylesheet">
     </head>
     <body class="antialiased">
-        @component(config('sqms.theme') . '::navigation.navbar')
-            @slot('navRight')
-                @component(config('sqms.theme') . '::navigation.item', ['active' => \Route::currentRouteNamed('home'), 'link' => route('home'), 'title' => 'Home'])
-                @endcomponent
+        <x-squadms-default-theme::navigation.navbar :brand="config('app.name', 'SquadMS')">
+            <x-slot name="navRight">
+                <x-squadms-default-theme::navigation.item :active="\Route::currentRouteNamed('home')" :link="route('home')" title="Home"/>
 
                 @auth
-                    @component(config('sqms.theme') . '::navigation.item', ['active' => \Route::currentRouteNamed('profile') && \Request::route('steam_id_64') === \Auth::user()->steam_id_64, 'link' => route('profile', ['steam_id_64' => \Auth::user()->steam_id_64]), 'title' => 'Profile'])
-                    @endcomponent
+                    <x-squadms-default-theme::navigation.item :active="\Route::currentRouteNamed('profile') && \Request::route('steam_id_64') === \Auth::user()->steam_id_64" :link="route('profile', ['steam_id_64' => \Auth::user()->steam_id_64])" title="Profil"/>
                 @endauth
 
                 @guest
-                    @component(config('sqms.theme') . '::navigation.item', ['active' => false, 'link' => route(config('sqms.auth.routes.login')), 'title' => 'Login'])
-                    @endcomponent
+                    <x-squadms-default-theme::navigation.item :link="route(config('sqms.auth.routes.login'))" title="Login"/>
                 @endguest
-            @endslot
-        @endcomponent
+            </x-slot>
+        </x-squadms-default-theme::navigation.navbar>
 
         <!-- Styles -->
         <script src="{{ mix('js/app.js', 'themes/squadms-default-theme') }}"></script>

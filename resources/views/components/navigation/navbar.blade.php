@@ -1,7 +1,7 @@
-@props(['htmlBrand' => false, 'brand', 'navLeft', 'navCenter', 'navRight', 'navExtra'])
+@props(['htmlBrand' => false, 'container' => 'container', 'navLeft' => false, 'navCenter' => false, 'navRight' => false, 'navExtra' => false, 'brand'])
 
 <nav {{ $attributes->merge(['class' => 'navbar navbar-expand-lg navbar-light bg-light']) }}>
-    <div class="container-fluid">
+    <div class="{{ $container }}">
         @if ($htmlBrand)
             <a class="navbar-brand" href="{{ route('home') }}">
                 {!! $brand !!}
@@ -16,22 +16,30 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <!-- Left -->
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                {{ $navLeft }}
-            </ul>
+            @if ($navLeft)
+                <!-- Left -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    {{ $navLeft }}
+                </ul>
+            @endif
 
-            <!-- Center -->
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                {{ $navCenter }}
-            </ul>
+            @if ($navCenter)
+                <!-- Center -->
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    {{ $navCenter }}
+                </ul>
+            @endif
 
-            <!-- Right -->
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                {{ $nacRight }}
-            </ul>
+            @if ($navRight)
+                <!-- Right -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    {{ $navRight }}
+                </ul>
+            @endif
 
-            {{ $navExtra }}
+            @if ($navExtra)
+                {{ $navExtra }}
+            @endif
         </div>
     </div>
 </nav>
