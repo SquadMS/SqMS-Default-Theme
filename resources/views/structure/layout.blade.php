@@ -18,13 +18,11 @@
             <x-slot name="navRight">
                 <x-squadms-default-theme::navigation.item :active="\Route::currentRouteNamed('home')" :link="route('home')" title="Home"/>
 
-                @auth
+                @if (\Auth::user())
                     <x-squadms-default-theme::navigation.item :active="\Route::currentRouteNamed('profile') && \Request::route('steam_id_64') === \Auth::user()->steam_id_64" :link="route('profile', ['steam_id_64' => \Auth::user()->steam_id_64])" title="Profil"/>
-                @endauth
-
-                @guest
+                @else
                     <x-squadms-default-theme::navigation.item :link="route(config('sqms.auth.routes.login'))" title="Login"/>
-                @endguest
+                @endif
             </x-slot>
         </x-squadms-default-theme::navigation.navbar>
 
