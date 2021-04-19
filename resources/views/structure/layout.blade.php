@@ -11,6 +11,7 @@
 
         <!-- Styles -->
         <link href="{{ mix('css/app.css', 'themes/squadms-default-theme') }}" rel="stylesheet">
+        @stack('styles')
     </head>
     <body class="antialiased">
         <x-squadms-default-theme::navigation.navbar :brand="config('app.name', 'SquadMS')">
@@ -27,7 +28,10 @@
             </x-slot>
         </x-squadms-default-theme::navigation.navbar>
 
+        @yield('content')
+
         <!-- Styles -->
         <script src="{{ mix('js/app.js', 'themes/squadms-default-theme') }}"></script>
+        @stack('scripts')
     </body>
 </html>
