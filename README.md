@@ -8,6 +8,17 @@
 
 Default Theme for the Squad Management System.
 
+## Installation
+
+To install the theme simply run the following command at the root of your squadms project:
+```
+composer require squadms/default-theme
+```
+Next publish the assets. **Remember that you will have to re-publish your assets once you upgrade the theme */
+```
+php artisan vendor:publish --provider="SquadMS\DefaultTheme\SquadMSDefaultThemeServiceProvider" --tag="assets"
+```
+
 ## Check Out SquadMS
 
 Check out the main Repo at [SquadMS/Squad-MS](https://github.com/SquadMS/Squad-MS) or learn more on [squadms.com](https://squadms.com).

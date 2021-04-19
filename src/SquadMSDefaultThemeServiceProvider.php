@@ -23,6 +23,16 @@ class SquadMSDefaultThemeServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        /* Publish Assets */
+        if ($this->app->runningInConsole()) {
+            // Publish assets
+            $this->publishes([
+              __DIR__ . '/../public' => public_path('themes/squadms-default-theme'),
+            ], 'assets');
+          
+        }
+
+        /* Load views */
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'squadms-default-theme');
     }
 }
