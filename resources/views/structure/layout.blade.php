@@ -28,7 +28,11 @@
             </x-slot>
         </x-squadms-default-theme::navigation.navbar>
 
-        @yield('content')
+        <main>
+            @yield('content')
+        </main>
+
+        @include('squadms-default-theme::structure.footer')
 
         <!-- Styles -->
         <script src="{{ mix('js/app.js', 'themes/squadms-default-theme') }}"></script>
