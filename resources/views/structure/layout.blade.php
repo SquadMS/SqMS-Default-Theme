@@ -26,7 +26,7 @@
             </x-slot>
         </x-squadms-default-theme::navigation.navbar>
 
-        <main class="flex-grow-1 d-flex flex-column">
+        <main class="flex-grow-1 d-flex flex-column {{ $mainClass ?? '' }}">
             @yield('content')
         </main>
 

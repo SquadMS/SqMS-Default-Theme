@@ -1,10 +1,13 @@
-@extends('squadms-default-theme::structure.layout')
+@extends('squadms-default-theme::structure.layout', [
+    'mainClass' => 'justify-content-center'
+])
 
 @section('content')
-<section class="flex-grow-1 d-flex justify-content-center">
+<section>
     <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col text-center">
+                <h1>Welcome to</h1>
                 <img src="https://squadms.com/img/logo.svg">
             </div>
         </div>
