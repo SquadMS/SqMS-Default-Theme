@@ -13,7 +13,7 @@
         <link href="{{ mix('css/app.css', 'themes/squadms-default-theme') }}" rel="stylesheet">
         @stack('styles')
     </head>
-    <body class="antialiased">
+    <body class="min-vh-100 d-flex flex-column">
         <x-squadms-default-theme::navigation.navbar :brand="config('app.name', 'SquadMS')">
             <x-slot name="navRight">
                 <x-squadms-default-theme::navigation.item :active="\Route::currentRouteNamed('home')" :link="route('home')" title="Home"/>
@@ -26,7 +26,7 @@
             </x-slot>
         </x-squadms-default-theme::navigation.navbar>
 
-        <main>
+        <main class="flex-grow-1">
             @yield('content')
         </main>
 
