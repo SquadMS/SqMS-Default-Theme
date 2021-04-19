@@ -15,16 +15,16 @@
     <body class="antialiased">
         @component(config('sqms.theme') . '::navigation.navbar')
             @slot('navRight')
-                @component(config('sqms.theme') . '::navigation.nav-item', ['active' => \Route::currentRouteNamed('home'), 'link' => route('home'), 'title' => 'Home'])
+                @component(config('sqms.theme') . '::navigation.item', ['active' => \Route::currentRouteNamed('home'), 'link' => route('home'), 'title' => 'Home'])
                 @endcomponent
 
                 @auth
-                    @component(config('sqms.theme') . '::navigation.nav-item', ['active' => \Route::currentRouteNamed('profile') && \Request::route('steam_id_64') === \Auth::user()->steam_id_64, 'link' => route('profile', ['steam_id_64' => \Auth::user()->steam_id_64]), 'title' => 'Profile'])
+                    @component(config('sqms.theme') . '::navigation.item', ['active' => \Route::currentRouteNamed('profile') && \Request::route('steam_id_64') === \Auth::user()->steam_id_64, 'link' => route('profile', ['steam_id_64' => \Auth::user()->steam_id_64]), 'title' => 'Profile'])
                     @endcomponent
                 @endauth
 
                 @guest
-                    @component(config('sqms.theme') . '::navigation.nav-item', ['active' => false, 'link' => route(config('sqms.auth.routes.login')), 'title' => 'Login'])
+                    @component(config('sqms.theme') . '::navigation.item', ['active' => false, 'link' => route(config('sqms.auth.routes.login')), 'title' => 'Login'])
                     @endcomponent
                 @endguest
             @endslot
