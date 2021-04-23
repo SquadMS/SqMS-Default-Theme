@@ -16,12 +16,12 @@
     <body class="min-vh-100 d-flex flex-column">
         <x-squadms-default-theme::navigation.navbar :brand="config('app.name', 'SquadMS')">
             <x-slot name="navRight">
-                <x-squadms-default-theme::navigation.item :active="\Route::currentRouteNamed('home')" :link="route('home')" title="Home"/>
+                <x-squadms-default-theme::navigation.item :active="\Route::currentRouteNamed(config('sqms.routes.def.home.name'))" :link="route(config('sqms.routes.def.home.name'))" title="Home"/>
 
                 @if (\Auth::user())
-                    <x-squadms-default-theme::navigation.item :active="\Route::currentRouteNamed('profile') && \Request::route('steam_id_64') === \Auth::user()->steam_id_64" :link="route('profile', ['steam_id_64' => \Auth::user()->steam_id_64])" title="Profil"/>
+                    <x-squadms-default-theme::navigation.item :active="\Route::currentRouteNamed(config('sqms.routes.def.profile.name')) && \Request::route('steam_id_64') === \Auth::user()->steam_id_64" :link="route(config('sqms.routes.def.profile.name'), ['steam_id_64' => \Auth::user()->steam_id_64])" title="Profil"/>
                 @else
-                    <x-squadms-default-theme::navigation.item :link="route(config('sqms.auth.routes.login'))" title="Login"/>
+                    <x-squadms-default-theme::navigation.item :link="route(config('sqms.routes.def.steam-login.name'))" title="Login"/>
                 @endif
             </x-slot>
         </x-squadms-default-theme::navigation.navbar>
