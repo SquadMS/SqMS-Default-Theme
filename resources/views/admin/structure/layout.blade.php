@@ -49,8 +49,8 @@
                     </div>
                 </nav>
 
-                <div class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-                    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4" role="main">
+                <div class="col-md-9 col-lg-10 ms-sm-auto px-0 bg-light">
+                    <main class="px-md-4" role="main">
                         @yield('content')
                     </main>
 
