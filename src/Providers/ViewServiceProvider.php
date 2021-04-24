@@ -25,7 +25,7 @@ class ViewServiceProvider extends ServiceProvider
     public function boot()
     {
         /* Load views */
-        $this->loadViewsFrom(__DIR__.'/../resources/views', 'squadms-default-theme');
+        $this->loadViewsFrom(__DIR__ . '/../../resources/views', 'squadms-default-theme');
 
         /* Add isAdmin directive */
         Blade::if('admin', function ($user) {

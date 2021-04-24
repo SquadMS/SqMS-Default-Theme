@@ -33,6 +33,6 @@ class SquadMSDefaultThemeServiceProvider extends ServiceProvider
         }
 
         /* Load Translations */
-        $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'squadms-default-theme');
+        $this->loadTranslationsFrom(__DIR__ . '/../resources/lang', 'squadms-default-theme');
     }
 }
