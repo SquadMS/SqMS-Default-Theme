@@ -1,19 +1,6 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./resources/js/admin/app.js":
-/*!***********************************!*\
-  !*** ./resources/js/admin/app.js ***!
-  \***********************************/
-/***/ (() => {
-
-// You can specify which plugins you need
-// import { Alert } from 'bootstrap';
-// If you do not need all plugins and want to improve build times only load what you need
-//import Alert from 'bootstrap/js/dist/alert';
-
-/***/ }),
-
 /***/ "./resources/js/public/app.js":
 /*!************************************!*\
   !*** ./resources/js/public/app.js ***!
@@ -139,6 +126,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
 /******/ 			"/js/public/app": 0,
+/******/ 			"css/admin/app": 0,
 /******/ 			"css/public/app": 0
 /******/ 		};
 /******/ 		
@@ -187,10 +175,9 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/public/app"], () => (__webpack_require__("./resources/js/public/app.js")))
-/******/ 	__webpack_require__.O(undefined, ["css/public/app"], () => (__webpack_require__("./resources/js/admin/app.js")))
-/******/ 	__webpack_require__.O(undefined, ["css/public/app"], () => (__webpack_require__("./resources/scss/public/app.scss")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/public/app"], () => (__webpack_require__("./resources/scss/admin/app.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/admin/app","css/public/app"], () => (__webpack_require__("./resources/js/public/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/admin/app","css/public/app"], () => (__webpack_require__("./resources/scss/public/app.scss")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/admin/app","css/public/app"], () => (__webpack_require__("./resources/scss/admin/app.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
