@@ -10,7 +10,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
         <!-- Styles -->
-        <link href="{{ mix('css/app.css', 'themes/squadms-default-theme') }}" rel="stylesheet">
+        <link href="{{ mix('css/admin/app.css', 'themes/squadms-default-theme') }}" rel="stylesheet">
         @stack('styles')
     </head>
     <body class="min-vh-100 d-flex flex-column">
@@ -33,7 +33,7 @@
         @include('squadms-default-theme::structure.footer')
 
         <!-- Styles -->
-        <script src="{{ mix('js/app.js', 'themes/squadms-default-theme') }}"></script>
+        <script src="{{ mix('js/admin/app.js', 'themes/squadms-default-theme') }}"></script>
         @stack('scripts')
     </body>
 </html>

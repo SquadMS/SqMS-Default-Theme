@@ -13,9 +13,16 @@ if (fs.existsSync('public')) {
 mix.setPublicPath('public');
 
 /* Build SCSS/JS assets */
-mix.sass('resources/scss/app.scss', 'css/')
-  .js('resources/js/app.js', 'js/')
-  .version();
+mix
+/* Public assets */
+.sass('resources/scss/public/app.scss', 'css/public/')
+.js('resources/js/public/app.js', 'js/public/')
+
+/* Admin assets */
+.sass('resources/scss/admin/app.scss', 'css/public/')
+.js('resources/js/admin/app.js', 'js/public/')
+
+.version();
 
 /* Copy static images */
 mix.copyDirectory('resources/img/static', 'public/img');

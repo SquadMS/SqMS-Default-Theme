@@ -1,20 +1,49 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./resources/js/app.js":
-/*!*****************************!*\
-  !*** ./resources/js/app.js ***!
-  \*****************************/
+/***/ "./resources/js/admin/app.js":
+/*!***********************************!*\
+  !*** ./resources/js/admin/app.js ***!
+  \***********************************/
 /***/ (() => {
 
+// You can specify which plugins you need
+// import { Alert } from 'bootstrap';
+// If you do not need all plugins and want to improve build times only load what you need
+//import Alert from 'bootstrap/js/dist/alert';
+
+/***/ }),
+
+/***/ "./resources/js/public/app.js":
+/*!************************************!*\
+  !*** ./resources/js/public/app.js ***!
+  \************************************/
+/***/ (() => {
+
+// You can specify which plugins you need
+// import { Alert } from 'bootstrap';
+// If you do not need all plugins and want to improve build times only load what you need
+//import Alert from 'bootstrap/js/dist/alert';
+
+/***/ }),
+
+/***/ "./resources/scss/public/app.scss":
+/*!****************************************!*\
+  !*** ./resources/scss/public/app.scss ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
 
 
 /***/ }),
 
-/***/ "./resources/scss/app.scss":
-/*!*********************************!*\
-  !*** ./resources/scss/app.scss ***!
-  \*********************************/
+/***/ "./resources/scss/admin/app.scss":
+/*!***************************************!*\
+  !*** ./resources/scss/admin/app.scss ***!
+  \***************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -109,8 +138,8 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"/js/app": 0,
-/******/ 			"css/app": 0
+/******/ 			"/js/public/app": 0,
+/******/ 			"css/public/app": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -158,8 +187,10 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/scss/app.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/public/app"], () => (__webpack_require__("./resources/js/public/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/public/app"], () => (__webpack_require__("./resources/js/admin/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/public/app"], () => (__webpack_require__("./resources/scss/public/app.scss")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/public/app"], () => (__webpack_require__("./resources/scss/admin/app.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
