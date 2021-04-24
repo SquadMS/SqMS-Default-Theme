@@ -22,7 +22,6 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
             <ul class="navbar-nav me-auto px-3">
                 <li class="nav-item text-nowrap">
                     <a class="nav-link" href="{{ route(config('sqms.routes.def.home.name')) }}">Back to Website</a>
