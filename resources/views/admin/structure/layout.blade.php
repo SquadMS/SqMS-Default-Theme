@@ -41,7 +41,7 @@
                     <div class="position-sticky pt-3">
                         <ul class="nav flex-column">
                             <x-squadms-default-theme::navigation.item :link="route(config('sqms.routes.def.admin-dashboard.name'))" title="Login">
-                                <x-slot title="title">
+                                <x-slot name="title">
                                     <span data-feather="home"></span>
                                     Dashboard
                                 </x-slot>
