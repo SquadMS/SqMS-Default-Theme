@@ -16,7 +16,7 @@
 
     <body class="min-vh-100 d-flex flex-column">
         <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-            <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="{{ route(config('sqms.routes.def.admin-dashboard')) }}">{{ config('app.name', 'SquadMS') }}</a>
+            <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="{{ route(config('sqms.routes.def.admin-dashboard.name')) }}">{{ config('app.name', 'SquadMS') }}</a>
             <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -40,7 +40,7 @@
                 <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
                     <div class="position-sticky pt-3">
                         <ul class="nav flex-column">
-                            <x-squadms-default-theme::navigation.item :link="route(config('sqms.routes.def.admin-dashboard'))" title="Login">
+                            <x-squadms-default-theme::navigation.item :link="route(config('sqms.routes.def.admin-dashboard.name'))" title="Login">
                                 <x-slot title="title">
                                     <span data-feather="home"></span>
                                     Dashboard
@@ -51,7 +51,7 @@
                 </nav>
 
                 <div class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-                    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4" role="main">
                         @yield('content')
                     </main>
 

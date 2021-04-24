@@ -34,8 +34,5 @@ class SquadMSDefaultThemeServiceProvider extends ServiceProvider
 
         /* Load Translations */
         $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'squadms-default-theme');
-
-        /* Load views */
-        $this->loadViewsFrom(__DIR__.'/../resources/views', 'squadms-default-theme');
     }
 }

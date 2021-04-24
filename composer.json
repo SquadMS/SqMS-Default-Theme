@@ -29,7 +29,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "SquadMS\\DefaultTheme\\SquadMSDefaultThemeServiceProvider"
+                "SquadMS\\DefaultTheme\\SquadMSDefaultThemeServiceProvider",
+                "SquadMS\\DefaultTheme\\Providers\\ViewServiceProvider"
             ]
         }
     }
