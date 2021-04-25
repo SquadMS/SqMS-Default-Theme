@@ -19,7 +19,7 @@
                 <x-squadms-default-theme::navigation.item :active="\Route::currentRouteNamed(config('sqms.routes.def.home.name'))" :link="route(config('sqms.routes.def.home.name'))" title="Home"/>
 
                 @admin(\Auth::user())
-                <x-squadms-default-theme::navigation.item :active="\Route::currentRouteNamed(config('sqms.routes.def.admin-dashboard.name'))" :link="route(config('sqms.routes.def.admin-dashboard.name'))" title="Admin"/>
+                <x-squadms-default-theme::navigation.item :link="route(config('sqms.routes.def.admin-dashboard.name'))" title="Admin"/>
                 @endadmin
             </x-slot>
             <x-slot name="navRight">

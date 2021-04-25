@@ -41,7 +41,7 @@
                 <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
                     <div class="position-sticky pt-3">
                         <ul class="nav flex-column">
-                            <x-squadms-default-theme::navigation.item :link="route(config('sqms.routes.def.admin-dashboard.name'))" title="Login">
+                            <x-squadms-default-theme::navigation.item :link="route(config('sqms.routes.def.admin-dashboard.name'))" :active="\Route::currentRouteNamed(config('sqms.routes.def.admin-dashboard.name'))" >
                                 <x-slot name="title">
                                     <span data-feather="home"></span>
                                     Dashboard
