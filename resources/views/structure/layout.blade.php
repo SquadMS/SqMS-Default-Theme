@@ -28,6 +28,22 @@
                 @else
                     <x-squadms-default-theme::navigation.item :link="route(config('sqms.routes.def.steam-login.name'))" title="Login"/>
                 @endif
+
+                <x-squadms-default-theme::navigation.dropdown>
+                    <x-slot name="title">
+                        <span class="flag-icon flag-icon-{{ (string)\Illuminate\Support\Str::of(app()->getLocale())->replace('en', 'us') }}"></span>
+                    </x-slot>
+
+                    <x-slot name="links">
+                        @foreach (\Illuminate\Support\Arr::except(config('localized-routes.supported-locales', []), app()->getLocale()) as $locale)
+                            <x-squadms-default-theme::dropdown.item :link="\Route::localizedUrl($locale)">
+                                <x-slot name="title">
+                                    <span class="flag-icon flag-icon-{{ (string)\Illuminate\Support\Str::of(app()->getLocale())->replace('en', 'us') }}"></span> {{ LocaleHelper::getHumanReadableName($locale) }}
+                                </x-slot>
+                            </x-squadms-default-theme::dropdown.item>
+                        @endforeach
+                    </x-slot>
+                </x-squadms-default-theme::navigation.dropdown>
             </x-slot>
         </x-squadms-default-theme::navigation.navbar>
 
