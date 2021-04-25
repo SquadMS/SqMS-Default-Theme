@@ -14,7 +14,7 @@
         @stack('styles')
     </head>
 
-    <body class="min-vh-100 d-flex flex-column">
+    <body class="min-vh-100 d-flex flex-column bg-light">
         <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
             <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="{{ route(config('sqms.routes.def.admin-dashboard.name')) }}">
                 <img src="https://squadms.com/img/logo-white.svg" alt="SquadMS Logo" class="img-fluid" style="height: 1.75em;">
@@ -38,7 +38,7 @@
 
         <div class="container-fluid">
             <div class="row">
-                <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+                <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
                     <div class="position-sticky pt-3">
                         <ul class="nav flex-column">
                             <x-squadms-default-theme::navigation.item :link="route(config('sqms.routes.def.admin-dashboard.name'))" :active="\Route::currentRouteNamed(config('sqms.routes.def.admin-dashboard.name'))" >
@@ -51,8 +51,8 @@
                     </div>
                 </nav>
 
-                <div class="col-md-9 col-lg-10 ms-sm-auto px-0 bg-light">
-                    <main class="px-md-4 pt-4" role="main">
+                <div class="col-md-9 col-lg-10 ms-sm-auto px-0">
+                    <main class="px-md-4 pt-4 bg-white" role="main">
                         @yield('content')
                     </main>
 
