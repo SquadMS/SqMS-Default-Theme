@@ -52,7 +52,7 @@
                 </nav>
 
                 <div class="col-md-9 col-lg-10 ms-sm-auto px-0">
-                    <main class="px-md-4 pt-4 bg-white" role="main">
+                    <main class="px-md-4 py-4 bg-white" role="main">
                         @yield('content')
                     </main>
 
