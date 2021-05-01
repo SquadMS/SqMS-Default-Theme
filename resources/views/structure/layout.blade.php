@@ -35,7 +35,7 @@
                     </x-slot>
 
                     <x-slot name="links">
-                        @foreach (\Illuminate\Support\Arr::except(config('localized-routes.supported-locales', []), [app()->getLocale()]) as $locale)
+                        @foreach (\LocaleHelper::getAvailableLocales(true) as $locale)
                             <x-squadms-default-theme::dropdown.item :link="\Route::localizedUrl($locale)">
                                 <x-slot name="title">
                                     <span class="flag-icon flag-icon-{{ (string)\Illuminate\Support\Str::of($locale)->replace('en', 'us') }}"></span> {{ \LocaleHelper::getHumanReadableName($locale) }}
