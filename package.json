@@ -23,6 +23,7 @@
   "homepage": "https://github.com/SquadMS/SqMS-Default-Theme#readme",
   "dependencies": {
     "bootstrap": "^5.0.0-beta3",
+    "flag-icon-css": "^3.5.0",
     "laravel-mix": "^6.0.16"
   },
   "devDependencies": {
