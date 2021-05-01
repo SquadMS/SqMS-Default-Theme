@@ -36,14 +36,14 @@
                 @if (count(\LocaleHelper::getAvailableLocales()) > 1)
                 <x-squadms-default-theme::navigation.dropdown>
                     <x-slot name="title">
-                        <span class="flag-icon flag-icon-{{ (string)\Illuminate\Support\Str::of(app()->getLocale())->replace('en', 'us') }}"></span>
+                        <span class="flag-icon {{ \LocaleHelper::localeToFlagIconsCSS(app()->getLocale()) }}"></span>
                     </x-slot>
 
                     <x-slot name="links">
                         @foreach (\LocaleHelper::getAvailableLocales(true) as $locale)
                             <x-squadms-default-theme::dropdown.item :link="\Route::localizedUrl($locale)">
                                 <x-slot name="title">
-                                    <span class="flag-icon flag-icon-{{ (string)\Illuminate\Support\Str::of($locale)->replace('en', 'us') }}"></span> {{ \LocaleHelper::getHumanReadableName($locale) }}
+                                    <span class="flag-icon {{ \LocaleHelper::localeToFlagIconsCSS($locale) }}"></span> {{ \LocaleHelper::getHumanReadableName($locale) }}
                                 </x-slot>
                             </x-squadms-default-theme::dropdown.item>
                         @endforeach
