@@ -30,3 +30,8 @@ Check out the main Repo at [SquadMS/Squad-MS](https://github.com/SquadMS/Squad-M
 ## License
 
 SquadMS and the Laravel framework are open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Contributors
+
+<!-- readme: collaborators,contributors -start -->
+<!-- readme: collaborators,contributors -end -->
