@@ -5,7 +5,7 @@
         data-bs-toggle="dropdown" aria-expanded="false">
         {{ $title }}
     </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
         {{ $links }}
     </ul>
 </li>
