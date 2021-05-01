@@ -16,17 +16,21 @@
     <body class="min-vh-100 d-flex flex-column bg-light">
         <x-squadms-default-theme::navigation.navbar :brand="config('app.name', 'SquadMS')">
             <x-slot name="navLeft">
-                <x-squadms-default-theme::navigation.item :active="\NavigationHelper::isCurrentRoute(config('sqms.routes.def.home.name'))" :link="route(config('sqms.routes.def.home.name'))" title="Home"/>
+                <x-squadms-default-theme::navigation.item :active="\NavigationHelper::isCurrentRoute(config('sqms.routes.def.home.name'))" :link="route(config('sqms.routes.def.home.name'))" :title="__('navigation.home')"/>
 
                 @admin(\Auth::user())
-                <x-squadms-default-theme::navigation.item :link="route(config('sqms.routes.def.admin-dashboard.name'))" title="Admin"/>
+                <x-squadms-default-theme::navigation.item :link="route(config('sqms.routes.def.admin-dashboard.name'))" :title="__('navigation.admin')"/>
                 @endadmin
             </x-slot>
             <x-slot name="navRight">
                 @if (\Auth::user())
-                    <x-squadms-default-theme::navigation.item :active="\NavigationHelper::isCurrentRoute(config('sqms.routes.def.profile.name')) && \Request::route('steam_id_64') === \Auth::user()->steam_id_64" :link="route(config('sqms.routes.def.profile.name'), ['steam_id_64' => \Auth::user()->steam_id_64])" title="Profil"/>
+                    <x-squadms-default-theme::navigation.item :active="\NavigationHelper::isCurrentRoute(config('sqms.routes.def.profile.name')) && \Request::route('steam_id_64') === \Auth::user()->steam_id_64" :link="route(config('sqms.routes.def.profile.name'), ['steam_id_64' => \Auth::user()->steam_id_64])" :title="__('navigation.profile')"/>
+                    <x-squadms-default-theme::navigation.item :link="route(config('sqms.routes.def.logout.name'))" :title="__('navigation.logout')" onclick="event.preventDefault(); document.getElementById('frm-logout').submit();"/>
+                    <form id="frm-logout" action="{{ route(config('sqms.routes.def.logout.name')) }}" method="POST" style="display: none;">
+                        {{ csrf_field() }}
+                    </form>
                 @else
-                    <x-squadms-default-theme::navigation.item :link="route(config('sqms.routes.def.steam-login.name'))" title="Login"/>
+                    <x-squadms-default-theme::navigation.item :link="route(config('sqms.routes.def.steam-login.name'))" :title="__('navigation.login')" />
                 @endif
 
                 @if (count(\LocaleHelper::getAvailableLocales()) > 1)
