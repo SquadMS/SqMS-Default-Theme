@@ -16,7 +16,7 @@
     <body class="min-vh-100 d-flex flex-column bg-light">
         <x-squadms-default-theme::navigation.navbar :brand="config('app.name', 'SquadMS')">
             <x-slot name="navLeft">
-                <x-squadms-default-theme::navigation.item :active="\Route::currentRouteNamed(config('sqms.routes.def.home.name'))" :link="route(config('sqms.routes.def.home.name'))" title="Home"/>
+                <x-squadms-default-theme::navigation.item :active="\NavigationHelper::isCurrentRoute(config('sqms.routes.def.home.name'))" :link="route(config('sqms.routes.def.home.name'))" title="Home"/>
 
                 @admin(\Auth::user())
                 <x-squadms-default-theme::navigation.item :link="route(config('sqms.routes.def.admin-dashboard.name'))" title="Admin"/>
@@ -24,7 +24,7 @@
             </x-slot>
             <x-slot name="navRight">
                 @if (\Auth::user())
-                    <x-squadms-default-theme::navigation.item :active="\Route::currentRouteNamed(config('sqms.routes.def.profile.name')) && \Request::route('steam_id_64') === \Auth::user()->steam_id_64" :link="route(config('sqms.routes.def.profile.name'), ['steam_id_64' => \Auth::user()->steam_id_64])" title="Profil"/>
+                    <x-squadms-default-theme::navigation.item :active="\NavigationHelper::isCurrentRoute(config('sqms.routes.def.profile.name')) && \Request::route('steam_id_64') === \Auth::user()->steam_id_64" :link="route(config('sqms.routes.def.profile.name'), ['steam_id_64' => \Auth::user()->steam_id_64])" title="Profil"/>
                 @else
                     <x-squadms-default-theme::navigation.item :link="route(config('sqms.routes.def.steam-login.name'))" title="Login"/>
                 @endif
@@ -38,7 +38,7 @@
                         @foreach (\Illuminate\Support\Arr::except(config('localized-routes.supported-locales', []), app()->getLocale()) as $locale)
                             <x-squadms-default-theme::dropdown.item :link="\Route::localizedUrl($locale)">
                                 <x-slot name="title">
-                                    <span class="flag-icon flag-icon-{{ (string)\Illuminate\Support\Str::of(app()->getLocale())->replace('en', 'us') }}"></span> {{ LocaleHelper::getHumanReadableName($locale) }}
+                                    <span class="flag-icon flag-icon-{{ (string)\Illuminate\Support\Str::of(app()->getLocale())->replace('en', 'us') }}"></span> {{ \LocaleHelper::getHumanReadableName($locale) }}
                                 </x-slot>
                             </x-squadms-default-theme::dropdown.item>
                         @endforeach
