@@ -12,6 +12,8 @@ if (fs.existsSync('public')) {
 /* Configure the public path */
 mix.setPublicPath('public');
 
+mix.setResourceRoot('themes/squadms-default-theme');
+
 /* Build SCSS/JS assets */
 mix
 /* Public assets */
