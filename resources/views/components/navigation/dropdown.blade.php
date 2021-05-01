@@ -5,7 +5,7 @@
         data-bs-toggle="dropdown" aria-expanded="false">
         {{ $title }}
     </a>
-    <ul class="dropdown-menu {{ $alignment }}" aria-labelledby="{{ $id }}">
+    <ul class="dropdown-menu {{ \LocaleHelper::isRTL(app()->getLocale()) ? ($alignment === 'dropdown-menu-end' ? 'dropdown-menu-start' : ($alignment === 'dropdown-menu-start' ? 'dropdown-menu-end' : $alignment)) : $alignment }}" aria-labelledby="{{ $id }}">
         {{ $links }}
     </ul>
 </li>
