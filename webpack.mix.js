@@ -6,7 +6,7 @@ if (fs.existsSync('public')) {
     fs.rmdirSync('public', { recursive: true });
 
     fs.mkdirSync('public');
-    fs.mkdirSync('public/img');
+    fs.mkdirSync('public/images');
 }
 
 /* Configure the public path */
@@ -25,4 +25,4 @@ mix
 .version();
 
 /* Copy static images */
-mix.copyDirectory('resources/img/static', 'public/img');
+mix.copyDirectory('resources/images/static', 'public/static-images');
