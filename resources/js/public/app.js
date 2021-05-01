@@ -1,3 +1,5 @@
+import '@popperjs/core';
+
 // You can specify which plugins you need
 // import { Alert } from 'bootstrap';
 
