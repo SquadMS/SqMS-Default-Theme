@@ -18,6 +18,9 @@ mix.setResourceRoot('/themes/squadms-default-theme');
 mix
 /* Public assets */
 .sass('resources/scss/public/app.scss', 'css/public/')
+.sass("resources/scss/public/app-rtl.scss", "css/public/", {}, [
+  require("rtlcss")(),
+])
 .js('resources/js/public/app.js', 'js/public/')
 
 /* Admin assets */

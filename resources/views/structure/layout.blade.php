@@ -10,7 +10,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
         <!-- Styles -->
-        <link href="{{ mix('css/public/app.css', 'themes/squadms-default-theme') }}" rel="stylesheet">
+        <link href="{{ mix('css/public/app' . (LocaleHelper::isRTL() ? '-rtl' : '') . '.css', 'themes/squadms-default-theme') }}" rel="stylesheet">
         @stack('styles')
     </head>
     <body class="min-vh-100 d-flex flex-column bg-light">
