@@ -1,10 +1,10 @@
 <?php
 
 return [
-    'home' => 'Home',
-    'profile' => 'Profile',
+    'home' => 'الصفحة الرئيسية',
+    'profile' => 'الملف الشخصي',
 
-    'admin' => 'Admin',
-    'login' => 'Login',
-    'logout' => 'Logout',
+    'admin' => 'الأدمن',
+    'login' => 'تسجيل الدخول',
+    'logout' => 'تسجيل الخروج',
 ];
