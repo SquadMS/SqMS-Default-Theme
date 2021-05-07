@@ -47,7 +47,7 @@ SquadMS and the Laravel framework are open-sourced software licensed under the [
         <a href="https://github.com/ibnalsam">
             <img src="https://avatars.githubusercontent.com/u/47418168?v=4" width="100;" alt="ibnalsam"/>
             <br />
-            <sub><b>ibnalsam</b></sub>
+            <sub><b>Ibnalsam</b></sub>
         </a>
     </td></tr>
 </table>
