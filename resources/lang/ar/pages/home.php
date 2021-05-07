@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'heading' => 'Welcome to',
+    'heading' => 'أهلاً بكم في',
 ];
