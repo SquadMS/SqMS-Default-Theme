@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'heading' => 'Profile of :name',
+    'heading' => 'الملف الشخصي لـ :name',
 ];
