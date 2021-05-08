@@ -43,10 +43,19 @@
                         <ul class="nav flex-column">
                             <x-squadms-default-theme::navigation.item :link="route(config('sqms.routes.def.admin-dashboard.name'))" :active="\Route::currentRouteNamed(config('sqms.routes.def.admin-dashboard.name'))" >
                                 <x-slot name="title">
-                                    <span data-feather="home"></span>
+                                    <i class="bi bi-house-fill"></i>
                                     Dashboard
                                 </x-slot>
                             </x-squadms-default-theme::navigation.item>
+
+                            @can ('sqms admin rbac')
+                                <x-squadms-default-theme::navigation.item :link="route(config('sqms.routes.def.admin-rbac.name'))" :active="\Route::currentRouteNamed(config('sqms.routes.def.admin-rbac.name'))" >
+                                    <x-slot name="title">
+                                        <i class="bi bi-shield-lock-fill"></i>
+                                        RBAC
+                                    </x-slot>
+                                </x-squadms-default-theme::navigation.item>
+                            @endcan
                         </ul>
                     </div>
                 </nav>
