@@ -4,7 +4,7 @@ return [
     'home' => 'הביתה',
     'profile' => 'פרופיל',
 
-    'admin' => 'Admin',
+    'admin' => 'מנהל',
     'login' => 'כניסה',
     'logout' => 'יציאה',
 ];
