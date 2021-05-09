@@ -8,7 +8,7 @@ use Spatie\Permission\Models\Role;
 class CreateRole extends Component
 {
     public bool $showModal = false;
-    public bool $input = '';
+    public string $input = '';
 
     public function createRole() {
         /* Create the Role */
