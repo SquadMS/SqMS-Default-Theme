@@ -28,7 +28,8 @@ switch ($maxWidth ?? '') {
         show: @entangle($attributes->wire('model')).defer,
     }"
     x-init="() => {
-        const modal = new bootstrap.Modal(document.getElementById('#{{ $id }}'))
+        const element document.getElementById('#{{ $id }}')
+        const modal = new bootstrap.Modal(element)
         $watch('show', value => {
             if (value) {
                 modal.show()
