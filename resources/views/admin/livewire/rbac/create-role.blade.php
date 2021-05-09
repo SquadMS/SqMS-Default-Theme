@@ -17,6 +17,8 @@
                 Cancel
             </x-squadms-default-theme::button>
     
+            <div class="flex-grow-1"></div>
+            
             <x-squadms-default-theme::button class="btn-success" wire:click="createRole" wire:loading.attr="disabled">
                 Create Role
             </x-squadms-default-theme::button>
