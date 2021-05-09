@@ -2,12 +2,11 @@
 
 namespace SquadMS\DefaultTheme\Providers;
 
-use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 use Livewire\Livewire;
 use SquadMS\Foundation\Http\Livewire\RBAC\RoleList;
 
-class LivewireProvider extends ServiceProvider
+class LivewireServiceProvider extends ServiceProvider
 {
     /**
      * Register any application services.
