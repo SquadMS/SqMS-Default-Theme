@@ -5,13 +5,16 @@
     <div class="container-fluid">
         <div class="row pb-4">
             <div class="col">
-                <h1>RBAC</h1>
+                <h1 class="d-flex aliign-items-center">
+                    <span class="flex-grow-1">RBAC</span>
+                    <button type="button" class="btn btn-primary">Primary</button>
+                </h1>
                 <hr>
             </div>
         </div>
         <div class="row">
             <div class="col text-center">
-                <p class="color-info">Coming Soon.</p>
+                <livewire:admin.rbac.role-list></livewire:admin.rbac.role-list/>
             </div>
         </div>
     </div>

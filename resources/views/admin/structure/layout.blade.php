@@ -10,6 +10,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
         <!-- Styles -->
+        @livewireStyles
         <link href="{{ mix('css/admin/app.css', 'themes/squadms-default-theme') }}" rel="stylesheet">
         @stack('styles')
     </head>
@@ -72,6 +73,7 @@
         </div>    
 
         <!-- Styles -->
+        @livewireScripts
         <script src="{{ mix('js/admin/app.js', 'themes/squadms-default-theme') }}"></script>
         @stack('scripts')
     </body>

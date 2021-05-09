@@ -19,7 +19,8 @@
     ],
     "require": {
         "illuminate/support": "^8.0",
-        "squadms/foundation": "dev-master"
+        "squadms/foundation": "dev-master",
+        "livewire/livewire": "^2.4"
     },
     "autoload": {
         "psr-4": {
