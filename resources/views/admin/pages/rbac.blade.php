@@ -14,7 +14,7 @@
         </div>
         <div class="row">
             <div class="col text-center">
-                <livewire:admin.rbac.role-list></livewire:admin.rbac.role-list/>
+                <livewire:sqms-default-theme.admin.rbac.role-list></livewire:admin.rbac.role-list/>
             </div>
         </div>
     </div>

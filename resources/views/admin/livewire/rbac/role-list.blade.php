@@ -21,6 +21,8 @@
                 @endforeach
             </tbody>
         </table>
+
+        {{ $roles->links() }}
     </div>
     @else
     <p class="text-center">No Roles have been created yet.</p>
