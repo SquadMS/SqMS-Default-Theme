@@ -14,11 +14,11 @@
     
         <x-slot name="footer">
             <x-squadms-default-theme::button wire:click="$toggle('showModal')" wire:loading.attr="disabled">
-                Nevermind
+                Cancel
             </x-squadms-default-theme::button>
     
             <x-squadms-default-theme::button class="btn-success" wire:click="createRole" wire:loading.attr="disabled">
-                Delete Account
+                Create Role
             </x-squadms-default-theme::button>
         </x-slot>
     </x-squadms-default-theme::dialog-modal>
