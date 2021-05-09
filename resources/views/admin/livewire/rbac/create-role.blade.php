@@ -1,7 +1,7 @@
 <div>
     <button type="button" class="btn btn-primary" wire:click="$toggle('showModal')">Create</button>
 
-    <x-squadms-default-theme::confirm-modal wire:model="showModal">
+    <x-squadms-default-theme::dialog-modal wire:model="showModal">
         <x-slot name="title">
             Delete Account
         </x-slot>
@@ -21,5 +21,5 @@
                 Delete Account
             </x-squadms-default-theme::button>
         </x-slot>
-    </x-squadms-default-theme::confirm-modal>
+    </x-squadms-default-theme::dialog-modal>
 </div>
