@@ -1,16 +1,16 @@
 <div>
-    <x-squadms-default-theme::button class="btn-primary" wire:click="$toggle('showModal')" wire:loading.attr="disabled">
-        Create
+    <x-squadms-default-theme::button class="btn-warning" wire:click="$toggle('showModal')" wire:loading.attr="disabled">
+        Edit
     </x-squadms-default-theme::button>
 
     <x-squadms-default-theme::dialog-modal wire:model="showModal">
         <x-slot name="title">
-            Create Role
+            Edit Role
         </x-slot>
     
         <x-slot name="content">
             <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="New role name" aria-label="New role name" wire:model.lazy="input">
+                <input type="text" class="form-control" placeholder="Name of the role" aria-label="Name of the role" wire:model.lazy="role.name">
             </div>
         </x-slot>
     
@@ -21,8 +21,8 @@
     
             <div class="flex-grow-1"></div>
 
-            <x-squadms-default-theme::button class="btn-success" wire:click="createRole" wire:loading.attr="disabled">
-                Create
+            <x-squadms-default-theme::button class="btn-success" wire:click="saveRole" wire:loading.attr="disabled">
+                Save
             </x-squadms-default-theme::button>
         </x-slot>
     </x-squadms-default-theme::dialog-modal>

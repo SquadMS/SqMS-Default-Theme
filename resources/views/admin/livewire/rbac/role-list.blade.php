@@ -16,12 +16,10 @@
                         <x-squadms-default-theme::button class="btn-primary" wire:loading.attr="disabled">
                             Members
                         </x-squadms-default-theme::button>
-                        <x-squadms-default-theme::button class="btn-warning" wire:loading.attr="disabled">
-                            Edit
-                        </x-squadms-default-theme::button>
-                        <x-squadms-default-theme::button class="btn-danger" wire:loading.attr="disabled">
-                            Delete
-                        </x-squadms-default-theme::button>
+
+                        <livewire:sqms-default-theme.admin.rbac.role-members :role="$role"></livewire:admin.rbac.role-members/>
+                        <livewire:sqms-default-theme.admin.rbac.edit-role :role="$role"></livewire:admin.rbac.edit-role/>
+                        <livewire:sqms-default-theme.admin.rbac.delete-role :role="$role"></livewire:admin.rbac.delete-role/>
                     </td>
                 </tr>
                 @endforeach
