@@ -1,6 +1,6 @@
 <?php
 
-namespace SquadMS\Foundation\Http\Livewire\RBAC;
+namespace SquadMS\DefaultTheme\Http\Livewire\RBAC;
 
 use Livewire\Component;
 use Spatie\Permission\Models\Role;

@@ -4,8 +4,8 @@ namespace SquadMS\DefaultTheme\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Livewire\Livewire;
-use SquadMS\Foundation\Http\Livewire\RBAC\CreateRole;
-use SquadMS\Foundation\Http\Livewire\RBAC\RoleList;
+use SquadMS\DefaultTheme\Http\Livewire\RBAC\CreateRole;
+use SquadMS\DefaultTheme\Http\Livewire\RBAC\RoleList;
 
 class LivewireServiceProvider extends ServiceProvider
 {
