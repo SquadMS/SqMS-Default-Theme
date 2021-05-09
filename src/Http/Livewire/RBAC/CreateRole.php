@@ -22,6 +22,6 @@ class CreateRole extends Component
     
     public function render()
     {
-        return view('admin.livewire.create-role');
+        return view('squadms-default-theme::admin.livewire.create-role');
     }
 }

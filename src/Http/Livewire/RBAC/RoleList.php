@@ -14,7 +14,7 @@ class RoleList extends Component
 
     public function render()
     {
-        return view('admin.livewire.rbac.role-list', [
+        return view('squadms-default-theme::admin.livewire.rbac.role-list', [
             'roles' => Role::paginate(10),
         ]);
     }
