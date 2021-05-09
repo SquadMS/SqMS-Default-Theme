@@ -13,9 +13,15 @@
                 <tr>
                     <th scope="row">{{ $role->name }}</th>
                     <td>
-                        <button type="button" class="btn btn-primary">Members</button>
-                        <button type="button" class="btn btn-warning">Edit</button>
-                        <button type="button" class="btn btn-primary">Delete</button>
+                        <x-squadms-default-theme::button class="btn-primary" wire:loading.attr="disabled">
+                            Members
+                        </x-squadms-default-theme::button>
+                        <x-squadms-default-theme::button class="btn-warning" wire:loading.attr="disabled">
+                            Edit
+                        </x-squadms-default-theme::button>
+                        <x-squadms-default-theme::button class="btn-danger" wire:loading.attr="disabled">
+                            Delete
+                        </x-squadms-default-theme::button>
                     </td>
                 </tr>
                 @endforeach
