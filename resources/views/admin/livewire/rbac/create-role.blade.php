@@ -1,5 +1,5 @@
 <div>
-    <button type="button" class="btn btn-primary">Create</button>
+    <button type="button" class="btn btn-primary" wire:click="$toggle('showModal')">Create</button>
 
     <x-squadms-default-theme::modal wire:model="showModal">
         <x-slot name="title">
