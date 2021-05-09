@@ -5,7 +5,7 @@
 
     <x-squadms-default-theme::dialog-modal wire:model="showModal">
         <x-slot name="title">
-            Delete Account
+            Create Role
         </x-slot>
     
         <x-slot name="content">
