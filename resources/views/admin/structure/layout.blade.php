@@ -13,6 +13,9 @@
         @livewireStyles
         <link href="{{ mix('css/admin/app.css', 'themes/squadms-default-theme') }}" rel="stylesheet">
         @stack('styles')
+
+        <!-- Important Scripts -->
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer></script>
     </head>
 
     <body class="min-vh-100 d-flex flex-column bg-light">
@@ -72,7 +75,7 @@
             </div>
         </div>    
 
-        <!-- Styles -->
+        <!-- Scripts -->
         @livewireScripts
         <script src="{{ mix('js/admin/app.js', 'themes/squadms-default-theme') }}"></script>
         @stack('scripts')
