@@ -12,6 +12,10 @@ class RoleList extends Component
 
     protected $paginationTheme = 'bootstrap';
 
+    protected $listeners = [
+        'role:created' => '$refresh',
+    ];
+
     public function render()
     {
         return view('squadms-default-theme::admin.livewire.rbac.role-list', [

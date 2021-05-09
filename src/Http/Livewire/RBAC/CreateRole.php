@@ -16,6 +16,8 @@ class CreateRole extends Component
             'name' => $this->input,
         ]);
 
+        $this->emit('role:created');
+
         /* Reset state */
         $this->reset();
     }
