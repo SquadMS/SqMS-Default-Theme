@@ -4,6 +4,7 @@ namespace SquadMS\DefaultTheme\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Livewire\Livewire;
+use SquadMS\Foundation\Http\Livewire\RBAC\CreateRole;
 use SquadMS\Foundation\Http\Livewire\RBAC\RoleList;
 
 class LivewireServiceProvider extends ServiceProvider
@@ -27,5 +28,6 @@ class LivewireServiceProvider extends ServiceProvider
     {
         /* Register livewire components */
         Livewire::component('sqms-default-theme.admin.rbac.role-list', RoleList::class);
+        Livewire::component('sqms-default-theme.admin.rbac.create-role', CreateRole::class);
     }
 }
