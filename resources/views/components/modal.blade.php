@@ -1,4 +1,4 @@
-@props(['id', 'maxWidth'])
+@props(['id', 'maxWidth', 'modal' => false])
 
 @php
 $id = $id ?? md5($attributes->wire('model'));
