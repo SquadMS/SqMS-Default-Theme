@@ -34,6 +34,6 @@ class LivewireServiceProvider extends ServiceProvider
         Livewire::component('sqms-default-theme.admin.rbac.create-role', CreateRole::class);
         Livewire::component('sqms-default-theme.admin.rbac.edit-role', EditRole::class);
         Livewire::component('sqms-default-theme.admin.rbac.delete-role', DeleteRole::class);
-        Livewire::component('sqms-default-theme.admin.rbac.member-role', MembersRole::class);
+        Livewire::component('sqms-default-theme.admin.rbac.members-role', MembersRole::class);
     }
 }

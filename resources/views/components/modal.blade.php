@@ -1,4 +1,4 @@
-@props(['id', 'maxWidth', 'modal' => false])
+@props(['id', 'maxWidth'])
 
 @php
 $id = $id ?? md5($attributes->wire('model'));
@@ -42,12 +42,12 @@ switch ($maxWidth ?? '') {
         })
     }"
     wire:ignore.self 
-    class="modal fade" 
     tabindex="-1" 
     id="{{ $id }}" 
     aria-labelledby="{{ $id }}" 
     aria-hidden="true"
     x-ref="{{ $id }}"
+    {{ $attributes->except(['id', 'maxWidth'])->merge(['class' => 'modal fade']) }}
 >
     <div class="modal-dialog{{ $maxWidth }}">
         {{ $slot }}
