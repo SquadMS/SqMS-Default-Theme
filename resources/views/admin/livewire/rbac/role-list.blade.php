@@ -13,13 +13,9 @@
                 <tr>
                     <th scope="row">{{ $role->name }}</th>
                     <td>
-                        <x-squadms-default-theme::button class="btn-primary" wire:loading.attr="disabled">
-                            Members
-                        </x-squadms-default-theme::button>
-
-                        <livewire:sqms-default-theme.admin.rbac.members-role :role="$role"></livewire:admin.rbac.members-role/>
-                        <livewire:sqms-default-theme.admin.rbac.edit-role :role="$role"></livewire:admin.rbac.edit-role/>
-                        <livewire:sqms-default-theme.admin.rbac.delete-role :role="$role"></livewire:admin.rbac.delete-role/>
+                        <livewire:sqms-default-theme.admin.rbac.members-role :role="$role"></livewire:sqms-default-theme.admin.rbac.members-role/>
+                        <livewire:sqms-default-theme.admin.rbac.edit-role :role="$role"></livewire:sqms-default-theme.admin.admin.rbac.edit-role/>
+                        <livewire:sqms-default-theme.admin.rbac.delete-role :role="$role"></livewire:sqms-default-theme.admin.admin.rbac.delete-role/>
                     </td>
                 </tr>
                 @endforeach
