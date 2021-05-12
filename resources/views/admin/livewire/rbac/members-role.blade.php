@@ -15,7 +15,7 @@
         <x-slot name="footer">
             <div class="flex-grow-1"></div>
 
-            <x-squadms-default-theme::button class="btn-dark" wire:click="$toggle('showModal')" wire:loading.attr="disabled">
+            <x-squadms-default-theme::button class="btn-dark" wire:click="$set('showModal', false)" wire:loading.attr="disabled">
                 Close
             </x-squadms-default-theme::button>
         </x-slot>

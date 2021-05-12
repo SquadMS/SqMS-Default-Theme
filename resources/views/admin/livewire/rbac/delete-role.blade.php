@@ -13,7 +13,7 @@
         </x-slot>
     
         <x-slot name="footer">
-            <x-squadms-default-theme::button class="btn-dark" wire:click="$toggle('showModal')" wire:loading.attr="disabled">
+            <x-squadms-default-theme::button class="btn-dark" wire:click="$set('showModal', false)" wire:loading.attr="disabled">
                 Cancel
             </x-squadms-default-theme::button>
     
