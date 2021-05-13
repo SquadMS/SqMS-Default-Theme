@@ -11,7 +11,9 @@ class EditRole extends AbstractModalComponent
 
     public function updateRole() {
         /* Validate the data first */
-        $this->validate();
+        $this->validate([
+            'role.name' => 'required|string|unique:Spatie\Permission\Models\Role,name,' . $this->role->id,
+        ]);
         
         /* Create the Role */
         $this->role->save();
@@ -21,16 +23,21 @@ class EditRole extends AbstractModalComponent
         /* Emit event */
         $this->emitUp('role:updated');
     }
+
+    public function togglePermission(string $definition, bool $state) {
+        $this->validate([
+            'definition' => 'required|string'
+        ]);
+
+        if ($state) {
+            $this->role->givePermissionTo($definition);
+        } else {
+            $this->role->revokePermissionTo($definition);
+        }
+    }
     
     public function render()
     {
         return view('squadms-default-theme::admin.livewire.rbac.edit-role');
-    }
-
-    protected function rules() : array
-    {
-        return [
-            'role.name' => 'required|string|unique:Spatie\Permission\Models\Role,name,' . $this->role->id,
-        ];
     }
 }
