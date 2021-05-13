@@ -16,6 +16,8 @@ class EditRole extends AbstractModalComponent
         /* Create the Role */
         $this->role->save();
 
+        $this->hideModal();
+
         /* Emit event */
         $this->emitUp('role:updated');
     }
