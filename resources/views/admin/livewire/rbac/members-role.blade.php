@@ -3,7 +3,7 @@
         Members
     </x-squadms-default-theme::button>
 
-    <x-squadms-default-theme::dialog-modal wire:model="showModal">
+    <x-squadms-default-theme::dialog-modal wire:model="showModal" maxWidth="xl" class="modal-fullscreen-xl-down">
         <x-slot name="title">
             Role Members
         </x-slot>

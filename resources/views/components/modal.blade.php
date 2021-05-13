@@ -15,7 +15,6 @@ switch ($maxWidth ?? '') {
     case 'xl':
         $maxWidth = ' modal-xl';
         break;
-    case '2xl':
     default:
         $maxWidth = '';
         break;
