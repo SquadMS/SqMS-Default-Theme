@@ -21,7 +21,7 @@
     
             <div class="flex-grow-1"></div>
 
-            <x-squadms-default-theme::button class="btn-success" wire:click="saveRole" wire:loading.attr="disabled">
+            <x-squadms-default-theme::button class="btn-success" wire:click="updateRole" wire:loading.attr="disabled">
                 Save
             </x-squadms-default-theme::button>
         </x-slot>
