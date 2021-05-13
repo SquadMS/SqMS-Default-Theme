@@ -1,4 +1,4 @@
-@props(['id', 'maxWidth', 'modal' => false])
+@props(['id', 'maxWidth', 'fullscreen', 'modal' => false])
 
 @php
 $id = $id ?? md5($attributes->wire('model'));
@@ -18,6 +18,28 @@ switch ($maxWidth ?? '') {
     default:
         $maxWidth = '';
         break;
+}
+if ($fullscreen) {
+    switch ($fullscreen ?? '') {
+        case 'sm':
+            $fullscreen = ' modal-fullscreen-sm-down';
+            break;
+        case 'md':
+            $fullscreen = ' modal-fullscreen-md-down';
+            break;
+        case 'lg':
+            $fullscreen = ' modal-fullscreen-lg-down';
+            break;
+        case 'xl':
+            $fullscreen = ' modal-fullscreen-xl-down';
+            break;
+        case 'xxl':
+            $fullscreen = ' modal-fullscreen-xxl-down';
+            break;
+        default:
+            $fullscreen = ' modal-fullscreen';
+            break;
+    }
 }
 @endphp
 
@@ -48,7 +70,7 @@ switch ($maxWidth ?? '') {
     x-ref="modal"
     {!! $attributes->except(['id', 'maxWidth'])->merge(['class' => 'modal fade']) !!}
 >
-    <div class="modal-dialog{{ $maxWidth }}">
+    <div class="modal-dialog{{ $maxWidth . $fullscreen }}">
         {{ $slot }}
     </div>
 </div>
