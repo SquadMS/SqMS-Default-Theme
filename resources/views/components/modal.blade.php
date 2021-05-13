@@ -28,7 +28,7 @@ switch ($maxWidth ?? '') {
         show: @entangle($attributes->wire('model')).defer,
     }"
     x-init="() => {
-        const element = document.getElementById('{{ $id }}')
+        const element = $refs.modal
         const modal = new bootstrap.Modal(element)
         $watch('show', value => {
             if (value) {
@@ -46,7 +46,7 @@ switch ($maxWidth ?? '') {
     id="{{ $id }}" 
     aria-labelledby="{{ $id }}" 
     aria-hidden="true"
-    x-ref="{{ $id }}"
+    x-ref="modal"
     {!! $attributes->except(['id', 'maxWidth'])->merge(['class' => 'modal fade']) !!}
 >
     <div class="modal-dialog{{ $maxWidth }}">
