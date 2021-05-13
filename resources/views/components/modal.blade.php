@@ -19,7 +19,7 @@ switch ($maxWidth ?? '') {
         $maxWidth = '';
         break;
 }
-if ($fullscreen) {
+if (isset($fullscreen)) {
     switch ($fullscreen ?? '') {
         case 'sm':
             $fullscreen = ' modal-fullscreen-sm-down';
