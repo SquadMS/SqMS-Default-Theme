@@ -11,7 +11,7 @@ class EditRole extends AbstractModalComponent
 
     public function updateRole() {
         /* Validate the data first */
-        $this->validate($this->getValidationRules());
+        $this->validate();
         
         /* Create the Role */
         $this->role->save();
@@ -25,7 +25,7 @@ class EditRole extends AbstractModalComponent
         return view('squadms-default-theme::admin.livewire.rbac.edit-role');
     }
 
-    private function getValidationRules() : array
+    protected function rules() : array
     {
         return [
             'role.name' => 'required|string|unique:Spatie\Permission\Models\Role,name,' . $this->role->id,
