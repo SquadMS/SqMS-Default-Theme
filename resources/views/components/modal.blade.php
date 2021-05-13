@@ -1,4 +1,4 @@
-@props(['id', 'maxWidth', 'fullscreen', 'modal' => false])
+@props(['id', 'maxWidth', 'fullscreen' => '', 'modal' => false])
 
 @php
 $id = $id ?? md5($attributes->wire('model'));
@@ -19,27 +19,28 @@ switch ($maxWidth ?? '') {
         $maxWidth = '';
         break;
 }
-if (isset($fullscreen)) {
-    switch ($fullscreen ?? '') {
-        case 'sm':
-            $fullscreen = ' modal-fullscreen-sm-down';
-            break;
-        case 'md':
-            $fullscreen = ' modal-fullscreen-md-down';
-            break;
-        case 'lg':
-            $fullscreen = ' modal-fullscreen-lg-down';
-            break;
-        case 'xl':
-            $fullscreen = ' modal-fullscreen-xl-down';
-            break;
-        case 'xxl':
-            $fullscreen = ' modal-fullscreen-xxl-down';
-            break;
-        default:
-            $fullscreen = ' modal-fullscreen';
-            break;
-    }
+switch ($fullscreen ?? '') {
+    case 'sm':
+        $fullscreen = ' modal-fullscreen-sm-down';
+        break;
+    case 'md':
+        $fullscreen = ' modal-fullscreen-md-down';
+        break;
+    case 'lg':
+        $fullscreen = ' modal-fullscreen-lg-down';
+        break;
+    case 'xl':
+        $fullscreen = ' modal-fullscreen-xl-down';
+        break;
+    case 'xxl':
+        $fullscreen = ' modal-fullscreen-xxl-down';
+        break;
+    case 'all':
+        $fullscreen = ' modal-fullscreen';
+        break;
+    default:
+        $fullscreen = '';
+        break;
 }
 @endphp
 
