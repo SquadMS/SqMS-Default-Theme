@@ -7,7 +7,6 @@ use SquadMS\DefaultTheme\Http\Livewire\Contracts\AbstractModalComponent;
 
 class DeleteRole extends AbstractModalComponent
 {
-    public bool $showModal = false;
     public Role $role;
 
     public function deleteRole() {

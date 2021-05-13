@@ -2,10 +2,10 @@
 
 namespace SquadMS\DefaultTheme\Http\Livewire\RBAC;
 
+use Livewire\Component;
 use Spatie\Permission\Models\Role;
-use SquadMS\DefaultTheme\Http\Livewire\Contracts\AbstractModalComponent;
 
-class RoleEntry extends AbstractModalComponent
+class RoleEntry extends Component
 {
     public Role $role;
 

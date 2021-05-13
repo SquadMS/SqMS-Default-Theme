@@ -7,7 +7,6 @@ use SquadMS\DefaultTheme\Http\Livewire\Contracts\AbstractModalComponent;
 
 class CreateRole extends AbstractModalComponent
 {
-    public bool $showModal = false;
     public string $input = '';
 
     protected $rules = [
