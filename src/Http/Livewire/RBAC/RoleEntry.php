@@ -16,6 +16,6 @@ class MembersRole extends AbstractModalComponent
     
     public function render()
     {
-        return view('squadms-default-theme::admin.livewire.rbac.members-role');
+        return view('squadms-default-theme::admin.livewire.rbac.role-entry');
     }
 }
