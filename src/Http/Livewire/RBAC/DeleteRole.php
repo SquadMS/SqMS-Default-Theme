@@ -11,10 +11,13 @@ class DeleteRole extends AbstractModalComponent
 
     public function deleteRole() {
         /* Delete the Role */
-        $this->role->delete();
+        $this->role->delete();    
+        
+        /* Hide the modal (backdrop) */
+        $this->hideModal();
 
         /* Emit event */
-        $this->emit('role:deleted');     
+        $this->emit('role:deleted');
     }
     
     public function render()
