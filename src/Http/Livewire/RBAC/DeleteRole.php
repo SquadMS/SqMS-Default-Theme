@@ -14,10 +14,7 @@ class DeleteRole extends AbstractModalComponent
         $this->role->delete();
 
         /* Emit event */
-        $this->emit('role:deleted');
-
-        /* Reset state */
-        $this->reset();        
+        $this->emit('role:deleted');     
     }
     
     public function render()
