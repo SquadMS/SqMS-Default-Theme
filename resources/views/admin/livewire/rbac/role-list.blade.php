@@ -10,14 +10,7 @@
             </thead>
             <tbody>
                 @foreach ($roles as $role)
-                <tr>
-                    <th scope="row">{{ $role->name }}</th>
-                    <td>
-                        <livewire:sqms-default-theme.admin.rbac.members-role :role="$role" :wire:key="'members-role'.$role->id"></livewire:sqms-default-theme.admin.rbac.members-role/>
-                        <livewire:sqms-default-theme.admin.rbac.edit-role :role="$role" :wire:key="'edit-role'.$role->id"></livewire:sqms-default-theme.admin.admin.rbac.edit-role/>
-                        <livewire:sqms-default-theme.admin.rbac.delete-role :role="$role" :wire:key="'delete-role'.$role->id"></livewire:sqms-default-theme.admin.admin.rbac.delete-role/>
-                    </td>
-                </tr>
+                <livewire:sqms-default-theme.admin.rbac.role-entry :role="$role"></livewire:sqms-default-theme.admin.rbac.role-entry />
                 @endforeach
             </tbody>
         </table>

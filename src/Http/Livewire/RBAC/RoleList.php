@@ -15,7 +15,6 @@ class RoleList extends Component
     protected $listeners = [
         'role:created' => '$refresh',
         'role:deleted' => '$refresh',
-        'role:updated' => '$refresh',
     ];
 
     public function render()

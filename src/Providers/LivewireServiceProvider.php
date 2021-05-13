@@ -8,6 +8,7 @@ use SquadMS\DefaultTheme\Http\Livewire\RBAC\CreateRole;
 use SquadMS\DefaultTheme\Http\Livewire\RBAC\DeleteRole;
 use SquadMS\DefaultTheme\Http\Livewire\RBAC\EditRole;
 use SquadMS\DefaultTheme\Http\Livewire\RBAC\MembersRole;
+use SquadMS\DefaultTheme\Http\Livewire\RBAC\RoleEntry;
 use SquadMS\DefaultTheme\Http\Livewire\RBAC\RoleList;
 
 class LivewireServiceProvider extends ServiceProvider
@@ -31,6 +32,7 @@ class LivewireServiceProvider extends ServiceProvider
     {
         /* Register livewire components */
         Livewire::component('sqms-default-theme.admin.rbac.role-list', RoleList::class);
+        Livewire::component('sqms-default-theme.admin.rbac.role-entry', RoleEntry::class);
         Livewire::component('sqms-default-theme.admin.rbac.create-role', CreateRole::class);
         Livewire::component('sqms-default-theme.admin.rbac.edit-role', EditRole::class);
         Livewire::component('sqms-default-theme.admin.rbac.delete-role', DeleteRole::class);
