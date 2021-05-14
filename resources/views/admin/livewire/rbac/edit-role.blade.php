@@ -13,34 +13,37 @@
                 <input type="text" class="form-control" placeholder="Name of the role" aria-label="Name of the role" wire:model.lazy="role.name">
             </div>
             <div>
-                @foreach (\SquadMSPermissions::getPermissions() as $module => $definitions)
-                <div class="table-responsive">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th scope="col">Role</th>
-                                <th scope="col">Actions</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @foreach ($definitions as $definition => $displayName)
+                @foreach (\SquadMSPermissions::getModules() as $module)
+                <div class="m-2 border border-dark">
+                    <h3>{{ $module }}</h3>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
                                 <tr>
-                                    <td>{{ $displayName }}</td>
-                                    <td>
-                                        @if ($role->hasPermissionTo($definition))
-                                            <button class="btn btn-primary" type="button" wire:click="togglePermission($definition, false)">
-                                                <i class="bi bi-check-lg"></i>
-                                            </button>
-                                        @else
-                                            <button class="btn btn-secondary" type="button" wire:click="togglePermission($definition, true)">
-                                                <i class="bi bi-x"></i>
-                                            </button>
-                                        @endif
-                                    </td>
+                                    <th scope="col">Role</th>
+                                    <th scope="col">Actions</th>
                                 </tr>
-                            @endforeach
-                        </tbody>
-                    </table>
+                            </thead>
+                            <tbody>
+                                @foreach (\SquadMSPermissions::getPermissions($module) as $definition => $displayName)
+                                    <tr>
+                                        <td>{{ $displayName }}</td>
+                                        <td>
+                                            @if ($role->hasPermissionTo($definition))
+                                                <button class="btn btn-primary" type="button" wire:click="togglePermission($definition, false)">
+                                                    <i class="bi bi-check-lg"></i>
+                                                </button>
+                                            @else
+                                                <button class="btn btn-secondary" type="button" wire:click="togglePermission($definition, true)">
+                                                    <i class="bi bi-x"></i>
+                                                </button>
+                                            @endif
+                                        </td>
+                                    </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
                 @endforeach
             </div>
