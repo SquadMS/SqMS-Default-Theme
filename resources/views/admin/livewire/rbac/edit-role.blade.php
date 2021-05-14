@@ -30,11 +30,11 @@
                                         <td>{{ $displayName }}</td>
                                         <td>
                                             @if ($role->hasPermissionTo($definition))
-                                                <button class="btn btn-primary" type="button" wire:click="togglePermission($definition, false)">
+                                                <button class="btn btn-primary" type="button" wire:click="togglePermission('{{ $definition }}', false)">
                                                     <i class="bi bi-check-lg"></i>
                                                 </button>
                                             @else
-                                                <button class="btn btn-secondary" type="button" wire:click="togglePermission($definition, true)">
+                                                <button class="btn btn-secondary" type="button" wire:click="togglePermission('{{ $definition }}', true)">
                                                     <i class="bi bi-x"></i>
                                                 </button>
                                             @endif
