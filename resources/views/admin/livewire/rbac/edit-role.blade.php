@@ -3,7 +3,7 @@
         Edit
     </x-squadms-default-theme::button>
 
-    <x-squadms-default-theme::dialog-modal wire:model="showModal">
+    <x-squadms-default-theme::dialog-modal wire:model="showModal" maxWidth="xl" fullscreen="xl">
         <x-slot name="title">
             Edit Role
         </x-slot>
