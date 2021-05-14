@@ -25,10 +25,6 @@ class EditRole extends AbstractModalComponent
     }
 
     public function togglePermission(string $definition, bool $state) {
-        $this->validate([
-            'definition' => 'required|string'
-        ]);
-
         if ($state) {
             $this->role->givePermissionTo($definition);
         } else {
