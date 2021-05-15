@@ -2,6 +2,7 @@
 
 namespace SquadMS\DefaultTheme\Http\Livewire\RBAC;
 
+use Illuminate\Support\Str;
 use Livewire\WithPagination;
 use Spatie\Permission\Models\Role;
 use SquadMS\DefaultTheme\Http\Livewire\Contracts\AbstractModalComponent;
@@ -14,7 +15,16 @@ class MembersRole extends AbstractModalComponent
 
     public Role $role;
 
-    public ?SquadMSUser $selectedUser = null;
+    public string $searchInstance;;
+    public ?SquadMSUser $selectedUser;
+
+    function __construct($id = null)
+    {
+        parent::__construct($id);
+
+        $this->searchInstance =Str::random();
+        $this->selectedUser = null;
+    }
 
     protected $listeners = [
         'newMemberUpdated' => 'selectUser',
@@ -36,6 +46,7 @@ class MembersRole extends AbstractModalComponent
         /* Remove the User from the Role */
         $this->role->users()->attach($this->selectedUser);
 
+        $this->searchInstance = Str::random();
         $this->selectedUser = null;
 
         /* Fire the member added event */
