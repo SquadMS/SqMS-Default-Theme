@@ -6,22 +6,24 @@ use Livewire\WithPagination;
 use Spatie\Permission\Models\Role;
 use SquadMS\DefaultTheme\Http\Livewire\Contracts\AbstractModalComponent;
 use SquadMS\Foundation\Contracts\SquadMSUser;
+use SquadMS\Foundation\Repositories\UserRepository;
 
 class MembersRole extends AbstractModalComponent
 {
     use WithPagination;
-    
+
     public Role $role;
 
     protected $listeners = [
+        'newMemberUpdated' => 'addMember',
         'role:memberAdded' => '$refresh',
         'role:memberRemoved' => '$refresh',
     ];
 
-    public function addMember(SquadMSUser $user)
+    public function addMember(string $name, string $value)
     {
         /* Remove the User from the Role */
-        $this->role->users()->attach($user);
+        $this->role->users()->attach(UserRepository::getUserModelQuery()->where('steam_id_64', $value)->first());
 
         /* Fire the member added event */
         $this->emit('role:memberAdded');
