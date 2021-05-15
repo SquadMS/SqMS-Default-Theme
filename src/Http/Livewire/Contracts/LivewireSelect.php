@@ -15,7 +15,7 @@ abstract class LivewireSelect extends Component
         return [
             'default' => 'form-select',
 
-            'searchSelectedOption' => 'p-2 rounded border w-full bg-white flex items-center',
+            'searchSelectedOption' => 'p-2 rounded border w-100 bg-white d-flex items-center',
             'searchSelectedOptionTitle' => 'text-start',
             'searchSelectedOptionReset' => 'h-4 w-4',
 
