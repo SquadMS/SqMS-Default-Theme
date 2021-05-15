@@ -11,7 +11,10 @@
         <x-slot name="content">
             <div class="input-group mb-3">
                 <input type="text" class="form-control" placeholder="Name of the role" aria-label="Name of the role" wire:model.lazy="role.name">
-            </div>
+                <x-squadms-default-theme::button class="btn-outline-success" wire:click="updateRole" wire:loading.attr="disabled">
+                    Update
+                </x-squadms-default-theme::button>
+              </div>
             <div>
                 @foreach (\SquadMSPermissions::getModules() as $module)
                 <div class="m-2 border border-dark">
@@ -51,14 +54,10 @@
     
         <x-slot name="footer">
             <x-squadms-default-theme::button class="btn-dark" wire:click="$set('showModal', false)" wire:loading.attr="disabled">
-                Cancel
+                Close
             </x-squadms-default-theme::button>
     
             <div class="flex-grow-1"></div>
-
-            <x-squadms-default-theme::button class="btn-success" wire:click="updateRole" wire:loading.attr="disabled">
-                Save
-            </x-squadms-default-theme::button>
         </x-slot>
     </x-squadms-default-theme::dialog-modal>
 </div>
