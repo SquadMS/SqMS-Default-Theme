@@ -24,8 +24,11 @@ class NewMemberSearch extends LivewireSelect
     {
         $user = UserRepository::getUserModelQuery()
         ->where('steam_id_64', $steamId64)
-        ->get()
-        ->map(fn ($user) => [ 'value' => $user['steam_id_64'], 'description' => $user['name'] ])
-        ->toArray();
+        ->first();
+
+        return [
+            'value' => $user['steam_id_64'],
+            'description' => $user['name']
+        ];
     }
 }

@@ -3,7 +3,6 @@
 namespace SquadMS\DefaultTheme\Http\Livewire\Contracts;
 
 use Asantibanez\LivewireSelect\LivewireSelect as Component;
-use SquadMS\Foundation\Repositories\UserRepository;
 
 /**
  * @inheritDoc
