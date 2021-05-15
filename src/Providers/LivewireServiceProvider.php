@@ -4,6 +4,7 @@ namespace SquadMS\DefaultTheme\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Livewire\Livewire;
+use SquadMS\DefaultTheme\Http\Livewire\LivewireSelect\LivewireSelect;
 use SquadMS\DefaultTheme\Http\Livewire\RBAC\CreateRole;
 use SquadMS\DefaultTheme\Http\Livewire\RBAC\DeleteRole;
 use SquadMS\DefaultTheme\Http\Livewire\RBAC\EditRole;
@@ -31,6 +32,8 @@ class LivewireServiceProvider extends ServiceProvider
     public function boot()
     {
         /* Register livewire components */
+        Livewire::component('sqms-default-theme.livewire-select', LivewireSelect::class);
+
         Livewire::component('sqms-default-theme.admin.rbac.role-list', RoleList::class);
         Livewire::component('sqms-default-theme.admin.rbac.role-entry', RoleEntry::class);
         Livewire::component('sqms-default-theme.admin.rbac.create-role', CreateRole::class);

@@ -15,12 +15,17 @@
         {
             "type": "composer",
             "url": "https://pkg.skyraptor.eu"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/bumbummen99/livewire-select"
         }
     ],
     "require": {
         "illuminate/support": "^8.0",
         "squadms/foundation": "dev-master",
-        "livewire/livewire": "^2.4"
+        "livewire/livewire": "^2.4",
+        "asantibanez/livewire-select": "dev-master"
     },
     "autoload": {
         "psr-4": {

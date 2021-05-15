@@ -9,7 +9,30 @@
         </x-slot>
     
         <x-slot name="content">
-            <p>Coming Soon</p>
+            <div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">User</th>
+                                <th class="text-end">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (\SquadMSPermissions::getPermissions($module) as $user)
+                                <tr>
+                                    <td>{{ $user->name }}</td>
+                                    <td class="text-end">
+                                        <button class="btn btn-secondary" type="button" wire:click="removeMember('{{ $user }}', true)">
+                                            <i class="bi bi-x"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </x-slot>
     
         <x-slot name="footer">
