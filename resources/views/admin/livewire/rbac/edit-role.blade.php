@@ -10,7 +10,7 @@
     
         <x-slot name="content">
             <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Name of the role" aria-label="Name of the role" wire:model.lazy="role.name">
+                <input type="text" class="form-control" placeholder="Name of the role" aria-label="Name of the role" value="{{ $role->name }}" wire:model.lazy="role.name">
                 <x-squadms-default-theme::button class="btn-outline-success" wire:click="updateRole" wire:loading.attr="disabled">
                     Update
                 </x-squadms-default-theme::button>
