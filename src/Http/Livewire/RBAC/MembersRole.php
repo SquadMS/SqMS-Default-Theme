@@ -2,12 +2,15 @@
 
 namespace SquadMS\DefaultTheme\Http\Livewire\RBAC;
 
+use Livewire\WithPagination;
 use Spatie\Permission\Models\Role;
 use SquadMS\DefaultTheme\Http\Livewire\Contracts\AbstractModalComponent;
 use SquadMS\Foundation\Contracts\SquadMSUser;
 
 class MembersRole extends AbstractModalComponent
 {
+    use WithPagination;
+    
     public Role $role;
 
     protected $listeners = [
@@ -35,6 +38,8 @@ class MembersRole extends AbstractModalComponent
     
     public function render()
     {
-        return view('squadms-default-theme::admin.livewire.rbac.members-role');
+        return view('squadms-default-theme::admin.livewire.rbac.members-role', [
+            'users' => $this->role->users()->paginate(10),
+        ]);
     }
 }

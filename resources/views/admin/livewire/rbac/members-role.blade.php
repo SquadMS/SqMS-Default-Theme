@@ -19,7 +19,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach (\SquadMSPermissions::getPermissions($module) as $user)
+                            @foreach ($users as $user)
                                 <tr>
                                     <td>{{ $user->name }}</td>
                                     <td class="text-end">
@@ -32,6 +32,8 @@
                         </tbody>
                     </table>
                 </div>
+
+                {{ $users->links() }}
             </div>
         </x-slot>
     

@@ -13,10 +13,6 @@
     ],
     "repositories": [
         {
-            "type": "composer",
-            "url": "https://pkg.skyraptor.eu"
-        },
-        {
             "type": "vcs",
             "url": "https://github.com/bumbummen99/livewire-select"
         }
