@@ -13435,6 +13435,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
 .zindex-dropdown {
   z-index: 1000 !important;
 }
