@@ -1,6 +1,14 @@
 @import '~bootstrap/scss/bootstrap';
 @import '~bootstrap-icons/font/bootstrap-icons.css';
 
+.zindex-dropdown {
+	z-index: $zindex-dropdown !important;
+}
+
+.left-0 {
+	left: 0 !important;
+}
+
 .feather {
 	width: 16px;
 	height: 16px;
