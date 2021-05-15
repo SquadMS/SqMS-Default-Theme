@@ -24,14 +24,14 @@
                             <thead>
                                 <tr>
                                     <th scope="col">Role</th>
-                                    <th scope="col">Actions</th>
+                                    <th class="text-end">Actions</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 @foreach (\SquadMSPermissions::getPermissions($module) as $definition => $displayName)
                                     <tr>
                                         <td>{{ $displayName }}</td>
-                                        <td>
+                                        <td class="text-end">
                                             @if ($role->hasPermissionTo($definition))
                                                 <button class="btn btn-primary" type="button" wire:click="togglePermission('{{ $definition }}', false)">
                                                     <i class="bi bi-check"></i>

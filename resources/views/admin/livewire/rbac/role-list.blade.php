@@ -5,7 +5,7 @@
             <thead>
                 <tr>
                     <th scope="col">Role</th>
-                    <th scope="col">Actions</th>
+                    <th class="text-end">Actions</th>
                 </tr>
             </thead>
             <tbody>
