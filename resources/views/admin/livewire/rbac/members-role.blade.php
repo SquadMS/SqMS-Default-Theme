@@ -1,4 +1,4 @@
-<div class="d-inline-block">
+<div class="d-inline-block text-start">
     <x-squadms-default-theme::button class="btn-primary" wire:click="$toggle('showModal')" wire:loading.attr="disabled">
         Members
     </x-squadms-default-theme::button>
