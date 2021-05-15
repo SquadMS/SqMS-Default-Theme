@@ -1,4 +1,4 @@
-<div>
+<div {{ $attributes->merge(['class' => 'd-inline-block']) }}>
     <x-squadms-default-theme::button class="btn-warning" wire:click="$toggle('showModal')" wire:loading.attr="disabled">
         Edit
     </x-squadms-default-theme::button>
