@@ -15,6 +15,7 @@ class NewMemberSearch extends LivewireSelect
         ->orWhere('name', 'like', $searchTerm . '%')
         ->orWhere('name', 'like', '%'. $searchTerm . '%')
         ->limit(10)
-        ->get();
+        ->get()
+        ->map(fn ($user) => [ 'value' => $user['steam_id_64'], 'description' => $user['name'] ]);
     }
 }
