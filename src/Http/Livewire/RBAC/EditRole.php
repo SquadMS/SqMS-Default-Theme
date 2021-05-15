@@ -9,6 +9,10 @@ class EditRole extends AbstractModalComponent
 {
     public Role $role;
 
+    protected $rules = [
+        'role.name' => null // TODO: Remove this somehow...
+    ];
+
     public function updateRole() {
         /* Validate the data first */
         $this->validate([
