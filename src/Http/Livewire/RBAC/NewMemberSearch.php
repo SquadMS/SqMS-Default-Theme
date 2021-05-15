@@ -31,4 +31,11 @@ class NewMemberSearch extends LivewireSelect
             'description' => $user['name']
         ];
     }
+
+    public function styles()
+    {
+        return array_merge(parent::styles(), [
+            'root' => 'flex-grow-1',
+        ]);
+    }
 }

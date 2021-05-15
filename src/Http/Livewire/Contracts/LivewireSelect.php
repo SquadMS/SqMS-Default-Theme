@@ -27,6 +27,8 @@ abstract class LivewireSelect extends Component
             'searchOptionItemInactive' => '',
 
             'searchNoResults' => 'p-3 w-100 bg-white border text-center',
+
+            'root',
         ];
     }
 }
