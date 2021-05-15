@@ -42,7 +42,7 @@ class MembersRole extends AbstractModalComponent
         $this->emit('role:memberAdded');
     }
 
-    public function removeMember(SquadMSUser $user)
+    public function removeMember($user)
     {
         /* Remove the User from the Role */
         $this->role->users()->detach($user);

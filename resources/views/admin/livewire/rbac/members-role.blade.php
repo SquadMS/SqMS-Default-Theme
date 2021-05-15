@@ -31,7 +31,7 @@
                                 <tr>
                                     <td>{{ $user->name }}</td>
                                     <td class="text-end">
-                                        <button class="btn btn-secondary" type="button" wire:click="removeMember('{{ $user }}', true)">
+                                        <button class="btn btn-secondary" type="button" wire:click="removeMember('{{ $user->id }}', true)">
                                             <i class="bi bi-x"></i>
                                         </button>
                                     </td>
