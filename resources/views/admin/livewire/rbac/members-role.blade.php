@@ -9,7 +9,7 @@
         </x-slot>
     
         <x-slot name="content">
-            <livewire:sqms-default-theme.admin.rbac.new-member-search name="new_member" />
+            <livewire:sqms-default-theme.admin.rbac.new-member-search name="new_member" :searchable="true" />
 
             <hr>
 
