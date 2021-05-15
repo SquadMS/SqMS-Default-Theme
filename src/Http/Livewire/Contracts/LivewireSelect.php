@@ -22,8 +22,8 @@ abstract class LivewireSelect extends Component
             'searchInput' => 'form-control',
             'searchOptionsContainer' => 'position-absolute top-0 left-0 mt-5 w-100 zindex-dropdown border border-grey rounded',
 
-            'searchOptionItem' => 'p-3 cursor-pointer text-sm',
-            'searchOptionItemActive' => 'p-3 cursor-pointer bg-light',
+            'searchOptionItem' => 'p-3 cursor-pointer bg-light',
+            'searchOptionItemActive' => 'p-3 cursor-pointer bg-primary text-white',
             'searchOptionItemInactive' => 'bg-gray',
 
             'searchNoResults' => 'p-3 w-100 bg-white border text-center',
