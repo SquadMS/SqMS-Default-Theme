@@ -33,8 +33,8 @@
                             <table class="table">
                                 <thead>
                                     <tr>
-                                        <th scope="col">Role</th>
-                                        <th class="text-end">Actions</th>
+                                        <th scope="col">Permission</th>
+                                        <th class="text-end">Allowed</th>
                                     </tr>
                                 </thead>
                                 <tbody>
