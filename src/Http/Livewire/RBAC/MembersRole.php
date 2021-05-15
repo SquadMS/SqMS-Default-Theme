@@ -14,16 +14,29 @@ class MembersRole extends AbstractModalComponent
 
     public Role $role;
 
+    public ?SquadMSUser $selectedUser = null;
+
     protected $listeners = [
-        'newMemberUpdated' => 'addMember',
+        'newMemberUpdated' => 'selectUser',
         'role:memberAdded' => '$refresh',
         'role:memberRemoved' => '$refresh',
     ];
 
-    public function addMember(string $name, string $value)
+    public function selectUser($data)
     {
+        $this->selectedUser = UserRepository::getUserModelQuery()->where('steam_id_64', $data['value'])->first();
+    }
+
+    public function addMember()
+    {
+        if (is_null($this->selectedUser)) {
+            return;
+        }
+
         /* Remove the User from the Role */
-        $this->role->users()->attach(UserRepository::getUserModelQuery()->where('steam_id_64', $value)->first());
+        $this->role->users()->attach($this->selectedUser);
+
+        $this->selectedUser = null;
 
         /* Fire the member added event */
         $this->emit('role:memberAdded');

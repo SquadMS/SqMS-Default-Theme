@@ -10,7 +10,7 @@
     
         <x-slot name="content">
             <div class="input-group mb-3">
-                <livewire:sqms-default-theme.admin.rbac.new-member-search name="newMember" :searchable="true" />
+                <livewire:sqms-default-theme.admin.rbac.new-member-search name="newMember" :searchable="true" :key="now()" />
                 <button class="btn btn-outline-primary" type="button" wire:click="addMember">Add</button>
             </div>
 
