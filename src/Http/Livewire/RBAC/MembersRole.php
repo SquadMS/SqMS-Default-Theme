@@ -15,7 +15,7 @@ class MembersRole extends AbstractModalComponent
 
     public Role $role;
 
-    public string $searchInstance;;
+    public string $searchInstance;
     public ?SquadMSUser $selectedUser;
 
     function __construct($id = null)
