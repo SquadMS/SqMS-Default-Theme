@@ -9,6 +9,10 @@
         </x-slot>
     
         <x-slot name="content">
+            <livewire:sqms-default-theme.admin.rbac.new-member-search name="new_member" />
+
+            <hr>
+
             <div>
                 @if ($users->count())
                 <div class="table-responsive">

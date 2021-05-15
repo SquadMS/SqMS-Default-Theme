@@ -1,13 +1,13 @@
 <?php
 
-namespace SquadMS\DefaultTheme\Http\Livewire\LivewireSelect;
+namespace SquadMS\DefaultTheme\Http\Livewire\Contracts\LivewireSelect;
 
 use Asantibanez\LivewireSelect\LivewireSelect as Component;
 
 /**
  * @inheritDoc
  */
-class LivewireSelect extends Component
+abstract class LivewireSelect extends Component
 {
     public function styles()
     {

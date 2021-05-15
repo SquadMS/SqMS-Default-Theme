@@ -32,8 +32,7 @@ class LivewireServiceProvider extends ServiceProvider
     public function boot()
     {
         /* Register livewire components */
-        Livewire::component('sqms-default-theme.livewire-select', LivewireSelect::class);
-
+        Livewire::component('sqms-default-theme.admin.rbac.new-member-search', LivewireSelect::class);
         Livewire::component('sqms-default-theme.admin.rbac.role-list', RoleList::class);
         Livewire::component('sqms-default-theme.admin.rbac.role-entry', RoleEntry::class);
         Livewire::component('sqms-default-theme.admin.rbac.create-role', CreateRole::class);
