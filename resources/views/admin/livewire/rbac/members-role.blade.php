@@ -10,6 +10,7 @@
     
         <x-slot name="content">
             <div>
+                @if ($users->count())
                 <div class="table-responsive">
                     <table class="table">
                         <thead>
@@ -34,6 +35,9 @@
                 </div>
 
                 {{ $users->links() }}
+                @else
+                <p class="text-center mb-0">This Role does not have any members.</p>
+                @endif
             </div>
         </x-slot>
     
