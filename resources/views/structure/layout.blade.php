@@ -16,21 +16,16 @@
     <body class="min-vh-100 d-flex flex-column bg-light">
         <x-squadms-default-theme::navigation.navbar :brand="config('app.name', 'SquadMS')">
             <x-slot name="navLeft">
-                <x-squadms-default-theme::navigation.item :active="\NavigationHelper::isCurrentRoute(config('sqms.routes.def.home.name'))" :link="route(config('sqms.routes.def.home.name'))" :title="__('squadms-default-theme::navigation.home')"/>
-
-                @admin(\Auth::user())
-                <x-squadms-default-theme::navigation.item :link="route(config('sqms.routes.def.admin-dashboard.name'))" :title="__('squadms-default-theme::navigation.admin')"/>
-                @endadmin
+                {!! \SquadMSMenu::getMenu('main-left')->setWrapperTag()->render() !!}
             </x-slot>
             <x-slot name="navRight">
+                {!! \SquadMSMenu::getMenu('main-right')->setWrapperTag()->render() !!}
+
                 @if (\Auth::user())
-                    <x-squadms-default-theme::navigation.item :active="\NavigationHelper::isCurrentRoute(config('sqms.routes.def.profile.name')) && \Request::route('steam_id_64') === \Auth::user()->steam_id_64" :link="route(config('sqms.routes.def.profile.name'), ['steam_id_64' => \Auth::user()->steam_id_64])" :title="__('squadms-default-theme::navigation.profile')"/>
                     <x-squadms-default-theme::navigation.item :link="route(config('sqms.routes.def.logout.name'))" :title="__('squadms-default-theme::navigation.logout')" onclick="event.preventDefault(); document.getElementById('frm-logout').submit();"/>
                     <form id="frm-logout" action="{{ route(config('sqms.routes.def.logout.name')) }}" method="POST" style="display: none;">
                         {{ csrf_field() }}
                     </form>
-                @else
-                    <x-squadms-default-theme::navigation.item :link="route(config('sqms.routes.def.steam-login.name'))" :title="__('squadms-default-theme::navigation.login')" />
                 @endif
 
                 @if (count(\LocaleHelper::getAvailableLocales()) > 1)

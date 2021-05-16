@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'heading' => 'Wilkommen zu',
+    'heading' => 'Willkommen zu',
 ];
