@@ -18,32 +18,26 @@
             <x-slot name="navLeft">
                 {!! \SquadMSMenu::getMenu('main-left')->setWrapperTag()->render() !!}
             </x-slot>
+            
             <x-slot name="navRight">
                 {!! \SquadMSMenu::getMenu('main-right')->setWrapperTag()->render() !!}
 
-                @if (\Auth::user())
-                    <x-squadms-default-theme::navigation.item :link="route(config('sqms.routes.def.logout.name'))" :title="__('squadms-default-theme::navigation.logout')" onclick="event.preventDefault(); document.getElementById('frm-logout').submit();"/>
-                    <form id="frm-logout" action="{{ route(config('sqms.routes.def.logout.name')) }}" method="POST" style="display: none;">
-                        {{ csrf_field() }}
-                    </form>
-                @endif
-
                 @if (count(\LocaleHelper::getAvailableLocales()) > 1)
-                <x-squadms-default-theme::navigation.dropdown>
-                    <x-slot name="title">
-                        <span class="flag-icon {{ \LocaleHelper::localeToFlagIconsCSS(app()->getLocale()) }}"></span>
-                    </x-slot>
+                    <x-squadms-default-theme::navigation.dropdown>
+                        <x-slot name="title">
+                            <span class="flag-icon {{ \LocaleHelper::localeToFlagIconsCSS(app()->getLocale()) }}"></span>
+                        </x-slot>
 
-                    <x-slot name="links">
-                        @foreach (\LocaleHelper::getAvailableLocales(true) as $locale)
-                            <x-squadms-default-theme::dropdown.item :link="\Route::localizedUrl($locale)">
-                                <x-slot name="title">
-                                    <span class="flag-icon {{ \LocaleHelper::localeToFlagIconsCSS($locale) }}"></span> {{ \LocaleHelper::getHumanReadableName($locale) }}
-                                </x-slot>
-                            </x-squadms-default-theme::dropdown.item>
-                        @endforeach
-                    </x-slot>
-                </x-squadms-default-theme::navigation.dropdown>
+                        <x-slot name="links">
+                            @foreach (\LocaleHelper::getAvailableLocales(true) as $locale)
+                                <x-squadms-default-theme::dropdown.item :link="\Route::localizedUrl($locale)">
+                                    <x-slot name="title">
+                                        <span class="flag-icon {{ \LocaleHelper::localeToFlagIconsCSS($locale) }}"></span> {{ \LocaleHelper::getHumanReadableName($locale) }}
+                                    </x-slot>
+                                </x-squadms-default-theme::dropdown.item>
+                            @endforeach
+                        </x-slot>
+                    </x-squadms-default-theme::navigation.dropdown>
                 @endif
             </x-slot>
         </x-squadms-default-theme::navigation.navbar>
