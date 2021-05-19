@@ -23,10 +23,6 @@ mix
 ])
 .js('resources/js/public/app.js', 'js/public/')
 
-/* Admin assets */
-.sass('resources/scss/admin/app.scss', 'css/admin/')
-.js('resources/js/admin/app.js', 'js/admin/')
-
 .version();
 
 /* Copy static images */

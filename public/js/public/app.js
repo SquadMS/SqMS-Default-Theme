@@ -8057,18 +8057,6 @@ __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
 
-/***/ }),
-
-/***/ "./resources/scss/admin/app.scss":
-/*!***************************************!*\
-  !*** ./resources/scss/admin/app.scss ***!
-  \***************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
 /***/ })
 
 /******/ 	});
@@ -8169,7 +8157,6 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
 /******/ 			"/js/public/app": 0,
-/******/ 			"css/admin/app": 0,
 /******/ 			"css/public/app-rtl": 0,
 /******/ 			"css/public/app": 0
 /******/ 		};
@@ -8219,10 +8206,9 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/admin/app","css/public/app-rtl","css/public/app"], () => (__webpack_require__("./resources/js/public/app.js")))
-/******/ 	__webpack_require__.O(undefined, ["css/admin/app","css/public/app-rtl","css/public/app"], () => (__webpack_require__("./resources/scss/public/app.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/admin/app","css/public/app-rtl","css/public/app"], () => (__webpack_require__("./resources/scss/public/app-rtl.scss")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/admin/app","css/public/app-rtl","css/public/app"], () => (__webpack_require__("./resources/scss/admin/app.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/public/app-rtl","css/public/app"], () => (__webpack_require__("./resources/js/public/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/public/app-rtl","css/public/app"], () => (__webpack_require__("./resources/scss/public/app.scss")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/public/app-rtl","css/public/app"], () => (__webpack_require__("./resources/scss/public/app-rtl.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
