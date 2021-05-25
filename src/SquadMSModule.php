@@ -20,7 +20,7 @@ class SquadMSModule extends SquadMSModuleContract {
     {
         Artisan::call('vendor:publish', [
             '--provider' => SquadMSDefaultThemeServiceProvider::class,
-            '--tags'     => 'assets',
+            '--tag'     => 'assets',
         ]);
     }
 }
