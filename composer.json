@@ -32,7 +32,8 @@
         "laravel": {
             "providers": [
                 "SquadMS\\DefaultTheme\\SquadMSDefaultThemeServiceProvider",
-                "SquadMS\\DefaultTheme\\Providers\\ViewServiceProvider"
+                "SquadMS\\DefaultTheme\\Providers\\ViewServiceProvider",
+                "SquadMS\\DefaultTheme\\Providers\\ModulesServiceProvider"
             ]
         }
     }

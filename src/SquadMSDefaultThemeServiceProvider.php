@@ -27,12 +27,12 @@ class SquadMSDefaultThemeServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
             // Publish assets
             $this->publishes([
-              __DIR__ . '/../public' => public_path('themes/squadms-default-theme'),
+              __DIR__ . '/../public' => public_path('themes/sqms-default-theme'),
             ], 'assets');
           
         }
 
         /* Load Translations */
-        $this->loadTranslationsFrom(__DIR__ . '/../resources/lang', 'squadms-default-theme');
+        $this->loadTranslationsFrom(__DIR__ . '/../resources/lang', 'sqms-default-theme');
     }
 }
