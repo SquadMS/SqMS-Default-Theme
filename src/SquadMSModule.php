@@ -23,4 +23,14 @@ class SquadMSModule extends SquadMSModuleContract {
             '--tag'     => 'assets',
         ]);
     }
+
+    static function registerAdminMenus() : void
+    {
+        //
+    }
+
+    static function registerMenuEntries(string $menu) : void
+    {
+        //
+    }
 }
