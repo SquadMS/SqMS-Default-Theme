@@ -1,7 +1,7 @@
 @props(['id', 'maxWidth', 'fullscreen' => '', 'modal' => false])
 
 @php
-$id = $id ?? md5($attributes->wire('model'));
+$id = $id ?? md5($attributes->get('model', 'showModal'));
 switch ($maxWidth ?? '') {
     case 'sm':
         $maxWidth = ' modal-sm';
@@ -47,7 +47,7 @@ switch ($fullscreen ?? '') {
 <!-- Modal -->
 <div 
     x-data="{
-        show: @entangle($attributes->wire('model')).defer,
+        show: @entangle($attributes->get('model', 'showModal')).defer,
     }"
     x-init="() => {
         const element = $refs.modal
