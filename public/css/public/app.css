@@ -14836,11 +14836,16 @@ textarea.form-control-lg {
   background-image: url(/themes/sqms-default-theme/images/no-map.jpg?fa471957b6f2ee8df9b84c632df8c693);
 }
 
-.server-list .server .main-info {
-  background: rgba(255, 196, 11, 0.15);
+@media (min-width: 768px) {
+  .server-list .server .server-inner {
+    background-image: linear-gradient(90deg, rgba(248, 249, 250, 0.15), transparent);
+  }
+}
+.server-list .server .server-inner .main-info {
+  background-color: rgba(248, 249, 250, 0.15);
 }
 @media (min-width: 768px) {
-  .server-list .server .main-info {
-    background-image: linear-gradient(90deg, rgba(255, 196, 11, 0.15), transparent);
+  .server-list .server .server-inner .main-info {
+    background-color: transparent;
   }
 }

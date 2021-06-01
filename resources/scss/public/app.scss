@@ -52,11 +52,17 @@ $theme-colors: map-merge(
 
 .server-list {
     .server {
-        .main-info {
-            background: rgba($primary, 15%);
-            
+        .server-inner {
             @include media-breakpoint-up(md) {
-                @include gradient-directional(rgba($primary, 15%), transparent, 90deg);
+                @include gradient-directional(rgba($light, 15%), transparent, 90deg);
+            }
+
+            .main-info {
+                background-color: rgba($light, 15%);
+                
+                @include media-breakpoint-up(md) {
+                    background-color: transparent;
+                }
             }
         }
     }
