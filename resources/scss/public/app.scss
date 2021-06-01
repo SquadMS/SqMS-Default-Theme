@@ -54,14 +54,22 @@ $theme-colors: map-merge(
     .server {
         .server-inner {
             @include media-breakpoint-up(md) {
-                @include gradient-directional(rgba($light, 15%), transparent, 90deg);
+                @include gradient-directional(rgba(#000, 33%) 25%, transparent, 90deg);
             }
 
             .main-info {
-                background-color: rgba($light, 15%);
+                background-color: rgba(#000, 33%);
                 
                 @include media-breakpoint-up(md) {
                     background-color: transparent;
+                }
+            }
+
+            .actions {
+                font-size: 1.5em;
+                
+                @include media-breakpoint-up(md) {
+                    font-size: 2em;
                 }
             }
         }
