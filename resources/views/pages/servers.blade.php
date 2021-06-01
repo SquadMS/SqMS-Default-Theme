@@ -1,7 +1,7 @@
 @extends('sqms-default-theme::structure.layout')
 
 @section('content')
-<section>
+<section class="mt-6">
     <div class="container">
         <div class="row mb-5">
             <div class="col">
