@@ -53,7 +53,11 @@ $theme-colors: map-merge(
 .server-list {
     .server {
         .main-info {
-            @include gradient-directional(rgba($primary, 15%), transparent, 90deg);
+            background: rgba($primary, 15%);
+            
+            @include media-breakpoint-up(md) {
+                @include gradient-directional(rgba($primary, 15%), transparent, 90deg);
+            }
         }
     }
 }

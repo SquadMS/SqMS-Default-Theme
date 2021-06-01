@@ -14837,5 +14837,10 @@ textarea.form-control-lg {
 }
 
 .server-list .server .main-info {
-  background-image: linear-gradient(90deg, rgba(255, 196, 11, 0.15), transparent);
+  background: rgba(255, 196, 11, 0.15);
+}
+@media (min-width: 768px) {
+  .server-list .server .main-info {
+    background-image: linear-gradient(90deg, rgba(255, 196, 11, 0.15), transparent);
+  }
 }
