@@ -1,3 +1,20 @@
+/* Social colors */
+$discord: #7289DA;
+$steam: #00adee;
+$teamspeak: #2580c3;
+$youtube: #FF0000;
+
+$theme-colors: () !default;
+$theme-colors: map-merge(
+  (
+    "discord": $discord,
+    "steam": $steam,
+    "teamspeak": $teamspeak,
+    "youtube": $youtube,
+    ),
+    $theme-colors
+);
+
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 @import '~bootstrap-icons/font/bootstrap-icons.css';
