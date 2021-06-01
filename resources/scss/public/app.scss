@@ -1,10 +1,10 @@
-@import "~bootstrap/scss/functions";
-@import "~bootstrap/scss/variables";
-
 /* Normal Colors */
 $yellow: #ffc40b;
 
 $primary: $yellow;
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
 
 /* Social colors */
 $discord: #7289DA;
