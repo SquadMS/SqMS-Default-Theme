@@ -14367,3 +14367,435 @@ textarea.form-control-lg {
 .flag-icon-xk.flag-icon-squared {
   background-image: url(/themes/sqms-default-theme/images/vendor/flag-icon-css/flags/1x1/xk.svg?48269c0b55c2532ccb7608a0fc28a5c2);
 }
+
+.bg-transparent-discord-900 {
+  background-color: rgba(114, 137, 218, 0.9);
+}
+
+.bg-transparent-discord-800 {
+  background-color: rgba(114, 137, 218, 0.8);
+}
+
+.bg-transparent-discord-700 {
+  background-color: rgba(114, 137, 218, 0.7);
+}
+
+.bg-transparent-discord-600 {
+  background-color: rgba(114, 137, 218, 0.6);
+}
+
+.bg-transparent-discord-500 {
+  background-color: rgba(114, 137, 218, 0.5);
+}
+
+.bg-transparent-discord-400 {
+  background-color: rgba(114, 137, 218, 0.4);
+}
+
+.bg-transparent-discord-300 {
+  background-color: rgba(114, 137, 218, 0.3);
+}
+
+.bg-transparent-discord-200 {
+  background-color: rgba(114, 137, 218, 0.2);
+}
+
+.bg-transparent-discord-100 {
+  background-color: rgba(114, 137, 218, 0.1);
+}
+
+.bg-transparent-steam-900 {
+  background-color: rgba(0, 173, 238, 0.9);
+}
+
+.bg-transparent-steam-800 {
+  background-color: rgba(0, 173, 238, 0.8);
+}
+
+.bg-transparent-steam-700 {
+  background-color: rgba(0, 173, 238, 0.7);
+}
+
+.bg-transparent-steam-600 {
+  background-color: rgba(0, 173, 238, 0.6);
+}
+
+.bg-transparent-steam-500 {
+  background-color: rgba(0, 173, 238, 0.5);
+}
+
+.bg-transparent-steam-400 {
+  background-color: rgba(0, 173, 238, 0.4);
+}
+
+.bg-transparent-steam-300 {
+  background-color: rgba(0, 173, 238, 0.3);
+}
+
+.bg-transparent-steam-200 {
+  background-color: rgba(0, 173, 238, 0.2);
+}
+
+.bg-transparent-steam-100 {
+  background-color: rgba(0, 173, 238, 0.1);
+}
+
+.bg-transparent-teamspeak-900 {
+  background-color: rgba(37, 128, 195, 0.9);
+}
+
+.bg-transparent-teamspeak-800 {
+  background-color: rgba(37, 128, 195, 0.8);
+}
+
+.bg-transparent-teamspeak-700 {
+  background-color: rgba(37, 128, 195, 0.7);
+}
+
+.bg-transparent-teamspeak-600 {
+  background-color: rgba(37, 128, 195, 0.6);
+}
+
+.bg-transparent-teamspeak-500 {
+  background-color: rgba(37, 128, 195, 0.5);
+}
+
+.bg-transparent-teamspeak-400 {
+  background-color: rgba(37, 128, 195, 0.4);
+}
+
+.bg-transparent-teamspeak-300 {
+  background-color: rgba(37, 128, 195, 0.3);
+}
+
+.bg-transparent-teamspeak-200 {
+  background-color: rgba(37, 128, 195, 0.2);
+}
+
+.bg-transparent-teamspeak-100 {
+  background-color: rgba(37, 128, 195, 0.1);
+}
+
+.bg-transparent-youtube-900 {
+  background-color: rgba(255, 0, 0, 0.9);
+}
+
+.bg-transparent-youtube-800 {
+  background-color: rgba(255, 0, 0, 0.8);
+}
+
+.bg-transparent-youtube-700 {
+  background-color: rgba(255, 0, 0, 0.7);
+}
+
+.bg-transparent-youtube-600 {
+  background-color: rgba(255, 0, 0, 0.6);
+}
+
+.bg-transparent-youtube-500 {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+.bg-transparent-youtube-400 {
+  background-color: rgba(255, 0, 0, 0.4);
+}
+
+.bg-transparent-youtube-300 {
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+.bg-transparent-youtube-200 {
+  background-color: rgba(255, 0, 0, 0.2);
+}
+
+.bg-transparent-youtube-100 {
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+.bg-transparent-primary-900 {
+  background-color: rgba(13, 110, 253, 0.9);
+}
+
+.bg-transparent-primary-800 {
+  background-color: rgba(13, 110, 253, 0.8);
+}
+
+.bg-transparent-primary-700 {
+  background-color: rgba(13, 110, 253, 0.7);
+}
+
+.bg-transparent-primary-600 {
+  background-color: rgba(13, 110, 253, 0.6);
+}
+
+.bg-transparent-primary-500 {
+  background-color: rgba(13, 110, 253, 0.5);
+}
+
+.bg-transparent-primary-400 {
+  background-color: rgba(13, 110, 253, 0.4);
+}
+
+.bg-transparent-primary-300 {
+  background-color: rgba(13, 110, 253, 0.3);
+}
+
+.bg-transparent-primary-200 {
+  background-color: rgba(13, 110, 253, 0.2);
+}
+
+.bg-transparent-primary-100 {
+  background-color: rgba(13, 110, 253, 0.1);
+}
+
+.bg-transparent-secondary-900 {
+  background-color: rgba(108, 117, 125, 0.9);
+}
+
+.bg-transparent-secondary-800 {
+  background-color: rgba(108, 117, 125, 0.8);
+}
+
+.bg-transparent-secondary-700 {
+  background-color: rgba(108, 117, 125, 0.7);
+}
+
+.bg-transparent-secondary-600 {
+  background-color: rgba(108, 117, 125, 0.6);
+}
+
+.bg-transparent-secondary-500 {
+  background-color: rgba(108, 117, 125, 0.5);
+}
+
+.bg-transparent-secondary-400 {
+  background-color: rgba(108, 117, 125, 0.4);
+}
+
+.bg-transparent-secondary-300 {
+  background-color: rgba(108, 117, 125, 0.3);
+}
+
+.bg-transparent-secondary-200 {
+  background-color: rgba(108, 117, 125, 0.2);
+}
+
+.bg-transparent-secondary-100 {
+  background-color: rgba(108, 117, 125, 0.1);
+}
+
+.bg-transparent-success-900 {
+  background-color: rgba(25, 135, 84, 0.9);
+}
+
+.bg-transparent-success-800 {
+  background-color: rgba(25, 135, 84, 0.8);
+}
+
+.bg-transparent-success-700 {
+  background-color: rgba(25, 135, 84, 0.7);
+}
+
+.bg-transparent-success-600 {
+  background-color: rgba(25, 135, 84, 0.6);
+}
+
+.bg-transparent-success-500 {
+  background-color: rgba(25, 135, 84, 0.5);
+}
+
+.bg-transparent-success-400 {
+  background-color: rgba(25, 135, 84, 0.4);
+}
+
+.bg-transparent-success-300 {
+  background-color: rgba(25, 135, 84, 0.3);
+}
+
+.bg-transparent-success-200 {
+  background-color: rgba(25, 135, 84, 0.2);
+}
+
+.bg-transparent-success-100 {
+  background-color: rgba(25, 135, 84, 0.1);
+}
+
+.bg-transparent-info-900 {
+  background-color: rgba(13, 202, 240, 0.9);
+}
+
+.bg-transparent-info-800 {
+  background-color: rgba(13, 202, 240, 0.8);
+}
+
+.bg-transparent-info-700 {
+  background-color: rgba(13, 202, 240, 0.7);
+}
+
+.bg-transparent-info-600 {
+  background-color: rgba(13, 202, 240, 0.6);
+}
+
+.bg-transparent-info-500 {
+  background-color: rgba(13, 202, 240, 0.5);
+}
+
+.bg-transparent-info-400 {
+  background-color: rgba(13, 202, 240, 0.4);
+}
+
+.bg-transparent-info-300 {
+  background-color: rgba(13, 202, 240, 0.3);
+}
+
+.bg-transparent-info-200 {
+  background-color: rgba(13, 202, 240, 0.2);
+}
+
+.bg-transparent-info-100 {
+  background-color: rgba(13, 202, 240, 0.1);
+}
+
+.bg-transparent-warning-900 {
+  background-color: rgba(255, 193, 7, 0.9);
+}
+
+.bg-transparent-warning-800 {
+  background-color: rgba(255, 193, 7, 0.8);
+}
+
+.bg-transparent-warning-700 {
+  background-color: rgba(255, 193, 7, 0.7);
+}
+
+.bg-transparent-warning-600 {
+  background-color: rgba(255, 193, 7, 0.6);
+}
+
+.bg-transparent-warning-500 {
+  background-color: rgba(255, 193, 7, 0.5);
+}
+
+.bg-transparent-warning-400 {
+  background-color: rgba(255, 193, 7, 0.4);
+}
+
+.bg-transparent-warning-300 {
+  background-color: rgba(255, 193, 7, 0.3);
+}
+
+.bg-transparent-warning-200 {
+  background-color: rgba(255, 193, 7, 0.2);
+}
+
+.bg-transparent-warning-100 {
+  background-color: rgba(255, 193, 7, 0.1);
+}
+
+.bg-transparent-danger-900 {
+  background-color: rgba(220, 53, 69, 0.9);
+}
+
+.bg-transparent-danger-800 {
+  background-color: rgba(220, 53, 69, 0.8);
+}
+
+.bg-transparent-danger-700 {
+  background-color: rgba(220, 53, 69, 0.7);
+}
+
+.bg-transparent-danger-600 {
+  background-color: rgba(220, 53, 69, 0.6);
+}
+
+.bg-transparent-danger-500 {
+  background-color: rgba(220, 53, 69, 0.5);
+}
+
+.bg-transparent-danger-400 {
+  background-color: rgba(220, 53, 69, 0.4);
+}
+
+.bg-transparent-danger-300 {
+  background-color: rgba(220, 53, 69, 0.3);
+}
+
+.bg-transparent-danger-200 {
+  background-color: rgba(220, 53, 69, 0.2);
+}
+
+.bg-transparent-danger-100 {
+  background-color: rgba(220, 53, 69, 0.1);
+}
+
+.bg-transparent-light-900 {
+  background-color: rgba(248, 249, 250, 0.9);
+}
+
+.bg-transparent-light-800 {
+  background-color: rgba(248, 249, 250, 0.8);
+}
+
+.bg-transparent-light-700 {
+  background-color: rgba(248, 249, 250, 0.7);
+}
+
+.bg-transparent-light-600 {
+  background-color: rgba(248, 249, 250, 0.6);
+}
+
+.bg-transparent-light-500 {
+  background-color: rgba(248, 249, 250, 0.5);
+}
+
+.bg-transparent-light-400 {
+  background-color: rgba(248, 249, 250, 0.4);
+}
+
+.bg-transparent-light-300 {
+  background-color: rgba(248, 249, 250, 0.3);
+}
+
+.bg-transparent-light-200 {
+  background-color: rgba(248, 249, 250, 0.2);
+}
+
+.bg-transparent-light-100 {
+  background-color: rgba(248, 249, 250, 0.1);
+}
+
+.bg-transparent-dark-900 {
+  background-color: rgba(33, 37, 41, 0.9);
+}
+
+.bg-transparent-dark-800 {
+  background-color: rgba(33, 37, 41, 0.8);
+}
+
+.bg-transparent-dark-700 {
+  background-color: rgba(33, 37, 41, 0.7);
+}
+
+.bg-transparent-dark-600 {
+  background-color: rgba(33, 37, 41, 0.6);
+}
+
+.bg-transparent-dark-500 {
+  background-color: rgba(33, 37, 41, 0.5);
+}
+
+.bg-transparent-dark-400 {
+  background-color: rgba(33, 37, 41, 0.4);
+}
+
+.bg-transparent-dark-300 {
+  background-color: rgba(33, 37, 41, 0.3);
+}
+
+.bg-transparent-dark-200 {
+  background-color: rgba(33, 37, 41, 0.2);
+}
+
+.bg-transparent-dark-100 {
+  background-color: rgba(33, 37, 41, 0.1);
+}

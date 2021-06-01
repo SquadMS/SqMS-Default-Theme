@@ -21,3 +21,12 @@ $theme-colors: map-merge(
 @import '~bootstrap/scss/bootstrap';
 @import '~bootstrap-icons/font/bootstrap-icons.css';
 @import '~flag-icon-css/sass/flag-icon';
+
+
+@each $color, $value in $theme-colors {
+    @each $opacity in (9, 8, 7, 6, 5, 4, 3, 2, 1) {
+        .bg-transparent-#{$color}-#{$opacity}00 {
+            background-color: rgba($value, percentage($opacity / 10));
+        }
+    }
+}

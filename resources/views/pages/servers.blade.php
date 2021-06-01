@@ -13,21 +13,17 @@
                 <div class="col-12 mb-4">
                     <div class="server d-flex flex-column flex-md-row bg-light">
                         <div class="d-flex align-items-center flex-md-grow-1 p-4">
-                            <span class="h2 text-truncate">{{ $server->name }}</span>
+                            <span class="w-100 h2 text-truncate text-center text-md-start">{{ $server->name }}</span>
                         </div>
     
                         <div class="d-flex flex-row align-items-stretch">
-                            <div class="d-flex align-items-center bg-steam px-5 py-4">
-                                <a href="{{ $server->connect_url }}">
-                                    <i class="bi bi-controller"></i>
-                                </a>
-                            </div>
+                            <a href="{{ $server->connect_url }}" class="d-flex flex-grow-1 flex-md-grow-0 align-items-center justify-content-center bg-steam-500 px-3 py-2 px-md-5 py-md-4">
+                                <span class="text-truncate"><i class="bi bi-controller"></i> Join</span>
+                            </a>
 
-                            <div class="d-flex align-items-center bg-info px-5 py-4">
-                                <a href="#">
-                                    <i class="bi bi-info-circle-fill"></i>
-                                </a>
-                            </div>
+                            <a href="#" class="d-flex flex-grow-1 flex-md-grow-0 align-items-center justify-content-center bg-info-500 px-3 py-2 px-md-5 py-md-4">
+                                <span class="text-truncate"><i class="bi bi-info-circle-fill"></i> Details</span>
+                            </a>
                         </div>
                     </div>
                 </div>
