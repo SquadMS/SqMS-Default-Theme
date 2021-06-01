@@ -14800,3 +14800,15 @@ textarea.form-control-lg {
 .bg-transparent-dark-100 {
   background-color: rgba(33, 37, 41, 0.1);
 }
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-no-map {
+  background-image: url(/themes/sqms-default-theme/images/no-map.jpg?fa471957b6f2ee8df9b84c632df8c693);
+}

@@ -11,7 +11,7 @@
         <div class="row server-list">
             @foreach ($servers as $server)
                 <div class="col-12 mb-4">
-                    <div class="server d-flex flex-column flex-md-row bg-light">
+                    <div class="server d-flex flex-column flex-md-row bg-light bg-no-map bg-cover bg-center">
                         <div class="d-flex align-items-center flex-md-grow-1 p-4">
                             <span class="w-100 h2 text-truncate text-center text-md-start">{{ $server->name }}</span>
                         </div>

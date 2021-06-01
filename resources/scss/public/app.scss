@@ -35,3 +35,17 @@ $theme-colors: map-merge(
         }
     }
 }
+
+.bg-center {
+    background-position: center;
+}
+
+.bg-cover {
+    background-size: cover;
+}
+
+@each $background in ('no-map') {
+    .bg-#{$background} {
+        background-image: url(../../images/no-map.jpg);
+    }
+}
