@@ -63,6 +63,10 @@ $theme-colors: map-merge(
                 @include media-breakpoint-up(md) {
                     background-color: transparent;
                 }
+
+                .info {
+                    background-color: rgba(#000, 0.5);
+                }
             }
 
             .actions {

@@ -13,8 +13,13 @@
                 <div class="col-12 mb-4">
                     <div class="server bg-light bg-no-map bg-cover bg-center">
                         <div class="server-inner d-flex flex-column flex-md-row">
-                            <div class="main-info d-flex align-items-center flex-md-grow-1 p-4">
-                                <span class="w-100 h2 text-truncate text-center text-md-start text-white">{{ $server->name }}</span>
+                            <div class="main-info d-flex align-items-center flex-md-grow-1">
+                                <div class="flex-md-grow-1 d-flex align-items-center p-4">
+                                    <span class="w-100 h2 text-truncate text-center text-md-start text-white">{{ $server->name }}</span>
+                                </div>
+                                <div class="d-flex h-100 align-items-center p-4 info">
+                                    <span class="text-danger">offline</span>
+                                </div>
                             </div>
         
                             <div class="actions d-flex flex-row align-items-stretch">
