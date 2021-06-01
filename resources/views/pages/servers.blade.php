@@ -12,16 +12,16 @@
             @foreach ($servers as $server)
                 <div class="col-12 mb-4">
                     <div class="server d-flex flex-column flex-md-row bg-light bg-no-map bg-cover bg-center">
-                        <div class="d-flex align-items-center flex-md-grow-1 p-4">
-                            <span class="w-100 h2 text-truncate text-center text-md-start">{{ $server->name }}</span>
+                        <div class="d-flex align-items-center flex-md-grow-1 p-4 main-info">
+                            <span class="w-100 h2 text-truncate text-center text-md-start text-white">{{ $server->name }}</span>
                         </div>
     
                         <div class="d-flex flex-row align-items-stretch">
-                            <a href="{{ $server->connect_url }}" class="d-flex flex-grow-1 flex-md-grow-0 align-items-center justify-content-center bg-transparent-steam-500 px-3 py-2 px-md-5 py-md-4">
+                            <a href="{{ $server->connect_url }}" class="d-flex flex-grow-1 flex-md-grow-0 align-items-center justify-content-center bg-transparent-steam-300 px-3 py-2 px-md-5 py-md-4">
                                 <span class="text-truncate"><i class="bi bi-controller"></i> Join</span>
                             </a>
 
-                            <a href="#" class="d-flex flex-grow-1 flex-md-grow-0 align-items-center justify-content-center bg-transparent-info-500 px-3 py-2 px-md-5 py-md-4">
+                            <a href="#" class="d-flex flex-grow-1 flex-md-grow-0 align-items-center justify-content-center bg-transparent-info-300 px-3 py-2 px-md-5 py-md-4">
                                 <span class="text-truncate"><i class="bi bi-info-circle-fill"></i> Details</span>
                             </a>
                         </div>

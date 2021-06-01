@@ -49,3 +49,11 @@ $theme-colors: map-merge(
         background-image: url(../../images/no-map.jpg);
     }
 }
+
+.server-list {
+    .server {
+        .main-info {
+            @include gradient-directional(rgba($primary, 15%), transparent, 90deg);
+        }
+    }
+}
