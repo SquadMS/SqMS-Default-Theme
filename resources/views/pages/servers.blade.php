@@ -10,6 +10,9 @@
         </div>
         <div class="row server-list">
             @foreach ($servers as $server)
+                @php
+                    $status = $server->getFrontendCache();    
+                @endphp
                 <div class="col-12 mb-4">
                     <div class="server bg-light bg-no-map bg-cover bg-center">
                         <div class="server-inner d-flex flex-column flex-md-row">
@@ -18,7 +21,12 @@
                                     <span class="w-100 h2 text-truncate text-center text-md-start text-white">{{ $server->name }}</span>
                                 </div>
                                 <div class="flex-grow-1 flex-md-grow-0 d-flex h-100 align-items-center justify-content-center p-2 px-md-4 info">
-                                    <span class="text-danger">offline</span>
+                                    @if ($server->is_online)
+                                        <span class="text-white">{{ \Illuminate\Support\Arr::get($status, 'playerCount', 0) }}(+{{ intval(\Illuminate\Support\Arr::get($status, 'queue', '0')) }})/{{ intval(\Illuminate\Support\Arr::get($status, 'slots', '0')) }}(+{{ \Illuminate\Support\Arr::get($status, 'reservedSlots', '0') }}) Spieler</span>
+                                    @else
+                                        <span class="text-danger">offline</span>
+                                    @endif
+                                    
                                 </div>
                             </div>
         
