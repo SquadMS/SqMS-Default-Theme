@@ -88,6 +88,7 @@ $spacers: map-merge(
 
             .extra {
                 background-color: rgba(#000, 0.66);
+                
                 @include media-breakpoint-up(md) {
                     border-left: 1px solid $primary;
                 }
