@@ -21,10 +21,10 @@
                                     <span class="w-100 h3 text-truncate text-center text-md-start text-white mb-md-0 data-server-name data-show-online {{ \Illuminate\Support\Arr::get($status, 'online', false) ? '' : 'd-none' }}">{{ \Illuminate\Support\Arr::get($status, 'name', 'Squad Dedicated Server') }}</span>
                                     <span class="w-100 h3 text-truncate text-center text-md-start text-secondary mb-md-0 data-show-offline {{ \Illuminate\Support\Arr::get($status, 'online', false) ? 'd-none' : '' }}">{{ $server->name }}</span>
                                 </div>
-                                
-                                <div class="flex-grow-1 flex-md-grow-0 d-flex h-100 align-items-center justify-content-center p-2 px-md-4 extra">
+
+                                <div class="flex-grow-1 min-width-0 flex-md-grow-0 d-flex h-100 align-items-center justify-content-center p-2 px-md-4 extra">
                                     <span class="text-white data-show-online {{ \Illuminate\Support\Arr::get($status, 'online', false) ? '' : 'd-none' }}"><span class="data-count">{{ \Illuminate\Support\Arr::get($status, 'playerCount', 0) }}</span>(+<span class="data-queue">{{ intval(\Illuminate\Support\Arr::get($status, 'queue', '0')) }}</span>)/<span class="data-slots">{{ intval(\Illuminate\Support\Arr::get($status, 'slots', '0')) }}</span>(+<span class="data-reserved">{{ \Illuminate\Support\Arr::get($status, 'reservedSlots', '0') }}</span>) {{ __('sqms-default-theme::pages/servers.server.players') }}</span>
-                                    <span class="text-danger data-show-offline {{ \Illuminate\Support\Arr::get($status, 'online', false) ? 'd-none' : '' }}">{{ __('sqms-default-theme::pages/servers.server.offline') }}</span>
+                                    <span class="text-danger text-truncate data-show-offline {{ \Illuminate\Support\Arr::get($status, 'online', false) ? 'd-none' : '' }}">{{ __('sqms-default-theme::pages/servers.server.offline') }}</span>
                                 </div>
                             </div>
         

@@ -15225,5 +15225,9 @@ textarea.form-control-lg {
 }
 .server-list .server .server-inner .extra {
   background-color: rgba(0, 0, 0, 0.66);
-  border-right: 1px solid #ffc40b;
+}
+@media (min-width: 768px) {
+  .server-list .server .server-inner .extra {
+    border-right: 1px solid #ffc40b;
+  }
 }
