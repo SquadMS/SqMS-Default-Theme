@@ -22,6 +22,7 @@ mix
   require("rtlcss")(),
 ])
 .js('resources/js/public/app.js', 'js/public/')
+.js('resources/js/public/server-status-listener.js', 'js/public/')
 
 .version();
 

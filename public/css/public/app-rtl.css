@@ -15186,6 +15186,10 @@ textarea.form-control-lg {
   background-color: rgba(33, 37, 41, 0.1);
 }
 
+.min-width-0 {
+  min-width: 0;
+}
+
 .bg-center {
   background-position: center;
 }

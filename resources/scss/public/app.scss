@@ -45,6 +45,10 @@ $spacers: map-merge(
     }
 }
 
+.min-width-0 {
+    min-width: 0;
+}
+
 .bg-center {
     background-position: center;
 }
