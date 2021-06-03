@@ -28,12 +28,12 @@
                             </div>
         
                             <div class="actions d-flex flex-row align-items-stretch">
-                                <a href="{{ $server->connect_url }}" class="d-flex flex-grow-1 flex-md-grow-0 align-items-center justify-content-center bg-transparent-steam-300 px-3 py-2 px-md-5 py-md-1 text-decoration-none">
-                                    <span class="text-truncate"><i class="bi bi-controller"></i></span>
+                                <a href="{{ $server->connect_url }}" class="d-flex flex-grow-1 flex-md-grow-0 align-items-center justify-content-center bg-transparent-steam-800 px-3 py-2 px-md-4 py-md-1 text-decoration-none">
+                                    <span class="text-truncate lh-1"><i class="bi bi-controller"></i></span>
                                 </a>
     
-                                <a href="#" class="d-flex flex-grow-1 flex-md-grow-0 align-items-center justify-content-center bg-transparent-info-300 px-3 py-2 px-md-5 py-md-1 text-decoration-none">
-                                    <span class="text-truncate"><i class="bi bi-info-circle-fill"></i></span>
+                                <a href="#" class="d-flex flex-grow-1 flex-md-grow-0 align-items-center justify-content-center bg-transparent-info-800 px-3 py-2 px-md-4 py-md-1 text-decoration-none">
+                                    <span class="text-truncate lh-1"><i class="bi bi-info-circle-fill"></i></span>
                                 </a>
                             </div>
                         </div>
