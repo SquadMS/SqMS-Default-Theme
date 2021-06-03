@@ -15215,9 +15215,6 @@ textarea.form-control-lg {
     background-color: transparent;
   }
 }
-.server-list .server .server-inner .main-info .info {
-  background-color: rgba(0, 0, 0, 0.5);
-}
 .server-list .server .server-inner .actions {
   font-size: 2em;
 }
@@ -15225,4 +15222,8 @@ textarea.form-control-lg {
   .server-list .server .server-inner .actions {
     font-size: 2.5em;
   }
+}
+.server-list .server .server-inner .extra {
+  background-color: rgba(0, 0, 0, 0.66);
+  border-right: 1px solid #ffc40b;
 }

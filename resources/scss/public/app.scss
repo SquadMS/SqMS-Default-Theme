@@ -76,18 +76,19 @@ $spacers: map-merge(
                 @include media-breakpoint-up(md) {
                     background-color: transparent;
                 }
-
-                .info {
-                    background-color: rgba(#000, 0.5);
-                }
             }
 
             .actions {
                 font-size: 2em;
-                
+            
                 @include media-breakpoint-up(md) {
                     font-size: 2.5em;
                 }
+            }
+
+            .extra {
+                background-color: rgba(#000, 0.66);
+                border-left: 1px solid $primary;
             }
         }
     }
