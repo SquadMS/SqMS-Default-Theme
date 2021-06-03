@@ -22,9 +22,9 @@
                                 </div>
                                 <div class="flex-grow-1 flex-md-grow-0 d-flex h-100 align-items-center justify-content-center p-2 px-md-4 info">
                                     @if ($server->is_online)
-                                        <span class="text-white">{{ \Illuminate\Support\Arr::get($status, 'playerCount', 0) }}(+{{ intval(\Illuminate\Support\Arr::get($status, 'queue', '0')) }})/{{ intval(\Illuminate\Support\Arr::get($status, 'slots', '0')) }}(+{{ \Illuminate\Support\Arr::get($status, 'reservedSlots', '0') }}) Spieler</span>
+                                        <span class="text-white">{{ \Illuminate\Support\Arr::get($status, 'playerCount', 0) }}(+{{ intval(\Illuminate\Support\Arr::get($status, 'queue', '0')) }})/{{ intval(\Illuminate\Support\Arr::get($status, 'slots', '0')) }}(+{{ \Illuminate\Support\Arr::get($status, 'reservedSlots', '0') }}) {{ __('sqms-default-theme::pages/servers.server.players') }}</span>
                                     @else
-                                        <span class="text-danger">offline</span>
+                                        <span class="text-danger">{{ __('sqms-default-theme::pages/servers.server.offline') }}</span>
                                     @endif
                                     
                                 </div>
