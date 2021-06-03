@@ -18,10 +18,14 @@
                         <div class="server-inner d-flex flex-column flex-md-row">
                             <div class="main-info d-flex flex-column flex-md-row align-items-md-center flex-md-grow-1">
                                 <div class="flex-md-grow-1 d-flex align-items-center p-4">
-                                    <span class="w-100 h2 text-truncate text-center text-md-start text-white mb-md-0">{{ $server->name }}</span>
+                                    @if (\Illuminate\Support\Arr::get($status, 'online', false))
+                                        <span class="w-100 h2 text-truncate text-center text-md-start text-white mb-md-0">{{ \Illuminate\Support\Arr::get($status, 'name', 'Squad Dedicated Server') }}</span>
+                                    @else
+                                        <span class="w-100 h2 text-truncate text-center text-md-start text-secondary mb-md-0">{{ $server->name }}</span>
+                                    @endif
                                 </div>
                                 <div class="flex-grow-1 flex-md-grow-0 d-flex h-100 align-items-center justify-content-center p-2 px-md-4 info">
-                                    @if ($server->is_online)
+                                    @if (\Illuminate\Support\Arr::get($status, 'online', false)))
                                         <span class="text-white">{{ \Illuminate\Support\Arr::get($status, 'playerCount', 0) }}(+{{ intval(\Illuminate\Support\Arr::get($status, 'queue', '0')) }})/{{ intval(\Illuminate\Support\Arr::get($status, 'slots', '0')) }}(+{{ \Illuminate\Support\Arr::get($status, 'reservedSlots', '0') }}) {{ __('sqms-default-theme::pages/servers.server.players') }}</span>
                                     @else
                                         <span class="text-danger">{{ __('sqms-default-theme::pages/servers.server.offline') }}</span>
@@ -47,3 +51,31 @@
     </div>
 </section>
 @endsection
+
+@push('scripts')
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        /* Check if Echo is installed, loaded and instanciated */
+        if (window.Echo) {
+            /* Get all servers elements */
+            const servers = document.getElementsByClassName('server');
+
+            /* Listen for status updates */
+            Echo.channel('server-status.{{ $server->id }}').listen('ServerStatusUpdated', (event) => {
+                if (event.online) {
+                    serverName.innerText = event.name;
+                    serverPlayerCount.innerText = event.playerCount + '(+' + event.serverQueue +')/' + parseInt(event.slots) + '(+' + event.reservedSlots + ') Spieler';
+                    serverMap.innerText = event.level;
+                    serverUrl.href = event.connectURL
+                    serverPopulation.innerHTML = renderPopulation(event.population);
+                    serverOffline.classList.add('d-none');
+                    serverOnline.classList.remove('d-none');
+                } else {
+                    serverOnline.classList.add('d-none');
+                    serverOffline.classList.remove('d-none');
+                }
+            });
+        }
+    });
+</script>
+@endpush
