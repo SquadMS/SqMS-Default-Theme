@@ -11,7 +11,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 
 document.addEventListener('DOMContentLoaded', function () {
   /* Define class needles, properties/updaters and event fields for automated updating */
-  var DEFINITIONS = [['data-server-name', 'innerText', 'name'], ['data-count', 'innerText', 'playerCount'], ['data-queue', 'innerText', 'serverQueue'], ['data-slots', 'innerText', 'slots'], ['data-reserved', 'innerText', 'reservedSlots']];
+  var DEFINITIONS = [['data-server-name', 'innerText', 'name'], ['data-count', 'innerText', 'count'], ['data-queue', 'innerText', 'queue'], ['data-slots', 'innerText', 'slots'], ['data-reserved', 'innerText', 'reserved']];
   /* Check if Echo is installed, loaded and instanciated */
 
   if (window.Echo) {
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
     try {
       var _loop = function _loop() {
         var server = _step.value;
-        Echo.channel("server.".concat(server.getAttribute('server-id'))).listen('QueryServer', function (event) {
+        Echo.channel("server.".concat(server.getAttribute('server-id'))).listen('SquadMS\\Servers\\Events\\ServerStatusUpdated', function (event) {
           var _iterator2 = _createForOfIteratorHelper(DEFINITIONS),
               _step2;
 

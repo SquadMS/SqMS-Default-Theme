@@ -9,12 +9,12 @@ document.addEventListener('DOMContentLoaded', function() {
         [
             'data-count',
             'innerText',
-            'playerCount'
+            'count'
         ],
         [
             'data-queue',
             'innerText',
-            'serverQueue'
+            'queue'
         ],
         [
             'data-slots',
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
         [
             'data-reserved',
             'innerText',
-            'reservedSlots'
+            'reserved'
         ]
     ];
 
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const servers = document.getElementsByClassName('server');
 
         for (const server of servers) {
-            Echo.channel(`server.${server.getAttribute('server-id')}`).listen('QueryServer', (event) => {
+            Echo.channel(`server.${server.getAttribute('server-id')}`).listen('SquadMS\\Servers\\Events\\ServerStatusUpdated', (event) => {
                 for (const triple of DEFINITIONS) {
                     for (const element of server.getElementsByClassName(triple[0])) {
                         if (isFunction(triple[1])) {
