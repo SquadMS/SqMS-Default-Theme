@@ -10,21 +10,18 @@
         </div>
         <div class="row server-list">
             @foreach ($servers as $server)
-                @php
-                    $status = $server->getFrontendCache();    
-                @endphp
                 <div class="col-12 mb-4">
                     <div class="server bg-light bg-no-map bg-cover bg-center" server-id="{{ $server->id }}">
                         <div class="server-inner d-flex flex-column flex-md-row">
                             <div class="main-info d-flex flex-column flex-md-row align-items-md-center flex-md-grow-1 min-width-0">
                                 <div class="flex-md-grow-1 min-width-0 d-flex align-items-center p-4">
-                                    <span class="w-100 h3 text-truncate text-center text-md-start text-white mb-md-0 data-server-name data-show-online {{ \Illuminate\Support\Arr::get($status, 'online', false) ? '' : 'd-none' }}">{{ \Illuminate\Support\Arr::get($status, 'name', 'Squad Dedicated Server') }}</span>
-                                    <span class="w-100 h3 text-truncate text-center text-md-start text-secondary mb-md-0 data-show-offline {{ \Illuminate\Support\Arr::get($status, 'online', false) ? 'd-none' : '' }}">{{ $server->name }}</span>
+                                    <span class="w-100 h3 text-truncate text-center text-md-start text-white mb-md-0 data-server-name data-show-online {{ $server->last_query_result->online() ? '' : 'd-none' }}">{{ $server->last_query_result->name() }}</span>
+                                    <span class="w-100 h3 text-truncate text-center text-md-start text-secondary mb-md-0 data-show-offline {{ $server->last_query_result->online()  ? 'd-none' : '' }}">{{ $server->last_query_result->name() }}</span>
                                 </div>
 
                                 <div class="flex-grow-1 min-width-0 flex-md-grow-0 d-flex h-100 align-items-center justify-content-center p-2 px-md-4 extra">
-                                    <span class="text-white data-show-online {{ \Illuminate\Support\Arr::get($status, 'online', false) ? '' : 'd-none' }}"><span class="data-count">{{ \Illuminate\Support\Arr::get($status, 'playerCount', 0) }}</span>(+<span class="data-queue">{{ intval(\Illuminate\Support\Arr::get($status, 'queue', '0')) }}</span>)/<span class="data-slots">{{ intval(\Illuminate\Support\Arr::get($status, 'slots', '0')) }}</span>(+<span class="data-reserved">{{ \Illuminate\Support\Arr::get($status, 'reservedSlots', '0') }}</span>) {{ __('sqms-default-theme::pages/servers.server.players') }}</span>
-                                    <span class="text-danger text-truncate data-show-offline {{ \Illuminate\Support\Arr::get($status, 'online', false) ? 'd-none' : '' }}">{{ __('sqms-default-theme::pages/servers.server.offline') }}</span>
+                                    <span class="text-white data-show-online {{ $server->last_query_result->online()  ? '' : 'd-none' }}"><span class="data-count">{{ $server->last_query_result->count() }}</span>(+<span class="data-queue">{{ $server->last_query_result->queue() }}</span>)/<span class="data-slots">{{ $server->last_query_result->slots() }}</span>(+<span class="data-reserved">{{ $server->last_query_result->reserved() }}</span>) {{ __('sqms-default-theme::pages/servers.server.players') }}</span>
+                                    <span class="text-danger text-truncate data-show-offline {{ $server->last_query_result->online()  ? 'd-none' : '' }}">{{ __('sqms-default-theme::pages/servers.server.offline') }}</span>
                                 </div>
                             </div>
         
