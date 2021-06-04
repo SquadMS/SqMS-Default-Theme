@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const servers = document.getElementsByClassName('server');
 
         for (const server of servers) {
-            Echo.channel(`server-status.${server.getAttribute('server-id')}`).listen('ServerStatusUpdated', (event) => {
+            Echo.channel(`server.${server.getAttribute('server-id')}`).listen('QueryServer', (event) => {
                 for (const triple of DEFINITIONS) {
                     for (const element of server.getElementsByClassName(triple[0])) {
                         if (isFunction(triple[1])) {
