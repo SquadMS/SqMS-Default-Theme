@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
     try {
       var _loop = function _loop() {
         var server = _step.value;
-        Echo.channel("server.".concat(server.getAttribute('server-id'))).listen('SquadMS\\Servers\\Events\\ServerStatusUpdated', function (event) {
+        Echo.channel("server.".concat(server.getAttribute('server-id'))).listen('.SquadMS\\Servers\\Events\\ServerStatusUpdated', function (event) {
           var _iterator2 = _createForOfIteratorHelper(DEFINITIONS),
               _step2;
 
