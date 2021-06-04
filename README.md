@@ -14,9 +14,9 @@ To install the theme simply run the following command at the root of your squadm
 ```
 composer require squadms/default-theme
 ```
-Next publish the assets. **Remember that you will have to re-publish your assets once you upgrade the theme!**
+Next publish the assets. **Remember that you will have to re-publish your assets once you install/upgrade a SquadMS module!**
 ```
-php artisan vendor:publish --provider="SquadMS\DefaultTheme\SquadMSDefaultThemeServiceProvider" --tag="assets"
+php artisan sqms:publish-assets
 ```
 
 ## Check Out SquadMS
