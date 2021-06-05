@@ -44,9 +44,7 @@
                         <div class="row">
                             <div class="col-12 col-md-6">
                                 <h2 class="text-nowrap text-truncate">
-                                    <div class="ratio ratio-squad-flag d-inline-block bg-faction-{{ \SquadMS\Foundation\Helpers\FactionHelper::getFactionTag($team->getName(), $server->last_query_result->layer()) }} bg-cover bg-center"  style="width: 1em">
-                                        <div></div>
-                                    </div>
+                                    <img src="{{ asset('images/static/factions/' . \SquadMS\Foundation\Helpers\FactionHelper::getFactionTag($team->getName(), $server->last_query_result->layer()) . '.svg', 'themes/sqms-default-theme') }}" style="height: 1em" />
                                     {{ $team->getName() }}
                                 </h2>
                             </div>

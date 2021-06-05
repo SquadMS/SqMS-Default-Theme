@@ -5,7 +5,7 @@ $ieColorEnd: ie-hex-str(rgba($gray-900, 100%));
 
 @each $faction in $factions {
   .bg-faction-#{$faction} {
-    background-image: url('../../images/factions/#{$faction}.svg');
+    background-image: url('../../images/static/factions/#{$faction}.svg');
     background-repeat: no-repeat;
   }
 }
