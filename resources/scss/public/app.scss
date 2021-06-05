@@ -38,6 +38,17 @@ $aspect-ratios: map-merge(
     $aspect-ratios
 );
 
+$utilities: (
+    "min-viewport-height": (
+        property: min-height,
+        class: min-vh,
+        values: (
+            (100: 100vh)
+            (50: 50vh)
+        )
+    ),
+);
+
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 @import '~bootstrap-icons/font/bootstrap-icons.css';
