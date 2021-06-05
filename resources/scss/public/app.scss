@@ -31,9 +31,24 @@ $spacers: map-merge(
     $spacers
 );
 
+$aspect-ratios: (
+  "1x1": 100%,
+  "4x3": calc(3 / 4 * 100%),
+  "16x9": calc(9 / 16 * 100%),
+  "21x9": calc(9 / 21 * 100%)
+) !default;
+
+$aspect-ratios: map-merge(
+    (
+        "squad-flag": (269 / 512 * 100%),
+    ),
+    $aspect-ratios
+);
+
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 @import '~bootstrap-icons/font/bootstrap-icons.css';
+@import './squad-factions';
 @import '~flag-icon-css/sass/flag-icon';
 
 

@@ -7860,6 +7860,10 @@ textarea.form-control-lg {
   height: 100%;
 }
 
+.ratio-squad-flag {
+  --bs-aspect-ratio: 52.5390625%;
+}
+
 .ratio-1x1 {
   --bs-aspect-ratio: 100%;
 }
@@ -12952,6 +12956,46 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.bg-faction-caf {
+  background-image: url(/themes/sqms-default-theme/images/caf.svg?17cc11fbf28e791af3cf2b30252bf30b);
+  background-repeat: no-repeat;
+}
+
+.bg-faction-im {
+  background-image: url(/themes/sqms-default-theme/images/im.svg?a57d4bf0c83419473933dc46f863e956);
+  background-repeat: no-repeat;
+}
+
+.bg-faction-ins {
+  background-image: url(/themes/sqms-default-theme/images/ins.svg?72885a744937a61230cf66fd08340210);
+  background-repeat: no-repeat;
+}
+
+.bg-faction-ru {
+  background-image: url(/themes/sqms-default-theme/images/ru.svg?98239d6de0cea6e59736211c1db14964);
+  background-repeat: no-repeat;
+}
+
+.bg-faction-uk {
+  background-image: url(/themes/sqms-default-theme/images/uk.svg?21edba9eaa0a47d085f189227592aee1);
+  background-repeat: no-repeat;
+}
+
+.bg-faction-us {
+  background-image: url(/themes/sqms-default-theme/images/us.svg?b1e1b8ce11575c9fcafc194630f759a8);
+  background-repeat: no-repeat;
+}
+
+.bg-faction-usmc {
+  background-image: url(/themes/sqms-default-theme/images/usmc.svg?cb08bd9bfe2e8bb8e8a2478461814b4e);
+  background-repeat: no-repeat;
+}
+
+.bg-faction-mea {
+  background-image: url(/themes/sqms-default-theme/images/mea.svg?bf58ab3f1b995eb98989a8b014a9c99d);
+  background-repeat: no-repeat;
+}
+
 .flag-icon-background, .flag-icon {
   background-size: contain;
   background-position: 50%;
