@@ -25,7 +25,7 @@
                 @endforeach
             @else
                 <div class="col">
-                    <p class="h3">Server offline :(</p>
+                    <p class="h3 text-center">Server offline :(</p>
                 </div>
             @endif
         </div>
