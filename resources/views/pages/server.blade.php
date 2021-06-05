@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col">
                 @foreach ($server->last_query_result->population()->getTeams() as $team)
-                <div class="embed-responsive embed-responsive-squad-flag {{ (new FactionHelper())->getClassNameForFaction($team->getName(), $layer) }} bg-cover bg-center">
+                <div class="embed-responsive embed-responsive-squad-flag bg-faction-{{ \SquadMS\Foundation\Helpers\FactionHelper::getFactionTag($team->getName(), $layer) }} bg-cover bg-center">
                     <div class="embed-responsive-item d-flex justify-content-center align-items-center">
                         <div class="gradient position-absolute w-100 h-100"></div>
                         <h2 class="text-white text-nowrap text-truncate w-100 px-2 mb-0" style="z-index: 1">{{ $team->getName() }}</iframe>
