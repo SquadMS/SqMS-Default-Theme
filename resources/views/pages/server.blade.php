@@ -34,7 +34,7 @@
     <div class="container">
         <div class="row mb-5">
             <div class="col">
-                <h1>{{ $server->last_query_result->name() }}</h1>
+                <h1 class="text-center">{{ $server->last_query_result->name() }}</h1>
             </div>
         </div>
         <div class="row">
