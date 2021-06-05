@@ -39,68 +39,72 @@
         </div>
         <div class="row">
             <div class="col">
-                @foreach ($server->last_query_result->population()->getTeams() as $team)
-                    <div class="row">
-                        <div class="col-12 col-md-6">
-                            <h2 class="text-white text-nowrap text-truncate" style="width: 1em">
-                                <div class="ratio ratio-squad-flag bg-faction-{{ \SquadMS\Foundation\Helpers\FactionHelper::getFactionTag($team->getName(), $server->last_query_result->layer()) }} bg-cover bg-center">
-                                    <div></div>
-                                </div>
-                                &nbsp;
-                                {{ $team->getName() }}
-                            </h2>
-                        </div>
-                    </div>
-
-                    <!-- Squads -->
-                    @if (count($team->getSquads()))
-                        @foreach ($team->getSquads() as $squad)
-                            <!-- Squad -->
-                            <div class="row">
-                                <div class="col-12">
-                                    <table class="table">
-                                        <thead class="thead-dark">
-                                            <tr>
-                                                <th scope="col" class="text-left">#{{ $squad->getId() }}</th>
-                                                <th scope="col" class="text-right">{{ $squad->getName() }}</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            @foreach ($squad->getPlayers() as $player)
-                                            <tr>
-                                                <td colspan="2" class="text-white"><a href="{{ route('profile', $player->getSteamId()) }}">{{ $player->getName() }}</a></td>
-                                            </tr>
-                                            @endforeach
-                                        </tbody>
-                                    </table>
-                                </div>
+                @if ($server->last_query_result->online())
+                    @foreach ($server->last_query_result->population()->getTeams() as $team)
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <h2 class="text-white text-nowrap text-truncate" style="width: 1em">
+                                    <div class="ratio ratio-squad-flag bg-faction-{{ \SquadMS\Foundation\Helpers\FactionHelper::getFactionTag($team->getName(), $server->last_query_result->layer()) }} bg-cover bg-center">
+                                        <div></div>
+                                    </div>
+                                    &nbsp;
+                                    {{ $team->getName() }}
+                                </h2>
                             </div>
-                        @endforeach
-                    @endif
-
-                    <!-- Unassigned Players -->
-                    @if (count($team->getPlayers()))
-                    <div class="row">
-                        <div class="col-12">
-                            <table class="table">
-                                <thead class="thead-dark">
-                                    <tr>
-                                        <th scope="col">-</th>
-                                        <th scope="col">Unassigned</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    @foreach ($team->getPlayers() as $player)
-                                    <tr>
-                                        <td colspan="2" class="text-white"><a href="{{ route('profile', $player->getSteamId()) }}">{{ $player->getName() }}</a></td>
-                                    </tr>
-                                    @endforeach
-                                </tbody>
-                            </table>
                         </div>
-                    </div>
-                    @endif
-                @endforeach
+
+                        <!-- Squads -->
+                        @if (count($team->getSquads()))
+                            @foreach ($team->getSquads() as $squad)
+                                <!-- Squad -->
+                                <div class="row">
+                                    <div class="col-12">
+                                        <table class="table">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th scope="col" class="text-left">#{{ $squad->getId() }}</th>
+                                                    <th scope="col" class="text-right">{{ $squad->getName() }}</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                @foreach ($squad->getPlayers() as $player)
+                                                <tr>
+                                                    <td colspan="2" class="text-white"><a href="{{ route('profile', $player->getSteamId()) }}">{{ $player->getName() }}</a></td>
+                                                </tr>
+                                                @endforeach
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            @endforeach
+                        @endif
+
+                        <!-- Unassigned Players -->
+                        @if (count($team->getPlayers()))
+                        <div class="row">
+                            <div class="col-12">
+                                <table class="table">
+                                    <thead class="thead-dark">
+                                        <tr>
+                                            <th scope="col">-</th>
+                                            <th scope="col">Unassigned</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach ($team->getPlayers() as $player)
+                                        <tr>
+                                            <td colspan="2" class="text-white"><a href="{{ route('profile', $player->getSteamId()) }}">{{ $player->getName() }}</a></td>
+                                        </tr>
+                                        @endforeach
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        @endif
+                    @endforeach
+                @else
+                        <p class="lead text-danger">Server is offline :(</div>
+                @endif
             </div>
         </div>
     </div>
