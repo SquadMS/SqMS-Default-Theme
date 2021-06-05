@@ -38,16 +38,15 @@
             </div>
         </div>
         <div class="row">
-            <div class="col">
-                @if ($server->last_query_result->online())
-                    @foreach ($server->last_query_result->population()->getTeams() as $team)
+            @if ($server->last_query_result->online())
+                @foreach ($server->last_query_result->population()->getTeams() as $team)
+                    <div class="col-12 col-md-6">
                         <div class="row">
                             <div class="col-12 col-md-6">
-                                <h2 class="text-white text-nowrap text-truncate" style="width: 1em">
-                                    <div class="ratio ratio-squad-flag bg-faction-{{ \SquadMS\Foundation\Helpers\FactionHelper::getFactionTag($team->getName(), $server->last_query_result->layer()) }} bg-cover bg-center">
+                                <h2 class="text-nowrap text-truncate">
+                                    <div class="ratio ratio-squad-flag d-inline-block bg-faction-{{ \SquadMS\Foundation\Helpers\FactionHelper::getFactionTag($team->getName(), $server->last_query_result->layer()) }} bg-cover bg-center"  style="width: 1em">
                                         <div></div>
                                     </div>
-                                    &nbsp;
                                     {{ $team->getName() }}
                                 </h2>
                             </div>
@@ -101,11 +100,13 @@
                             </div>
                         </div>
                         @endif
-                    @endforeach
-                @else
-                        <p class="lead text-danger">Server is offline :(</div>
-                @endif
-            </div>
+                    </div>
+                @endforeach
+            @else
+                <div class="col">
+                    <p class="lead text-danger">Server is offline :(</p>
+                </div>
+            @endif
         </div>
     </div>
 </section>
