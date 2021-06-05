@@ -5,14 +5,18 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                @foreach ($server->last_query_result->population()->getTeams() as $team)
-                <div class="embed-responsive embed-responsive-squad-flag bg-faction-{{ \SquadMS\Foundation\Helpers\FactionHelper::getFactionTag($team->getName(), $layer) }} bg-cover bg-center">
-                    <div class="embed-responsive-item d-flex justify-content-center align-items-center">
-                        <div class="gradient position-absolute w-100 h-100"></div>
-                        <h2 class="text-white text-nowrap text-truncate w-100 px-2 mb-0" style="z-index: 1">{{ $team->getName() }}</iframe>
+                @if ($server->last_query_result->online())
+                    @foreach ($server->last_query_result->population()->getTeams() as $team)
+                    <div class="embed-responsive embed-responsive-squad-flag bg-faction-{{ \SquadMS\Foundation\Helpers\FactionHelper::getFactionTag($team->getName(), $layer) }} bg-cover bg-center">
+                        <div class="embed-responsive-item d-flex justify-content-center align-items-center">
+                            <div class="gradient position-absolute w-100 h-100"></div>
+                            <h2 class="text-white text-nowrap text-truncate w-100 px-2 mb-0" style="z-index: 1">{{ $team->getName() }}</iframe>
+                        </div>
                     </div>
-                </div>
-                @foreach
+                    @foreach
+                @else
+                    <p class="h3">Server offline :(</p>
+                @endif
             </div>
         </div>
     </div>
