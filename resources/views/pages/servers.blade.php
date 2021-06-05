@@ -30,7 +30,7 @@
                                     <span class="text-steam lh-1"><i class="bi bi-controller"></i></span>
                                 </a>
     
-                                <a href="#" class="extra d-flex flex-grow-1 flex-md-grow-0 align-items-center justify-content-center px-3 py-2 px-md-4 py-md-1 text-decoration-none">
+                                <a href="{{ Config::get('sqms-servers.routes.def.server.name', ['server' => $server]) }}" class="extra d-flex flex-grow-1 flex-md-grow-0 align-items-center justify-content-center px-3 py-2 px-md-4 py-md-1 text-decoration-none">
                                     <span class="text-primary lh-1"><i class="bi bi-info-circle-fill"></i></span>
                                 </a>
                             </div>
