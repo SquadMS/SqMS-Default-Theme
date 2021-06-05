@@ -8330,6 +8330,10 @@ textarea.form-control-lg {
   min-height: 100vh !important;
 }
 
+.min-vh-50 {
+  min-height: 50vh !important;
+}
+
 .flex-fill {
   flex: 1 1 auto !important;
 }
@@ -15267,6 +15271,1830 @@ textarea.form-control-lg {
 
 .bg-no-map {
   background-image: url(/themes/sqms-default-theme/images/no-map.jpg?fa471957b6f2ee8df9b84c632df8c693);
+}
+
+.bg-discord-transparent-gradient-left {
+  background-image: linear-gradient(270deg, rgba(114, 137, 218, 0.33) 25%, transparent);
+}
+
+.bg-xs-discord-transparent-gradient-left {
+  background-image: linear-gradient(270deg, rgba(114, 137, 218, 0.33) 25%, transparent);
+}
+
+@media (min-width: 576px) {
+  .bg-sm-discord-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(114, 137, 218, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-md-discord-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(114, 137, 218, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-lg-discord-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(114, 137, 218, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-xl-discord-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(114, 137, 218, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1400px) {
+  .bg-xxl-discord-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(114, 137, 218, 0.33) 25%, transparent);
+  }
+}
+
+.bg-discord-transparent-gradient-right {
+  background-image: linear-gradient(90deg, rgba(114, 137, 218, 0.33) 25%, transparent);
+}
+
+.bg-xs-discord-transparent-gradient-right {
+  background-image: linear-gradient(90deg, rgba(114, 137, 218, 0.33) 25%, transparent);
+}
+
+@media (min-width: 576px) {
+  .bg-sm-discord-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(114, 137, 218, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-md-discord-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(114, 137, 218, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-lg-discord-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(114, 137, 218, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-xl-discord-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(114, 137, 218, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1400px) {
+  .bg-xxl-discord-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(114, 137, 218, 0.33) 25%, transparent);
+  }
+}
+
+.bg-discord-transparent-gradient-top {
+  background-image: linear-gradient(180deg, rgba(114, 137, 218, 0.33) 25%, transparent);
+}
+
+.bg-xs-discord-transparent-gradient-top {
+  background-image: linear-gradient(180deg, rgba(114, 137, 218, 0.33) 25%, transparent);
+}
+
+@media (min-width: 576px) {
+  .bg-sm-discord-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(114, 137, 218, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-md-discord-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(114, 137, 218, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-lg-discord-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(114, 137, 218, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-xl-discord-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(114, 137, 218, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1400px) {
+  .bg-xxl-discord-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(114, 137, 218, 0.33) 25%, transparent);
+  }
+}
+
+.bg-discord-transparent-gradient-down {
+  background-image: linear-gradient(0deg, rgba(114, 137, 218, 0.33) 25%, transparent);
+}
+
+.bg-xs-discord-transparent-gradient-down {
+  background-image: linear-gradient(0deg, rgba(114, 137, 218, 0.33) 25%, transparent);
+}
+
+@media (min-width: 576px) {
+  .bg-sm-discord-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(114, 137, 218, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-md-discord-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(114, 137, 218, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-lg-discord-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(114, 137, 218, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-xl-discord-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(114, 137, 218, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1400px) {
+  .bg-xxl-discord-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(114, 137, 218, 0.33) 25%, transparent);
+  }
+}
+
+.bg-steam-transparent-gradient-left {
+  background-image: linear-gradient(270deg, rgba(0, 173, 238, 0.33) 25%, transparent);
+}
+
+.bg-xs-steam-transparent-gradient-left {
+  background-image: linear-gradient(270deg, rgba(0, 173, 238, 0.33) 25%, transparent);
+}
+
+@media (min-width: 576px) {
+  .bg-sm-steam-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(0, 173, 238, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-md-steam-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(0, 173, 238, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-lg-steam-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(0, 173, 238, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-xl-steam-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(0, 173, 238, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1400px) {
+  .bg-xxl-steam-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(0, 173, 238, 0.33) 25%, transparent);
+  }
+}
+
+.bg-steam-transparent-gradient-right {
+  background-image: linear-gradient(90deg, rgba(0, 173, 238, 0.33) 25%, transparent);
+}
+
+.bg-xs-steam-transparent-gradient-right {
+  background-image: linear-gradient(90deg, rgba(0, 173, 238, 0.33) 25%, transparent);
+}
+
+@media (min-width: 576px) {
+  .bg-sm-steam-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(0, 173, 238, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-md-steam-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(0, 173, 238, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-lg-steam-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(0, 173, 238, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-xl-steam-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(0, 173, 238, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1400px) {
+  .bg-xxl-steam-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(0, 173, 238, 0.33) 25%, transparent);
+  }
+}
+
+.bg-steam-transparent-gradient-top {
+  background-image: linear-gradient(180deg, rgba(0, 173, 238, 0.33) 25%, transparent);
+}
+
+.bg-xs-steam-transparent-gradient-top {
+  background-image: linear-gradient(180deg, rgba(0, 173, 238, 0.33) 25%, transparent);
+}
+
+@media (min-width: 576px) {
+  .bg-sm-steam-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(0, 173, 238, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-md-steam-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(0, 173, 238, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-lg-steam-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(0, 173, 238, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-xl-steam-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(0, 173, 238, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1400px) {
+  .bg-xxl-steam-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(0, 173, 238, 0.33) 25%, transparent);
+  }
+}
+
+.bg-steam-transparent-gradient-down {
+  background-image: linear-gradient(0deg, rgba(0, 173, 238, 0.33) 25%, transparent);
+}
+
+.bg-xs-steam-transparent-gradient-down {
+  background-image: linear-gradient(0deg, rgba(0, 173, 238, 0.33) 25%, transparent);
+}
+
+@media (min-width: 576px) {
+  .bg-sm-steam-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(0, 173, 238, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-md-steam-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(0, 173, 238, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-lg-steam-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(0, 173, 238, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-xl-steam-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(0, 173, 238, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1400px) {
+  .bg-xxl-steam-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(0, 173, 238, 0.33) 25%, transparent);
+  }
+}
+
+.bg-teamspeak-transparent-gradient-left {
+  background-image: linear-gradient(270deg, rgba(37, 128, 195, 0.33) 25%, transparent);
+}
+
+.bg-xs-teamspeak-transparent-gradient-left {
+  background-image: linear-gradient(270deg, rgba(37, 128, 195, 0.33) 25%, transparent);
+}
+
+@media (min-width: 576px) {
+  .bg-sm-teamspeak-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(37, 128, 195, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-md-teamspeak-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(37, 128, 195, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-lg-teamspeak-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(37, 128, 195, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-xl-teamspeak-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(37, 128, 195, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1400px) {
+  .bg-xxl-teamspeak-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(37, 128, 195, 0.33) 25%, transparent);
+  }
+}
+
+.bg-teamspeak-transparent-gradient-right {
+  background-image: linear-gradient(90deg, rgba(37, 128, 195, 0.33) 25%, transparent);
+}
+
+.bg-xs-teamspeak-transparent-gradient-right {
+  background-image: linear-gradient(90deg, rgba(37, 128, 195, 0.33) 25%, transparent);
+}
+
+@media (min-width: 576px) {
+  .bg-sm-teamspeak-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(37, 128, 195, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-md-teamspeak-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(37, 128, 195, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-lg-teamspeak-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(37, 128, 195, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-xl-teamspeak-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(37, 128, 195, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1400px) {
+  .bg-xxl-teamspeak-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(37, 128, 195, 0.33) 25%, transparent);
+  }
+}
+
+.bg-teamspeak-transparent-gradient-top {
+  background-image: linear-gradient(180deg, rgba(37, 128, 195, 0.33) 25%, transparent);
+}
+
+.bg-xs-teamspeak-transparent-gradient-top {
+  background-image: linear-gradient(180deg, rgba(37, 128, 195, 0.33) 25%, transparent);
+}
+
+@media (min-width: 576px) {
+  .bg-sm-teamspeak-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(37, 128, 195, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-md-teamspeak-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(37, 128, 195, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-lg-teamspeak-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(37, 128, 195, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-xl-teamspeak-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(37, 128, 195, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1400px) {
+  .bg-xxl-teamspeak-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(37, 128, 195, 0.33) 25%, transparent);
+  }
+}
+
+.bg-teamspeak-transparent-gradient-down {
+  background-image: linear-gradient(0deg, rgba(37, 128, 195, 0.33) 25%, transparent);
+}
+
+.bg-xs-teamspeak-transparent-gradient-down {
+  background-image: linear-gradient(0deg, rgba(37, 128, 195, 0.33) 25%, transparent);
+}
+
+@media (min-width: 576px) {
+  .bg-sm-teamspeak-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(37, 128, 195, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-md-teamspeak-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(37, 128, 195, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-lg-teamspeak-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(37, 128, 195, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-xl-teamspeak-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(37, 128, 195, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1400px) {
+  .bg-xxl-teamspeak-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(37, 128, 195, 0.33) 25%, transparent);
+  }
+}
+
+.bg-youtube-transparent-gradient-left {
+  background-image: linear-gradient(270deg, rgba(255, 0, 0, 0.33) 25%, transparent);
+}
+
+.bg-xs-youtube-transparent-gradient-left {
+  background-image: linear-gradient(270deg, rgba(255, 0, 0, 0.33) 25%, transparent);
+}
+
+@media (min-width: 576px) {
+  .bg-sm-youtube-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(255, 0, 0, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-md-youtube-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(255, 0, 0, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-lg-youtube-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(255, 0, 0, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-xl-youtube-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(255, 0, 0, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1400px) {
+  .bg-xxl-youtube-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(255, 0, 0, 0.33) 25%, transparent);
+  }
+}
+
+.bg-youtube-transparent-gradient-right {
+  background-image: linear-gradient(90deg, rgba(255, 0, 0, 0.33) 25%, transparent);
+}
+
+.bg-xs-youtube-transparent-gradient-right {
+  background-image: linear-gradient(90deg, rgba(255, 0, 0, 0.33) 25%, transparent);
+}
+
+@media (min-width: 576px) {
+  .bg-sm-youtube-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(255, 0, 0, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-md-youtube-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(255, 0, 0, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-lg-youtube-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(255, 0, 0, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-xl-youtube-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(255, 0, 0, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1400px) {
+  .bg-xxl-youtube-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(255, 0, 0, 0.33) 25%, transparent);
+  }
+}
+
+.bg-youtube-transparent-gradient-top {
+  background-image: linear-gradient(180deg, rgba(255, 0, 0, 0.33) 25%, transparent);
+}
+
+.bg-xs-youtube-transparent-gradient-top {
+  background-image: linear-gradient(180deg, rgba(255, 0, 0, 0.33) 25%, transparent);
+}
+
+@media (min-width: 576px) {
+  .bg-sm-youtube-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(255, 0, 0, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-md-youtube-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(255, 0, 0, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-lg-youtube-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(255, 0, 0, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-xl-youtube-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(255, 0, 0, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1400px) {
+  .bg-xxl-youtube-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(255, 0, 0, 0.33) 25%, transparent);
+  }
+}
+
+.bg-youtube-transparent-gradient-down {
+  background-image: linear-gradient(0deg, rgba(255, 0, 0, 0.33) 25%, transparent);
+}
+
+.bg-xs-youtube-transparent-gradient-down {
+  background-image: linear-gradient(0deg, rgba(255, 0, 0, 0.33) 25%, transparent);
+}
+
+@media (min-width: 576px) {
+  .bg-sm-youtube-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(255, 0, 0, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-md-youtube-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(255, 0, 0, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-lg-youtube-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(255, 0, 0, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-xl-youtube-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(255, 0, 0, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1400px) {
+  .bg-xxl-youtube-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(255, 0, 0, 0.33) 25%, transparent);
+  }
+}
+
+.bg-primary-transparent-gradient-left {
+  background-image: linear-gradient(270deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+}
+
+.bg-xs-primary-transparent-gradient-left {
+  background-image: linear-gradient(270deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+}
+
+@media (min-width: 576px) {
+  .bg-sm-primary-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-md-primary-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-lg-primary-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-xl-primary-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1400px) {
+  .bg-xxl-primary-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+  }
+}
+
+.bg-primary-transparent-gradient-right {
+  background-image: linear-gradient(90deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+}
+
+.bg-xs-primary-transparent-gradient-right {
+  background-image: linear-gradient(90deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+}
+
+@media (min-width: 576px) {
+  .bg-sm-primary-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-md-primary-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-lg-primary-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-xl-primary-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1400px) {
+  .bg-xxl-primary-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+  }
+}
+
+.bg-primary-transparent-gradient-top {
+  background-image: linear-gradient(180deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+}
+
+.bg-xs-primary-transparent-gradient-top {
+  background-image: linear-gradient(180deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+}
+
+@media (min-width: 576px) {
+  .bg-sm-primary-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-md-primary-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-lg-primary-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-xl-primary-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1400px) {
+  .bg-xxl-primary-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+  }
+}
+
+.bg-primary-transparent-gradient-down {
+  background-image: linear-gradient(0deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+}
+
+.bg-xs-primary-transparent-gradient-down {
+  background-image: linear-gradient(0deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+}
+
+@media (min-width: 576px) {
+  .bg-sm-primary-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-md-primary-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-lg-primary-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-xl-primary-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1400px) {
+  .bg-xxl-primary-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+  }
+}
+
+.bg-secondary-transparent-gradient-left {
+  background-image: linear-gradient(270deg, rgba(108, 117, 125, 0.33) 25%, transparent);
+}
+
+.bg-xs-secondary-transparent-gradient-left {
+  background-image: linear-gradient(270deg, rgba(108, 117, 125, 0.33) 25%, transparent);
+}
+
+@media (min-width: 576px) {
+  .bg-sm-secondary-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(108, 117, 125, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-md-secondary-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(108, 117, 125, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-lg-secondary-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(108, 117, 125, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-xl-secondary-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(108, 117, 125, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1400px) {
+  .bg-xxl-secondary-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(108, 117, 125, 0.33) 25%, transparent);
+  }
+}
+
+.bg-secondary-transparent-gradient-right {
+  background-image: linear-gradient(90deg, rgba(108, 117, 125, 0.33) 25%, transparent);
+}
+
+.bg-xs-secondary-transparent-gradient-right {
+  background-image: linear-gradient(90deg, rgba(108, 117, 125, 0.33) 25%, transparent);
+}
+
+@media (min-width: 576px) {
+  .bg-sm-secondary-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(108, 117, 125, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-md-secondary-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(108, 117, 125, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-lg-secondary-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(108, 117, 125, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-xl-secondary-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(108, 117, 125, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1400px) {
+  .bg-xxl-secondary-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(108, 117, 125, 0.33) 25%, transparent);
+  }
+}
+
+.bg-secondary-transparent-gradient-top {
+  background-image: linear-gradient(180deg, rgba(108, 117, 125, 0.33) 25%, transparent);
+}
+
+.bg-xs-secondary-transparent-gradient-top {
+  background-image: linear-gradient(180deg, rgba(108, 117, 125, 0.33) 25%, transparent);
+}
+
+@media (min-width: 576px) {
+  .bg-sm-secondary-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(108, 117, 125, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-md-secondary-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(108, 117, 125, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-lg-secondary-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(108, 117, 125, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-xl-secondary-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(108, 117, 125, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1400px) {
+  .bg-xxl-secondary-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(108, 117, 125, 0.33) 25%, transparent);
+  }
+}
+
+.bg-secondary-transparent-gradient-down {
+  background-image: linear-gradient(0deg, rgba(108, 117, 125, 0.33) 25%, transparent);
+}
+
+.bg-xs-secondary-transparent-gradient-down {
+  background-image: linear-gradient(0deg, rgba(108, 117, 125, 0.33) 25%, transparent);
+}
+
+@media (min-width: 576px) {
+  .bg-sm-secondary-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(108, 117, 125, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-md-secondary-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(108, 117, 125, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-lg-secondary-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(108, 117, 125, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-xl-secondary-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(108, 117, 125, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1400px) {
+  .bg-xxl-secondary-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(108, 117, 125, 0.33) 25%, transparent);
+  }
+}
+
+.bg-success-transparent-gradient-left {
+  background-image: linear-gradient(270deg, rgba(25, 135, 84, 0.33) 25%, transparent);
+}
+
+.bg-xs-success-transparent-gradient-left {
+  background-image: linear-gradient(270deg, rgba(25, 135, 84, 0.33) 25%, transparent);
+}
+
+@media (min-width: 576px) {
+  .bg-sm-success-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(25, 135, 84, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-md-success-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(25, 135, 84, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-lg-success-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(25, 135, 84, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-xl-success-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(25, 135, 84, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1400px) {
+  .bg-xxl-success-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(25, 135, 84, 0.33) 25%, transparent);
+  }
+}
+
+.bg-success-transparent-gradient-right {
+  background-image: linear-gradient(90deg, rgba(25, 135, 84, 0.33) 25%, transparent);
+}
+
+.bg-xs-success-transparent-gradient-right {
+  background-image: linear-gradient(90deg, rgba(25, 135, 84, 0.33) 25%, transparent);
+}
+
+@media (min-width: 576px) {
+  .bg-sm-success-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(25, 135, 84, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-md-success-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(25, 135, 84, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-lg-success-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(25, 135, 84, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-xl-success-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(25, 135, 84, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1400px) {
+  .bg-xxl-success-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(25, 135, 84, 0.33) 25%, transparent);
+  }
+}
+
+.bg-success-transparent-gradient-top {
+  background-image: linear-gradient(180deg, rgba(25, 135, 84, 0.33) 25%, transparent);
+}
+
+.bg-xs-success-transparent-gradient-top {
+  background-image: linear-gradient(180deg, rgba(25, 135, 84, 0.33) 25%, transparent);
+}
+
+@media (min-width: 576px) {
+  .bg-sm-success-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(25, 135, 84, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-md-success-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(25, 135, 84, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-lg-success-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(25, 135, 84, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-xl-success-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(25, 135, 84, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1400px) {
+  .bg-xxl-success-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(25, 135, 84, 0.33) 25%, transparent);
+  }
+}
+
+.bg-success-transparent-gradient-down {
+  background-image: linear-gradient(0deg, rgba(25, 135, 84, 0.33) 25%, transparent);
+}
+
+.bg-xs-success-transparent-gradient-down {
+  background-image: linear-gradient(0deg, rgba(25, 135, 84, 0.33) 25%, transparent);
+}
+
+@media (min-width: 576px) {
+  .bg-sm-success-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(25, 135, 84, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-md-success-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(25, 135, 84, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-lg-success-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(25, 135, 84, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-xl-success-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(25, 135, 84, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1400px) {
+  .bg-xxl-success-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(25, 135, 84, 0.33) 25%, transparent);
+  }
+}
+
+.bg-info-transparent-gradient-left {
+  background-image: linear-gradient(270deg, rgba(13, 202, 240, 0.33) 25%, transparent);
+}
+
+.bg-xs-info-transparent-gradient-left {
+  background-image: linear-gradient(270deg, rgba(13, 202, 240, 0.33) 25%, transparent);
+}
+
+@media (min-width: 576px) {
+  .bg-sm-info-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(13, 202, 240, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-md-info-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(13, 202, 240, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-lg-info-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(13, 202, 240, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-xl-info-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(13, 202, 240, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1400px) {
+  .bg-xxl-info-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(13, 202, 240, 0.33) 25%, transparent);
+  }
+}
+
+.bg-info-transparent-gradient-right {
+  background-image: linear-gradient(90deg, rgba(13, 202, 240, 0.33) 25%, transparent);
+}
+
+.bg-xs-info-transparent-gradient-right {
+  background-image: linear-gradient(90deg, rgba(13, 202, 240, 0.33) 25%, transparent);
+}
+
+@media (min-width: 576px) {
+  .bg-sm-info-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(13, 202, 240, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-md-info-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(13, 202, 240, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-lg-info-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(13, 202, 240, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-xl-info-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(13, 202, 240, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1400px) {
+  .bg-xxl-info-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(13, 202, 240, 0.33) 25%, transparent);
+  }
+}
+
+.bg-info-transparent-gradient-top {
+  background-image: linear-gradient(180deg, rgba(13, 202, 240, 0.33) 25%, transparent);
+}
+
+.bg-xs-info-transparent-gradient-top {
+  background-image: linear-gradient(180deg, rgba(13, 202, 240, 0.33) 25%, transparent);
+}
+
+@media (min-width: 576px) {
+  .bg-sm-info-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(13, 202, 240, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-md-info-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(13, 202, 240, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-lg-info-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(13, 202, 240, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-xl-info-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(13, 202, 240, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1400px) {
+  .bg-xxl-info-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(13, 202, 240, 0.33) 25%, transparent);
+  }
+}
+
+.bg-info-transparent-gradient-down {
+  background-image: linear-gradient(0deg, rgba(13, 202, 240, 0.33) 25%, transparent);
+}
+
+.bg-xs-info-transparent-gradient-down {
+  background-image: linear-gradient(0deg, rgba(13, 202, 240, 0.33) 25%, transparent);
+}
+
+@media (min-width: 576px) {
+  .bg-sm-info-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(13, 202, 240, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-md-info-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(13, 202, 240, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-lg-info-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(13, 202, 240, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-xl-info-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(13, 202, 240, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1400px) {
+  .bg-xxl-info-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(13, 202, 240, 0.33) 25%, transparent);
+  }
+}
+
+.bg-warning-transparent-gradient-left {
+  background-image: linear-gradient(270deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+}
+
+.bg-xs-warning-transparent-gradient-left {
+  background-image: linear-gradient(270deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+}
+
+@media (min-width: 576px) {
+  .bg-sm-warning-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-md-warning-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-lg-warning-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-xl-warning-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1400px) {
+  .bg-xxl-warning-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+  }
+}
+
+.bg-warning-transparent-gradient-right {
+  background-image: linear-gradient(90deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+}
+
+.bg-xs-warning-transparent-gradient-right {
+  background-image: linear-gradient(90deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+}
+
+@media (min-width: 576px) {
+  .bg-sm-warning-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-md-warning-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-lg-warning-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-xl-warning-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1400px) {
+  .bg-xxl-warning-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+  }
+}
+
+.bg-warning-transparent-gradient-top {
+  background-image: linear-gradient(180deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+}
+
+.bg-xs-warning-transparent-gradient-top {
+  background-image: linear-gradient(180deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+}
+
+@media (min-width: 576px) {
+  .bg-sm-warning-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-md-warning-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-lg-warning-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-xl-warning-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1400px) {
+  .bg-xxl-warning-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+  }
+}
+
+.bg-warning-transparent-gradient-down {
+  background-image: linear-gradient(0deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+}
+
+.bg-xs-warning-transparent-gradient-down {
+  background-image: linear-gradient(0deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+}
+
+@media (min-width: 576px) {
+  .bg-sm-warning-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-md-warning-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-lg-warning-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-xl-warning-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1400px) {
+  .bg-xxl-warning-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(255, 196, 11, 0.33) 25%, transparent);
+  }
+}
+
+.bg-danger-transparent-gradient-left {
+  background-image: linear-gradient(270deg, rgba(220, 53, 69, 0.33) 25%, transparent);
+}
+
+.bg-xs-danger-transparent-gradient-left {
+  background-image: linear-gradient(270deg, rgba(220, 53, 69, 0.33) 25%, transparent);
+}
+
+@media (min-width: 576px) {
+  .bg-sm-danger-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(220, 53, 69, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-md-danger-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(220, 53, 69, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-lg-danger-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(220, 53, 69, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-xl-danger-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(220, 53, 69, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1400px) {
+  .bg-xxl-danger-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(220, 53, 69, 0.33) 25%, transparent);
+  }
+}
+
+.bg-danger-transparent-gradient-right {
+  background-image: linear-gradient(90deg, rgba(220, 53, 69, 0.33) 25%, transparent);
+}
+
+.bg-xs-danger-transparent-gradient-right {
+  background-image: linear-gradient(90deg, rgba(220, 53, 69, 0.33) 25%, transparent);
+}
+
+@media (min-width: 576px) {
+  .bg-sm-danger-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(220, 53, 69, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-md-danger-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(220, 53, 69, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-lg-danger-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(220, 53, 69, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-xl-danger-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(220, 53, 69, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1400px) {
+  .bg-xxl-danger-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(220, 53, 69, 0.33) 25%, transparent);
+  }
+}
+
+.bg-danger-transparent-gradient-top {
+  background-image: linear-gradient(180deg, rgba(220, 53, 69, 0.33) 25%, transparent);
+}
+
+.bg-xs-danger-transparent-gradient-top {
+  background-image: linear-gradient(180deg, rgba(220, 53, 69, 0.33) 25%, transparent);
+}
+
+@media (min-width: 576px) {
+  .bg-sm-danger-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(220, 53, 69, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-md-danger-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(220, 53, 69, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-lg-danger-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(220, 53, 69, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-xl-danger-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(220, 53, 69, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1400px) {
+  .bg-xxl-danger-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(220, 53, 69, 0.33) 25%, transparent);
+  }
+}
+
+.bg-danger-transparent-gradient-down {
+  background-image: linear-gradient(0deg, rgba(220, 53, 69, 0.33) 25%, transparent);
+}
+
+.bg-xs-danger-transparent-gradient-down {
+  background-image: linear-gradient(0deg, rgba(220, 53, 69, 0.33) 25%, transparent);
+}
+
+@media (min-width: 576px) {
+  .bg-sm-danger-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(220, 53, 69, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-md-danger-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(220, 53, 69, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-lg-danger-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(220, 53, 69, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-xl-danger-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(220, 53, 69, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1400px) {
+  .bg-xxl-danger-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(220, 53, 69, 0.33) 25%, transparent);
+  }
+}
+
+.bg-light-transparent-gradient-left {
+  background-image: linear-gradient(270deg, rgba(248, 249, 250, 0.33) 25%, transparent);
+}
+
+.bg-xs-light-transparent-gradient-left {
+  background-image: linear-gradient(270deg, rgba(248, 249, 250, 0.33) 25%, transparent);
+}
+
+@media (min-width: 576px) {
+  .bg-sm-light-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(248, 249, 250, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-md-light-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(248, 249, 250, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-lg-light-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(248, 249, 250, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-xl-light-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(248, 249, 250, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1400px) {
+  .bg-xxl-light-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(248, 249, 250, 0.33) 25%, transparent);
+  }
+}
+
+.bg-light-transparent-gradient-right {
+  background-image: linear-gradient(90deg, rgba(248, 249, 250, 0.33) 25%, transparent);
+}
+
+.bg-xs-light-transparent-gradient-right {
+  background-image: linear-gradient(90deg, rgba(248, 249, 250, 0.33) 25%, transparent);
+}
+
+@media (min-width: 576px) {
+  .bg-sm-light-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(248, 249, 250, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-md-light-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(248, 249, 250, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-lg-light-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(248, 249, 250, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-xl-light-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(248, 249, 250, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1400px) {
+  .bg-xxl-light-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(248, 249, 250, 0.33) 25%, transparent);
+  }
+}
+
+.bg-light-transparent-gradient-top {
+  background-image: linear-gradient(180deg, rgba(248, 249, 250, 0.33) 25%, transparent);
+}
+
+.bg-xs-light-transparent-gradient-top {
+  background-image: linear-gradient(180deg, rgba(248, 249, 250, 0.33) 25%, transparent);
+}
+
+@media (min-width: 576px) {
+  .bg-sm-light-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(248, 249, 250, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-md-light-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(248, 249, 250, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-lg-light-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(248, 249, 250, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-xl-light-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(248, 249, 250, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1400px) {
+  .bg-xxl-light-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(248, 249, 250, 0.33) 25%, transparent);
+  }
+}
+
+.bg-light-transparent-gradient-down {
+  background-image: linear-gradient(0deg, rgba(248, 249, 250, 0.33) 25%, transparent);
+}
+
+.bg-xs-light-transparent-gradient-down {
+  background-image: linear-gradient(0deg, rgba(248, 249, 250, 0.33) 25%, transparent);
+}
+
+@media (min-width: 576px) {
+  .bg-sm-light-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(248, 249, 250, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-md-light-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(248, 249, 250, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-lg-light-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(248, 249, 250, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-xl-light-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(248, 249, 250, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1400px) {
+  .bg-xxl-light-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(248, 249, 250, 0.33) 25%, transparent);
+  }
+}
+
+.bg-dark-transparent-gradient-left {
+  background-image: linear-gradient(270deg, rgba(33, 37, 41, 0.33) 25%, transparent);
+}
+
+.bg-xs-dark-transparent-gradient-left {
+  background-image: linear-gradient(270deg, rgba(33, 37, 41, 0.33) 25%, transparent);
+}
+
+@media (min-width: 576px) {
+  .bg-sm-dark-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(33, 37, 41, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-md-dark-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(33, 37, 41, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-lg-dark-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(33, 37, 41, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-xl-dark-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(33, 37, 41, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1400px) {
+  .bg-xxl-dark-transparent-gradient-left {
+    background-image: linear-gradient(270deg, rgba(33, 37, 41, 0.33) 25%, transparent);
+  }
+}
+
+.bg-dark-transparent-gradient-right {
+  background-image: linear-gradient(90deg, rgba(33, 37, 41, 0.33) 25%, transparent);
+}
+
+.bg-xs-dark-transparent-gradient-right {
+  background-image: linear-gradient(90deg, rgba(33, 37, 41, 0.33) 25%, transparent);
+}
+
+@media (min-width: 576px) {
+  .bg-sm-dark-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(33, 37, 41, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-md-dark-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(33, 37, 41, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-lg-dark-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(33, 37, 41, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-xl-dark-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(33, 37, 41, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1400px) {
+  .bg-xxl-dark-transparent-gradient-right {
+    background-image: linear-gradient(90deg, rgba(33, 37, 41, 0.33) 25%, transparent);
+  }
+}
+
+.bg-dark-transparent-gradient-top {
+  background-image: linear-gradient(180deg, rgba(33, 37, 41, 0.33) 25%, transparent);
+}
+
+.bg-xs-dark-transparent-gradient-top {
+  background-image: linear-gradient(180deg, rgba(33, 37, 41, 0.33) 25%, transparent);
+}
+
+@media (min-width: 576px) {
+  .bg-sm-dark-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(33, 37, 41, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-md-dark-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(33, 37, 41, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-lg-dark-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(33, 37, 41, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-xl-dark-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(33, 37, 41, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1400px) {
+  .bg-xxl-dark-transparent-gradient-top {
+    background-image: linear-gradient(180deg, rgba(33, 37, 41, 0.33) 25%, transparent);
+  }
+}
+
+.bg-dark-transparent-gradient-down {
+  background-image: linear-gradient(0deg, rgba(33, 37, 41, 0.33) 25%, transparent);
+}
+
+.bg-xs-dark-transparent-gradient-down {
+  background-image: linear-gradient(0deg, rgba(33, 37, 41, 0.33) 25%, transparent);
+}
+
+@media (min-width: 576px) {
+  .bg-sm-dark-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(33, 37, 41, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-md-dark-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(33, 37, 41, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-lg-dark-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(33, 37, 41, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-xl-dark-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(33, 37, 41, 0.33) 25%, transparent);
+  }
+}
+
+@media (min-width: 1400px) {
+  .bg-xxl-dark-transparent-gradient-down {
+    background-image: linear-gradient(0deg, rgba(33, 37, 41, 0.33) 25%, transparent);
+  }
 }
 
 @media (min-width: 768px) {

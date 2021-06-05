@@ -43,8 +43,8 @@ $utilities: (
         property: min-height,
         class: min-vh,
         values: (
-            (100: 100vh)
-            (50: 50vh)
+            100: 100vh,
+            50: 50vh
         )
     ),
 );
@@ -81,6 +81,23 @@ $utilities: (
         background-image: url(../../images/no-map.jpg);
     }
 }
+
+@each $name, $color in $theme-colors {
+    @each $dir, $deg in (left: 270deg, right: 90deg, top: 180deg, down: 0deg) {
+        .bg-#{$name}-transparent-gradient-#{$dir} {
+            @include gradient-directional(rgba($color, 33%) 25%, transparent, $deg);
+        }
+
+        @each $bp, $bpv in $grid-breakpoints {
+            .bg-#{$bp}-#{$name}-transparent-gradient-#{$dir} {
+                @include media-breakpoint-up($bp) {
+                    @include gradient-directional(rgba($color, 33%) 25%, transparent, $deg);
+                }
+            }
+        }
+    }
+}
+
 
 .server-list {
     .server {
