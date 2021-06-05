@@ -7,10 +7,10 @@
             @if ($server->last_query_result->online())
                 @foreach ($server->last_query_result->population()->getTeams() as $team)
                     <div class="col-12 col-md">
-                        <div class="flag p-md-4 d-flex justify-content-center align-items-center">
+                        <div class="squad-flag p-md-4 d-flex justify-content-center align-items-center">
                             <div class="ratio ratio-squad-flag bg-faction-{{ \SquadMS\Foundation\Helpers\FactionHelper::getFactionTag($team->getName(), $server->last_query_result->layer()) }} bg-cover bg-center">
                                 <div class="d-flex justify-content-center align-items-center">
-                                    <div class="gradient position-absolute w-100 h-100"></div>
+                                    <div class="gradient {{ $loop->first ? '' : 'right' }}position-absolute w-100 h-100"></div>
                                     <h2 class="text-white text-nowrap text-truncate w-100 px-2 mb-0" style="z-index: 1">{{ $team->getName() }}</iframe>
                                 </div>
                             </div>

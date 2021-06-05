@@ -82,22 +82,17 @@ $utilities: (
     }
 }
 
-@each $name, $color in $theme-colors {
-    @each $dir, $deg in (left: 270deg, right: 90deg, top: 180deg, down: 0deg) {
-        .bg-#{$name}-transparent-gradient-#{$dir} {
-            @include gradient-directional(rgba($color, 33%) 25%, transparent, $deg);
-        }
+.squad-flag {
+    .gradient {
+        @include gradient-directional(rgba(#000, 33%) 25%, transparent, 90deg);
 
-        @each $bp, $bpv in $grid-breakpoints {
-            .bg-#{$bp}-#{$name}-transparent-gradient-#{$dir} {
-                @include media-breakpoint-up($bp) {
-                    @include gradient-directional(rgba($color, 33%) 25%, transparent, $deg);
-                }
-            }
+        @include media-breakpoint-up(md) {
+            .right {
+                @include gradient-directional(rgba(#000, 33%) 25%, transparent, 180deg);
+            }   
         }
     }
 }
-
 
 .server-list {
     .server {
