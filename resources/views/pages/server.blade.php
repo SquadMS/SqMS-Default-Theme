@@ -1,9 +1,9 @@
 @extends('sqms-default-theme::structure.layout')
 
 @section('content')
-<section class="min-vh-50 bg-light bg-no-map bg-cover bg-center">
+<section class="bg-light bg-no-map bg-cover bg-center">
     <div class="container">
-        <div class="row">
+        <div class="row min-vh-50 align-items-stretch p-5">
             @if ($server->last_query_result->online())
                 @foreach ($server->last_query_result->population()->getTeams() as $team)
                     <div class="col-12 col-md">
@@ -18,8 +18,8 @@
                     </div>
 
                     @if ($loop->first)
-                        <div class="col-12 col-md-auto justify-content-center align-items-center">
-                            <span>VS.</span>
+                        <div class="col-12 col-md-auto d-flex justify-content-center align-items-center">
+                            <span class="text-primary h2">VS.</span>
                         </div>
                     @endif
                 @endforeach
