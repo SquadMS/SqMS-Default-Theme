@@ -42,8 +42,8 @@
                 @foreach ($server->last_query_result->population()->getTeams() as $team)
                     <div class="col-12 col-md-6">
                         <div class="row">
-                            <div class="col-12 col-md-6">
-                                <h2 class="text-nowrap text-truncate">
+                            <div class="col">
+                                <h2 class="text-nowrap text-truncate text-center lh-0">
                                     <img src="{{ asset('themes/sqms-default-theme/static-images/factions/' . \SquadMS\Foundation\Helpers\FactionHelper::getFactionTag($team->getName(), $server->last_query_result->layer()) . '.svg') }}" style="height: 1em" />
                                     {{ $team->getName() }}
                                 </h2>
