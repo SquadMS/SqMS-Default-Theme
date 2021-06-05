@@ -52,6 +52,14 @@
                             </div>
                         </div>
 
+                        @if (!count($team->getSquads()) && !count($team->getPlayers()))
+                            <div class="row">
+                                <div class="col">
+                                    <p class="lead text-center">No players online</p>
+                                </div>
+                            </div>
+                        @endif
+
                         <!-- Squads -->
                         @if (count($team->getSquads()))
                             @foreach ($team->getSquads() as $squad)
