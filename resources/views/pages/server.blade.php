@@ -11,7 +11,6 @@
                             <div class="ratio ratio-squad-flag bg-faction-{{ \SquadMS\Foundation\Helpers\FactionHelper::getFactionTag($team->getName(), $server->last_query_result->layer()) }} bg-cover bg-center">
                                 <div class="d-flex justify-content-center align-items-center">
                                     <div class="gradient {{ $loop->first ? '' : 'right' }} position-absolute w-100 h-100"></div>
-                                    <h2 class="text-white text-nowrap text-truncate w-100 px-2 mb-0" style="z-index: 1">{{ $team->getName() }}</iframe>
                                 </div>
                             </div>
                         </div>
@@ -40,7 +39,68 @@
         </div>
         <div class="row">
             <div class="col">
-                <p clasS="lead">Coming Soon.</p>
+                @foreach ($server->last_query_result->population()->getTeams() as $team)
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <h2 class="text-white text-nowrap text-truncate" style="width: 1em">
+                                <div class="ratio ratio-squad-flag bg-faction-{{ \SquadMS\Foundation\Helpers\FactionHelper::getFactionTag($team->getName(), $server->last_query_result->layer()) }} bg-cover bg-center">
+                                    <div></div>
+                                </div>
+                                &nbsp;
+                                {{ $team->getName() }}
+                            </h2>
+                        </div>
+                    </div>
+
+                    <!-- Squads -->
+                    @if (count($team->getSquads()))
+                        @foreach ($team->getSquads() as $squad)
+                            <!-- Squad -->
+                            <div class="row">
+                                <div class="col-12">
+                                    <table class="table">
+                                        <thead class="thead-dark">
+                                            <tr>
+                                                <th scope="col" class="text-left">#{{ $squad->getId() }}</th>
+                                                <th scope="col" class="text-right">{{ $squad->getName() }}</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach ($squad->getPlayers() as $player)
+                                            <tr>
+                                                <td colspan="2" class="text-white"><a href="{{ route('profile', $player->getSteamId()) }}">{{ $player->getName() }}</a></td>
+                                            </tr>
+                                            @endforeach
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        @endforeach
+                    @endif
+
+                    <!-- Unassigned Players -->
+                    @if (count($team->getPlayers()))
+                    <div class="row">
+                        <div class="col-12">
+                            <table class="table">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col">-</th>
+                                        <th scope="col">Unassigned</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach ($team->getPlayers() as $player)
+                                    <tr>
+                                        <td colspan="2" class="text-white"><a href="{{ route('profile', $player->getSteamId()) }}">{{ $player->getName() }}</a></td>
+                                    </tr>
+                                    @endforeach
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    @endif
+                @endforeach
             </div>
         </div>
     </div>

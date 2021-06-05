@@ -88,7 +88,7 @@ $utilities: (
 
         @include media-breakpoint-up(md) {
             &.right {
-                @include gradient-directional(rgba(#000, 33%) 25%, transparent, 180deg);
+                @include gradient-directional(rgba(#000, 33%) 25%, transparent, 270deg);
             }   
         }
     }
