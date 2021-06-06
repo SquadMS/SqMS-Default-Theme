@@ -1,6 +1,6 @@
 @props(['id' => 'TEAM', 'name' => 'Unassigned', 'players' => []])
 
-<div class="row squad" squad-id="{{ $id }}">
+<div {{ $attributes->merge(['class' => 'row squad', 'squad-id' => $id]) }}>
     <div class="col-12">
         <div class="title d-flex align-items-center bg-light p-2">
             <h5 class="text-truncate mb-0">
