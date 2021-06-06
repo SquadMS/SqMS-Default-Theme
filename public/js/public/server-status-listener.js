@@ -59,7 +59,8 @@ var ServerStatusListenerDefinitions = {
   queue: ['data-queue', 'innerText'],
   slots: ['data-slots', 'innerText'],
   reserved: ['data-reserved', 'innerText'],
-  levelClass: ['data-level-class', function () {}]
+  levelClass: ['data-level-class', function () {}],
+  teamTags: ['data-team-tags', function () {}]
 };
 
 var ServerStatusListener = /*#__PURE__*/function () {
@@ -70,7 +71,7 @@ var ServerStatusListener = /*#__PURE__*/function () {
     _classCallCheck(this, ServerStatusListener);
 
     /* Merge options with defaults */
-    this.definitions = Object.merge(ServerStatusListenerDefinitions, definitions);
+    this.definitions = Object.assign(ServerStatusListenerDefinitions, definitions);
     /* Callback to run once a server update has been received */
 
     this.callback = callback;

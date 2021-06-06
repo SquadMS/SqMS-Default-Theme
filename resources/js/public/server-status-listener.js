@@ -32,7 +32,7 @@ const ServerStatusListenerDefinitions = {
 export default class ServerStatusListener {
     constructor(definitions = {}, callback = null) {
         /* Merge options with defaults */
-        this.definitions = Object.merge(ServerStatusListenerDefinitions, definitions);
+        this.definitions = Object.assign(ServerStatusListenerDefinitions, definitions);
 
         /* Callback to run once a server update has been received */
         this.callback = callback;
