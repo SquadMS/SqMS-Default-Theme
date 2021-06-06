@@ -33,7 +33,7 @@ class SquadMSDefaultThemeServiceProvider extends ServiceProvider
         }
 
         /* Configuration */
-        $this->mergeConfigFrom(__DIR__ . '/../config/sqms-servers.php', 'sqms-servers');
+        $this->mergeConfigFrom(__DIR__ . '/../config/sqms-default-theme.php', 'sqms-default-theme');
 
         /* Load Translations */
         $this->loadTranslationsFrom(__DIR__ . '/../resources/lang', 'sqms-default-theme');
