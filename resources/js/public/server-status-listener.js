@@ -1,30 +1,29 @@
-const ServerStatusListenerDefinitions = [
-    [
+const ServerStatusListenerDefinitions = {
+    name: [
         'data-server-name',
         'innerText',
-        'name'
     ],
-    [
+    count: [
         'data-count',
         'innerText',
-        'count'
     ],
-    [
+    queue: [
         'data-queue',
         'innerText',
-        'queue'
     ],
-    [
+    slots: [
         'data-slots',
         'innerText',
-        'slots'
     ],
-    [
+    reserved: [
         'data-reserved',
         'innerText',
-        'reserved'
-    ]
-]
+    ],
+    levelClass: [
+        'data-level-class',
+        function() {},
+    ],
+}
 
 export default class ServerStatusListener {
     constructor(definitions = {}) {
@@ -56,12 +55,20 @@ export default class ServerStatusListener {
             }
 
             /* Update with the configured definitions */
-            for (const triple of this.definitions) {
-                for (const element of this.definitions[event.server].getElementsByClassName(triple[0])) {
-                    if (isFunction(triple[1])) {
-                        triple[1](element, event[triple[2]]);
+            for (const param in this.definitions) {
+                /* Get the pair, selector and modifier */
+                const pair = this.definitions[param];
+
+                /* Get the data from the event */
+                const value = event[param];
+
+                /* Find all descendant elements of the server for the selector */
+                for (const element of this.servers[event.server].getElementsByClassName(pair[0])) {
+                    /* If the modifier is a function, execute it, otherwise simply write */
+                    if (isFunction(pair[1])) {
+                        pair[1](element, value);
                     } else {
-                        element[triple[1]] = event[triple[2]];
+                        element[pair[1]] = value;
                     }
                     
                 }

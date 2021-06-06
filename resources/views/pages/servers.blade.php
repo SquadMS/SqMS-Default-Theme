@@ -11,7 +11,7 @@
         <div class="row server-list">
             @foreach ($servers as $server)
                 <div class="col-12 mb-4">
-                    <div class="server bg-light bg-no-map bg-cover bg-center" server-id="{{ $server->id }}">
+                    <div class="server bg-light bg-no-map bg-cover bg-center" server-id="{{ $server->id }}" server-level-bg="bg-no-map">
                         <div class="server-inner d-flex flex-column flex-md-row">
                             <div class="main-info d-flex flex-column flex-md-row align-items-md-center flex-md-grow-1 min-width-0">
                                 <div class="flex-md-grow-1 min-width-0 d-flex align-items-center p-4">
@@ -48,7 +48,22 @@
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         /* Initialize and listen for server status updates */
-        const listener = new window.ServerStatusListener();
+        const listener = new window.ServerStatusListener({
+            levelClass: [
+                'data-level-class',
+                function(element, value) {
+                    const oldClass = element.getAttribute('server-level-bg');
+                    const newClass = `bg-${value}`;
+                    
+                    /* Remove old class and add new one */
+                    element.classList.remove(oldClass);
+                    element.classList.add(newClass);
+
+                    /* Set server-level-bg attribute properly */
+                    element.setAttribute('server-level-bg', newClass);
+                },
+            ],
+        });
     });
 </script>
 @endpush

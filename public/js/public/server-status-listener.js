@@ -53,7 +53,14 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
-var ServerStatusListenerDefinitions = [['data-server-name', 'innerText', 'name'], ['data-count', 'innerText', 'count'], ['data-queue', 'innerText', 'queue'], ['data-slots', 'innerText', 'slots'], ['data-reserved', 'innerText', 'reserved']];
+var ServerStatusListenerDefinitions = {
+  name: ['data-server-name', 'innerText'],
+  count: ['data-count', 'innerText'],
+  queue: ['data-queue', 'innerText'],
+  slots: ['data-slots', 'innerText'],
+  reserved: ['data-reserved', 'innerText'],
+  levelClass: ['data-level-class', function () {}]
+};
 
 var ServerStatusListener = /*#__PURE__*/function () {
   function ServerStatusListener() {
@@ -107,39 +114,36 @@ var ServerStatusListener = /*#__PURE__*/function () {
         /* Update with the configured definitions */
 
 
-        var _iterator2 = _createForOfIteratorHelper(_this.definitions),
-            _step2;
+        for (var param in _this.definitions) {
+          /* Get the pair, selector and modifier */
+          var pair = _this.definitions[param];
+          /* Get the data from the event */
 
-        try {
-          for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
-            var triple = _step2.value;
+          var value = event[param];
+          /* Find all descendant elements of the server for the selector */
 
-            var _iterator3 = _createForOfIteratorHelper(_this.definitions[event.server].getElementsByClassName(triple[0])),
-                _step3;
+          var _iterator2 = _createForOfIteratorHelper(_this.servers[event.server].getElementsByClassName(pair[0])),
+              _step2;
 
-            try {
-              for (_iterator3.s(); !(_step3 = _iterator3.n()).done;) {
-                var element = _step3.value;
+          try {
+            for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
+              var element = _step2.value;
 
-                if (isFunction(triple[1])) {
-                  triple[1](element, event[triple[2]]);
-                } else {
-                  element[triple[1]] = event[triple[2]];
-                }
+              /* If the modifier is a function, execute it, otherwise simply write */
+              if (isFunction(pair[1])) {
+                pair[1](element, value);
+              } else {
+                element[pair[1]] = value;
               }
-            } catch (err) {
-              _iterator3.e(err);
-            } finally {
-              _iterator3.f();
             }
+          } catch (err) {
+            _iterator2.e(err);
+          } finally {
+            _iterator2.f();
           }
-          /* Toggle online/offline visibility elements */
-
-        } catch (err) {
-          _iterator2.e(err);
-        } finally {
-          _iterator2.f();
         }
+        /* Toggle online/offline visibility elements */
+
 
         _this.toggleVisibilites(server, event.online);
       });
@@ -149,33 +153,33 @@ var ServerStatusListener = /*#__PURE__*/function () {
     value: function toggleVisibilites(root) {
       var state = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
 
-      var _iterator4 = _createForOfIteratorHelper(root.getElementsByClassName('data-show-online')),
+      var _iterator3 = _createForOfIteratorHelper(root.getElementsByClassName('data-show-online')),
+          _step3;
+
+      try {
+        for (_iterator3.s(); !(_step3 = _iterator3.n()).done;) {
+          var element = _step3.value;
+          element.classList.toggle('d-none', !state);
+        }
+      } catch (err) {
+        _iterator3.e(err);
+      } finally {
+        _iterator3.f();
+      }
+
+      var _iterator4 = _createForOfIteratorHelper(root.getElementsByClassName('data-show-offline')),
           _step4;
 
       try {
         for (_iterator4.s(); !(_step4 = _iterator4.n()).done;) {
-          var element = _step4.value;
-          element.classList.toggle('d-none', !state);
+          var _element = _step4.value;
+
+          _element.classList.toggle('d-none', state);
         }
       } catch (err) {
         _iterator4.e(err);
       } finally {
         _iterator4.f();
-      }
-
-      var _iterator5 = _createForOfIteratorHelper(root.getElementsByClassName('data-show-offline')),
-          _step5;
-
-      try {
-        for (_iterator5.s(); !(_step5 = _iterator5.n()).done;) {
-          var _element = _step5.value;
-
-          _element.classList.toggle('d-none', state);
-        }
-      } catch (err) {
-        _iterator5.e(err);
-      } finally {
-        _iterator5.f();
       }
     }
   }, {
