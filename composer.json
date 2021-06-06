@@ -33,7 +33,8 @@
             "providers": [
                 "SquadMS\\DefaultTheme\\SquadMSDefaultThemeServiceProvider",
                 "SquadMS\\DefaultTheme\\Providers\\ViewServiceProvider",
-                "SquadMS\\DefaultTheme\\Providers\\ModulesServiceProvider"
+                "SquadMS\\DefaultTheme\\Providers\\ModulesServiceProvider",
+                "SquadMS\\DefaultTheme\\Providers\\RouteServiceProvider"
             ]
         }
     }
