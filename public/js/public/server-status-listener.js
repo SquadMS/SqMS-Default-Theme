@@ -135,7 +135,7 @@ var ServerStatusListener = /*#__PURE__*/function () {
               var element = _step2.value;
 
               /* If the modifier is a function, execute it, otherwise simply write */
-              if (isFunction(pair[1])) {
+              if (_this.isFunction(pair[1])) {
                 pair[1](element, value);
               } else {
                 element[pair[1]] = value;
