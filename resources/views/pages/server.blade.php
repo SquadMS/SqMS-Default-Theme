@@ -96,9 +96,9 @@
             const playerLists = server.getElementsByClassName('data-player-list');
             
             if (playerLists.length) {
-                fetch(`${window.location.hostname}/servers/${server.getAttribute('server-id')}/population`)
+                fetch(`${window.location.href.split('/')}/servers/${server.getAttribute('server-id')}/population`)
                 .then(response => {
-                    if (response.ok()) {
+                    if (response.ok) {
                         for (const playerList of playerLists) {
                             if (typeof morphdom === 'function') {
                                 morphdom(playerList, response.body)
