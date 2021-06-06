@@ -96,7 +96,7 @@
             const playerLists = server.getElementsByClassName('data-player-list');
             
             if (playerLists.length) {
-                fetch(`${window.location.href.split('/')}/servers/${server.getAttribute('server-id')}/population`)
+                fetch(`${window.location.origin}/servers/${server.getAttribute('server-id')}/population`)
                 .then(response => {
                     if (response.ok) {
                         for (const playerList of playerLists) {
