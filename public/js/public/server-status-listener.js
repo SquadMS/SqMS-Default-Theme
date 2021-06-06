@@ -112,7 +112,7 @@ var ServerStatusListener = /*#__PURE__*/function () {
 
       Echo.channel("server-status").listen('.SquadMS\\Servers\\Events\\ServerStatusUpdated', function (event) {
         /* Only update servers that are registered and found on the page */
-        if (!Object.keys(_this.servers).includes(event.server)) {
+        if (!Object.keys(_this.servers).includes(event.server.toString())) {
           console.log("Server ".concat(event.server, " is not registered, skipping..."));
           return;
         }

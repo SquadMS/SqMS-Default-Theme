@@ -56,7 +56,7 @@ export default class ServerStatusListener {
         /* Listen for status updates */
         Echo.channel(`server-status`).listen('.SquadMS\\Servers\\Events\\ServerStatusUpdated', (event) => {
             /* Only update servers that are registered and found on the page */
-            if (!Object.keys(this.servers).includes(event.server)) {
+            if (!Object.keys(this.servers).includes(event.server.toString())) {
                 console.log(`Server ${event.server} is not registered, skipping...`);
                 return;
             }
