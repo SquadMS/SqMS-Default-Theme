@@ -18,13 +18,13 @@
         <!-- Squads -->
         @if (count($team->getSquads()))
             @foreach ($team->getSquads() as $squad)
-                <x-sqms-default-theme::player-list.squad :id="$squad->getId()" :name="$squad->getName()" :players="$squad->getPlayers()" />
+                <x-sqms-default-theme::player-list.squad :id="$squad->getId()" :name="$squad->getName()" :players="$squad->getPlayers()" class="{{ $loop->last ? 'mb-3' : '' }}"/>
             @endforeach
         @endif
 
         <!-- Unassigned Players -->
         @if (count($team->getPlayers()))
-            <x-sqms-default-theme::player-list.squad :players="$team->getPlayers()" />
+            <x-sqms-default-theme::player-list.squad :players="$team->getPlayers()" class="mt-3 mb-3"/>
         @endif
     @endif
 </div>
