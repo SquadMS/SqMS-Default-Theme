@@ -47,9 +47,7 @@
         </div>
 
         <!-- Population -->
-        <div class="row data-player-list">
-            <x-sqms-default-theme::player-list.population :server="$server" />
-        </div>
+        <x-sqms-default-theme::player-list.population :server="$server" />
     </div>
 </section>
 @endsection
