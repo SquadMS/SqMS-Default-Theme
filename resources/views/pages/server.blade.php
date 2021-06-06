@@ -4,7 +4,7 @@
 ])
 
 @section('content')
-<section class="bg-light bg-no-map bg-cover bg-center">
+<section class="bg-light bg-{{ $server->last_query_result->online() ? \SquadMS\Foundation\Helpers\LevelHelper::levelToClass($server->last_query_result->level()) : 'no-map' }} bg-cover bg-center">
     <div class="container">
         <div class="row min-vh-50 align-items-center p-5">
             @if ($server->last_query_result->online())
