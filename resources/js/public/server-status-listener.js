@@ -72,7 +72,7 @@ export default class ServerStatusListener {
                 /* Find all descendant elements of the server for the selector */
                 for (const element of this.servers[event.server].getElementsByClassName(pair[0])) {
                     /* If the modifier is a function, execute it, otherwise simply write */
-                    if (isFunction(pair[1])) {
+                    if (this.isFunction(pair[1])) {
                         pair[1](element, value);
                     } else {
                         element[pair[1]] = value;
