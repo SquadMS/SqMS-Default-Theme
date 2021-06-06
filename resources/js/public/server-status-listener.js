@@ -23,6 +23,10 @@ const ServerStatusListenerDefinitions = {
         'data-level-class',
         function() {},
     ],
+    teamTags: [
+        'data-team-tags',
+        function() {},
+    ],
 }
 
 export default class ServerStatusListener {

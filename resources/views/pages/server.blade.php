@@ -11,7 +11,7 @@
                 @foreach ($server->last_query_result->population()->getTeams() as $team)
                     <div class="col-12 col-md">
                         <div class="squad-flag p-md-4 d-flex justify-content-center align-items-center">
-                            <div class="ratio ratio-squad-flag bg-faction-{{ \SquadMS\Foundation\Helpers\FactionHelper::getFactionTag($team->getName(), $server->last_query_result->layer()) }} bg-cover bg-center">
+                            <div class="ratio ratio-squad-flag data-team-tags bg-faction-{{ \SquadMS\Foundation\Helpers\FactionHelper::getFactionTag($team->getName(), $server->last_query_result->layer()) }} bg-cover bg-center" flag-class="bg-faction-{{ \SquadMS\Foundation\Helpers\FactionHelper::getFactionTag($team->getName(), $server->last_query_result->layer()) }}">
                                 <div class="d-flex justify-content-center align-items-center">
                                     <div class="gradient {{ $loop->first ? '' : 'right' }} position-absolute w-100 h-100"></div>
                                 </div>
@@ -75,6 +75,23 @@
                     element.setAttribute('server-level-bg', newClass);
                 },
             ],
+            teamTags: [
+                'data-team-tags',
+                function(element, value) {
+                    if (element.classList.has('flag')) {
+                        const oldFlag = element.getAttribute('flag-class');
+                        const teamId = element.getAttribute('team-id');
+                        const newClass = `bg-faction-${value[teamId]}`;
+
+                        /* Remove old class and add new one */
+                        element.classList.remove(oldFlag);
+                        element.classList.add(newClass);
+
+                        /* Set server-level-bg attribute properly */
+                        element.setAttribute('flag-class', newClass);
+                    }
+                },
+            ]
         }, function (server, event) {
             const playerLists = server.getElementsByClassName('data-player-list');
             
