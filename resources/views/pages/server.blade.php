@@ -97,11 +97,11 @@
             
             if (playerLists.length) {
                 fetch(`${window.location.origin}/servers/${server.getAttribute('server-id')}/population`)
-                .then(response => {
+                .then(async response => {
                     if (response.ok) {
                         for (const playerList of playerLists) {
                             if (typeof morphdom === 'function') {
-                                morphdom(playerList, response.body)
+                                morphdom(playerList, await response.text())
                             } else {
                                 playerList.innerHTML = response.body;
                             }                            
