@@ -3,7 +3,7 @@
 @section('content')
 <section class="bg-light bg-no-map bg-cover bg-center">
     <div class="container">
-        <div class="row min-vh-50 align-items-stretch p-5">
+        <div class="row min-vh-50 align-items-center p-5">
             @if ($server->last_query_result->online())
                 @foreach ($server->last_query_result->population()->getTeams() as $team)
                     <div class="col-12 col-md">
@@ -35,7 +35,7 @@
         <!-- Server name -->
         <div class="row mb-5">
             <div class="col">
-                <h1 class="text-center">{{ $server->last_query_result->name() }}</h1>
+                <h1 class="text-center text-truncate">{{ $server->last_query_result->name() }}</h1>
             </div>
         </div>
 
