@@ -30,7 +30,7 @@
         </div>
     </div>
 </section>
-<section class="mt-6">
+<section class="my-6">
     <div class="container">
         <div class="row mb-5">
             <div class="col">
@@ -62,23 +62,20 @@
                         @if (count($team->getSquads()))
                             @foreach ($team->getSquads() as $squad)
                                 <!-- Squad -->
-                                <div class="row">
+                                <div class="row squad" squad-id="{{ $squad->getId() }}">
                                     <div class="col-12">
-                                        <table class="table">
-                                            <thead class="thead-dark">
-                                                <tr>
-                                                    <th scope="col" class="text-left">#{{ $squad->getId() }}</th>
-                                                    <th scope="col" class="text-right">{{ $squad->getName() }}</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                @foreach ($squad->getPlayers() as $player)
-                                                <tr>
-                                                    <td colspan="2" class="text-white"><a href="{{ route('profile', $player->getSteamId()) }}">{{ $player->getName() }}</a></td>
-                                                </tr>
-                                                @endforeach
-                                            </tbody>
-                                        </table>
+                                        <div class="title d-flex align-items-center bg-light p-2">
+                                            <h5 class="text-truncate mb-0">
+                                                <span class="squad-id badge bg-secondary me-2">#{{ $squad->getId() }}</span>{{ $squad->getName() }}
+                                            </h5>
+                                        </div>
+                                        <div class="players d-flex flex-column">
+                                            @foreach ($squad->getPlayers() as $player)
+                                            <div class="player d-flex min-width-0 p-2 border-start border-end border-bottom border-light" player-id="{{ $player->getSteamId() }}">
+                                                <a href="{{ route('profile', $player->getSteamId()) }}" class="text-truncate text-decoration-none">{{ $player->getName() }}</a>
+                                            </div>
+                                            @endforeach
+                                        </div>
                                     </div>
                                 </div>
                             @endforeach
@@ -86,25 +83,23 @@
 
                         <!-- Unassigned Players -->
                         @if (count($team->getPlayers()))
-                        <div class="row">
-                            <div class="col-12">
-                                <table class="table">
-                                    <thead class="thead-dark">
-                                        <tr>
-                                            <th scope="col">-</th>
-                                            <th scope="col">Unassigned</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
+                            <!-- Squad -->
+                            <div class="row squad" squad-id="TEAM">
+                                <div class="col-12">
+                                    <div class="title d-flex align-items-center bg-light p-2">
+                                        <h5 class="text-truncate mb-0">
+                                            Unassigned
+                                        </h5>
+                                    </div>
+                                    <div class="players d-flex flex-column">
                                         @foreach ($team->getPlayers() as $player)
-                                        <tr>
-                                            <td colspan="2" class="text-white"><a href="{{ route('profile', $player->getSteamId()) }}">{{ $player->getName() }}</a></td>
-                                        </tr>
+                                        <div class="player d-flex min-width-0 p-2 border-start border-end border-bottom border-light" player-id="{{ $player->getSteamId() }}">
+                                            <a href="{{ route('profile', $player->getSteamId()) }}" class="text-truncate text-decoration-none">{{ $player->getName() }}</a>
+                                        </div>
                                         @endforeach
-                                    </tbody>
-                                </table>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
                         @endif
                     </div>
                 @endforeach
