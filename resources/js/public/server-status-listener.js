@@ -26,9 +26,12 @@ const ServerStatusListenerDefinitions = {
 }
 
 export default class ServerStatusListener {
-    constructor(definitions = {}) {
+    constructor(definitions = {}, callback = null) {
         /* Merge options with defaults */
         this.definitions = Object.merge(ServerStatusListenerDefinitions, definitions);
+
+        /* Callback to run once a server update has been received */
+        this.callback = callback;
 
         /* Get all servers elements with an id set */
         this.servers = {};
@@ -76,6 +79,11 @@ export default class ServerStatusListener {
 
             /* Toggle online/offline visibility elements */
             this.toggleVisibilites(server, event.online);
+
+            /* Run the user defined callback */
+            if (this.callback) {
+                this.callback(server, event);
+            }
         });
     }
 

@@ -65,11 +65,15 @@ var ServerStatusListenerDefinitions = {
 var ServerStatusListener = /*#__PURE__*/function () {
   function ServerStatusListener() {
     var definitions = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+    var callback = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
 
     _classCallCheck(this, ServerStatusListener);
 
     /* Merge options with defaults */
     this.definitions = Object.merge(ServerStatusListenerDefinitions, definitions);
+    /* Callback to run once a server update has been received */
+
+    this.callback = callback;
     /* Get all servers elements with an id set */
 
     this.servers = {};
@@ -146,6 +150,12 @@ var ServerStatusListener = /*#__PURE__*/function () {
 
 
         _this.toggleVisibilites(server, event.online);
+        /* Run the user defined callback */
+
+
+        if (_this.callback) {
+          _this.callback(server, event);
+        }
       });
     }
   }, {

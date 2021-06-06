@@ -55,6 +55,7 @@
 @endsection
 
 @push('scripts')
+<script src="https://cdn.jsdelivr.net/npm/morphdom@2.6.1/dist/morphdom.min.js"></script>
 <script src="{{ mix('js/public/server-status-listener.js', 'themes/sqms-default-theme') }}"></script>
 <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -74,6 +75,23 @@
                     element.setAttribute('server-level-bg', newClass);
                 },
             ],
+        }, function (server, event) {
+            const playerLists = server.getElementsByClassName('data-player-list');
+            
+            if (playerLists.length) {
+                fetch(`${window.location.hostname}/servers/${server.getAttribute('server-id')}/population`)
+                .then(response => {
+                    if (response.ok()) {
+                        for (const playerList of playerLists) {
+                            if (typeof morphdom === 'function') {
+                                morphdom(playerList, response.body)
+                            } else {
+                                playerList.innerHTML = response.body;
+                            }                            
+                        }
+                    }
+                });
+            }
         });
     });
 </script>
