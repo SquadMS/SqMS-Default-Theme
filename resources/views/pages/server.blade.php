@@ -11,7 +11,7 @@
                 @foreach ($server->last_query_result->population()->getTeams() as $team)
                     <div class="col-12 col-md">
                         <div class="squad-flag p-md-4 d-flex justify-content-center align-items-center">
-                            <div class="ratio ratio-squad-flag data-team-tags bg-faction-{{ \SquadMS\Foundation\Helpers\FactionHelper::getFactionTag($team->getName(), $server->last_query_result->layer()) }} bg-cover bg-center" flag-class="bg-faction-{{ \SquadMS\Foundation\Helpers\FactionHelper::getFactionTag($team->getName(), $server->last_query_result->layer()) }}">
+                            <div class="ratio ratio-squad-flag data-team-tags flag bg-faction-{{ \SquadMS\Foundation\Helpers\FactionHelper::getFactionTag($team->getName(), $server->last_query_result->layer()) }} bg-cover bg-center" flag-class="bg-faction-{{ \SquadMS\Foundation\Helpers\FactionHelper::getFactionTag($team->getName(), $server->last_query_result->layer()) }}" team-id="{{ $team->getId() }}">
                                 <div class="d-flex justify-content-center align-items-center">
                                     <div class="gradient {{ $loop->first ? '' : 'right' }} position-absolute w-100 h-100"></div>
                                 </div>
