@@ -69,7 +69,22 @@
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         /* Initialize and listen for server status updates */
-        const listener = new window.ServerStatusListener();
+        const listener = new window.ServerStatusListener({
+            levelClass: [
+                'data-level-class',
+                function(element, value) {
+                    const oldClass = element.getAttribute('server-level-bg');
+                    const newClass = `bg-${value}`;
+                    
+                    /* Remove old class and add new one */
+                    element.classList.remove(oldClass);
+                    element.classList.add(newClass);
+
+                    /* Set server-level-bg attribute properly */
+                    element.setAttribute('server-level-bg', newClass);
+                },
+            ],
+        });
     });
 </script>
 @endpush
