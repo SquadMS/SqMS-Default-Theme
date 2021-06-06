@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Response;
 use Illuminate\Support\Facades\View;
 use SquadMS\Servers\Models\Server;
 
-class ServersController extends Controller
+class ServerController extends Controller
 {
     /**
      * Shows the servers population
