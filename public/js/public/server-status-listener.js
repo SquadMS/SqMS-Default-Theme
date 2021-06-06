@@ -150,12 +150,12 @@ var ServerStatusListener = /*#__PURE__*/function () {
         /* Toggle online/offline visibility elements */
 
 
-        _this.toggleVisibilites(server, event.online);
+        _this.toggleVisibilites(_this.servers[event.server], event.online);
         /* Run the user defined callback */
 
 
         if (_this.callback) {
-          _this.callback(server, event);
+          _this.callback(_this.servers[event.server], event);
         }
       });
     }

@@ -82,11 +82,11 @@ export default class ServerStatusListener {
             }
 
             /* Toggle online/offline visibility elements */
-            this.toggleVisibilites(server, event.online);
+            this.toggleVisibilites(this.servers[event.server], event.online);
 
             /* Run the user defined callback */
             if (this.callback) {
-                this.callback(server, event);
+                this.callback(this.servers[event.server], event);
             }
         });
     }
