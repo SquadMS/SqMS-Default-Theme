@@ -103,7 +103,7 @@
                             if (typeof morphdom === 'function') {
                                 morphdom(playerList, await response.text())
                             } else {
-                                playerList.innerHTML = response.body;
+                                playerList.innerHTML = await response.text();
                             }                            
                         }
                     }
