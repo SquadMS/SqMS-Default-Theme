@@ -1,6 +1,6 @@
 @extends('sqms-default-theme::structure.layout', [
     'mainClass' => 'server',
-    'mainAttributes' => $server->id
+    'mainAttributes' => 'server-id="$server->id"'
 ])
 
 @section('content')
