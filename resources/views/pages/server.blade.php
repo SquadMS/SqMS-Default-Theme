@@ -1,4 +1,7 @@
-@extends('sqms-default-theme::structure.layout')
+@extends('sqms-default-theme::structure.layout', [
+    'mainClass' => 'server',
+    'mainAttributes' => $server->id
+])
 
 @section('content')
 <section class="bg-light bg-no-map bg-cover bg-center">
@@ -59,4 +62,10 @@
 
 @push('scripts')
 <script src="{{ mix('js/public/server-status-listener.js', 'themes/sqms-default-theme') }}"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        /* Initialize and listen for server status updates */
+        const listener = new window.ServerStatusListener();
+    });
+</script>
 @endpush

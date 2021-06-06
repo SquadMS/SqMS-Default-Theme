@@ -45,4 +45,10 @@
 
 @push('scripts')
 <script src="{{ mix('js/public/server-status-listener.js', 'themes/sqms-default-theme') }}"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        /* Initialize and listen for server status updates */
+        const listener = new window.ServerStatusListener();
+    });
+</script>
 @endpush
