@@ -78,7 +78,7 @@
             teamTags: [
                 'data-team-tags',
                 function(element, value) {
-                    if (element.classList.has('flag')) {
+                    if (element.classList.contains('flag')) {
                         const oldFlag = element.getAttribute('flag-class');
                         const teamId = element.getAttribute('team-id');
                         const newClass = `bg-faction-${value[teamId]}`;
