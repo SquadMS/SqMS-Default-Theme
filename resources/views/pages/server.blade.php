@@ -4,7 +4,7 @@
 ])
 
 @section('content')
-<section class="bg-light bg-no-map {{ $server->last_query_result->online() ? 'bg-' . \SquadMS\Foundation\Helpers\LevelHelper::levelToClass($server->last_query_result->level()) : '' }} bg-cover bg-center" server-level-bg="{{ $server->last_query_result->online() ? 'bg-' . \SquadMS\Foundation\Helpers\LevelHelper::levelToClass($server->last_query_result->level()) : '' }}">
+<section class="bg-light bg-no-map {{ $server->last_query_result->online() ? 'bg-map-' . \SquadMS\Foundation\Helpers\LevelHelper::levelToClass($server->last_query_result->level()) : '' }} bg-cover bg-center" server-level-bg="{{ $server->last_query_result->online() ? 'bg-map-' . \SquadMS\Foundation\Helpers\LevelHelper::levelToClass($server->last_query_result->level()) : '' }}">
     <div class="container">
         <div class="row min-vh-50 align-items-center p-5">
             @if ($server->last_query_result->online())
@@ -63,7 +63,7 @@
                 'data-level-class',
                 function(element, value) {
                     const oldClass = element.getAttribute('server-level-bg');
-                    const newClass = `bg-${value}`;
+                    const newClass = `bg-map-${value}`;
                     
                     /* Remove old class and add new one */
                     element.classList.remove(oldClass);
