@@ -23,6 +23,7 @@ mix
 ])
 .js('resources/js/public/app.js', 'js/public/')
 .js('resources/js/public/server-status-listener.js', 'js/public/')
+.js('resources/js/public/webp.js', 'js/public/')
 
 .version();
 

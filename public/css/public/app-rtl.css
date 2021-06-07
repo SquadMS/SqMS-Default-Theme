@@ -12977,6 +12977,31 @@ textarea.form-control-lg {
   background-repeat: no-repeat;
 }
 
+body.no-webp .bg-map-no-map {
+  background-image: url(/themes/sqms-default-theme/images/no-map.jpg?3fb2ac1b2a387f5b4d255d21b7125e29);
+  background-repeat: no-repeat;
+}
+body.webp .bg-map-no-map {
+  background-image: url(/themes/sqms-default-theme/images/no-map.webp?fa91d6f4626e5bcd931c91ee8d694277);
+  background-repeat: no-repeat;
+}
+body.no-webp .bg-map-belaya {
+  background-image: url(/themes/sqms-default-theme/images/belaya.jpg?a182aa61f07ca397d0a7be02b351ff3e);
+  background-repeat: no-repeat;
+}
+body.webp .bg-map-belaya {
+  background-image: url(/themes/sqms-default-theme/images/belaya.webp?18278c536e19dced4f4d74778289cb66);
+  background-repeat: no-repeat;
+}
+body.no-webp .bg-map-albasrah {
+  background-image: url(/themes/sqms-default-theme/images/albasrah.jpg?d528bdfcdc17bbd8448d3fbf696620e6);
+  background-repeat: no-repeat;
+}
+body.webp .bg-map-albasrah {
+  background-image: url(/themes/sqms-default-theme/images/albasrah.webp?a8ed20838f5cd87ed4991e75d23369f1);
+  background-repeat: no-repeat;
+}
+
 .flag-icon-background, .flag-icon {
   background-size: contain;
   background-position: 50%;
@@ -15244,10 +15269,6 @@ textarea.form-control-lg {
 
 .bg-cover {
   background-size: cover;
-}
-
-.bg-no-map {
-  background-image: url(/themes/sqms-default-theme/images/no-map.jpg?fa471957b6f2ee8df9b84c632df8c693);
 }
 
 .squad-flag .gradient {

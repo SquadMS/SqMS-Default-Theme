@@ -53,6 +53,7 @@ $utilities: (
 @import '~bootstrap/scss/bootstrap';
 @import '~bootstrap-icons/font/bootstrap-icons.css';
 @import './squad-factions';
+@import './squad-maps';
 @import '~flag-icon-css/sass/flag-icon';
 
 
@@ -74,12 +75,6 @@ $utilities: (
 
 .bg-cover {
     background-size: cover;
-}
-
-@each $background in ('no-map') {
-    .bg-#{$background} {
-        background-image: url(../../images/no-map.jpg);
-    }
 }
 
 .squad-flag {

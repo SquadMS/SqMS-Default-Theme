@@ -27,7 +27,8 @@
     "bootstrap-icons": "^1.4.1",
     "flag-icon-css": "^3.5.0",
     "laravel-mix": "^6.0.16",
-    "rtlcss": "^3.1.2"
+    "rtlcss": "^3.1.2",
+    "supports-webp": "^2.0.1"
   },
   "devDependencies": {
     "@babel/preset-react": "^7.13.13",
