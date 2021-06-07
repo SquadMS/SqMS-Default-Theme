@@ -11,7 +11,7 @@
         <div class="row server-list">
             @foreach ($servers as $server)
                 <div class="col-12 mb-4">
-                    <div class="server bg-light bg-no-map {{ $server->last_query_result->online() ? 'bg-map-' . \SquadMS\Foundation\Helpers\LevelHelper::levelToClass($server->last_query_result->level()) : '' }} bg-cover bg-center" server-id="{{ $server->id }}" server-level-bg="{{ $server->last_query_result->online() ? 'bg-map-' . \SquadMS\Foundation\Helpers\LevelHelper::levelToClass($server->last_query_result->level()) : '' }}">
+                    <div class="server bg-light bg-map-no-map {{ $server->last_query_result->online() ? 'bg-map-' . \SquadMS\Foundation\Helpers\LevelHelper::levelToClass($server->last_query_result->level()) : '' }} bg-cover bg-center" server-id="{{ $server->id }}" server-level-bg="{{ $server->last_query_result->online() ? 'bg-map-' . \SquadMS\Foundation\Helpers\LevelHelper::levelToClass($server->last_query_result->level()) : '' }}">
                         <div class="server-inner d-flex flex-column flex-md-row">
                             <div class="main-info d-flex flex-column flex-md-row align-items-md-center flex-md-grow-1 min-width-0">
                                 <div class="flex-md-grow-1 min-width-0 d-flex align-items-center p-4">
