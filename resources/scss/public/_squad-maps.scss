@@ -1,4 +1,4 @@
-$factions: no-map, belaya, albasrah;
+$factions: no-map, albasrah, belaya, chora, fallujah;
 
 body {
   @each $faction in $factions {

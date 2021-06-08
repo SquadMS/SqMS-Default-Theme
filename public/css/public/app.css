@@ -13008,6 +13008,14 @@ body.webp .bg-map-no-map {
   background-image: url(/themes/sqms-default-theme/images/no-map.webp?fa91d6f4626e5bcd931c91ee8d694277);
   background-repeat: no-repeat;
 }
+body.no-webp .bg-map-albasrah {
+  background-image: url(/themes/sqms-default-theme/images/albasrah.jpg?d528bdfcdc17bbd8448d3fbf696620e6);
+  background-repeat: no-repeat;
+}
+body.webp .bg-map-albasrah {
+  background-image: url(/themes/sqms-default-theme/images/albasrah.webp?a8ed20838f5cd87ed4991e75d23369f1);
+  background-repeat: no-repeat;
+}
 body.no-webp .bg-map-belaya {
   background-image: url(/themes/sqms-default-theme/images/belaya.jpg?a182aa61f07ca397d0a7be02b351ff3e);
   background-repeat: no-repeat;
@@ -13016,12 +13024,20 @@ body.webp .bg-map-belaya {
   background-image: url(/themes/sqms-default-theme/images/belaya.webp?18278c536e19dced4f4d74778289cb66);
   background-repeat: no-repeat;
 }
-body.no-webp .bg-map-albasrah {
-  background-image: url(/themes/sqms-default-theme/images/albasrah.jpg?d528bdfcdc17bbd8448d3fbf696620e6);
+body.no-webp .bg-map-chora {
+  background-image: url(/themes/sqms-default-theme/images/chora.jpg?11de4e4aa56ca62b020abe2127ebe79c);
   background-repeat: no-repeat;
 }
-body.webp .bg-map-albasrah {
-  background-image: url(/themes/sqms-default-theme/images/albasrah.webp?a8ed20838f5cd87ed4991e75d23369f1);
+body.webp .bg-map-chora {
+  background-image: url(/themes/sqms-default-theme/images/chora.webp?e37985a2eccf64b036acd76cab29b56a);
+  background-repeat: no-repeat;
+}
+body.no-webp .bg-map-fallujah {
+  background-image: url(/themes/sqms-default-theme/images/fallujah.jpg?098fd749fde91386be42c3fe28283440);
+  background-repeat: no-repeat;
+}
+body.webp .bg-map-fallujah {
+  background-image: url(/themes/sqms-default-theme/images/fallujah.webp?483b283f1894f75aa0681e904ad6f8ee);
   background-repeat: no-repeat;
 }
 
