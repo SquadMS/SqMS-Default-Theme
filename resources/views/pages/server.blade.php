@@ -8,10 +8,10 @@
     <div class="container">
         <div class="row min-vh-50 align-items-center p-5">
             @if ($server->last_query_result->online())
-                @foreach ($server->last_query_result->population()->getTeams() as $team)
+                @foreach ($server->last_query_result->teamTags() as $teamId => $teamTag)
                     <div class="col-12 col-md">
                         <div class="squad-flag p-md-4 d-flex justify-content-center align-items-center">
-                            <div class="ratio ratio-squad-flag data-team-tags flag bg-faction-{{ \SquadMS\Foundation\Helpers\FactionHelper::getFactionTag($server->last_query_result->layer(), $team->getId()) }} bg-cover bg-center" flag-class="bg-faction-{{ \SquadMS\Foundation\Helpers\FactionHelper::getFactionTag($server->last_query_result->layer(), $team->getId()) }}" team-id="{{ $team->getId() }}">
+                            <div class="ratio ratio-squad-flag data-team-tags flag bg-faction-{{ $teamTag }} bg-cover bg-center" flag-class="bg-faction-{{ $teamTag }}" team-id="{{ $teamId }}">
                                 <div class="d-flex justify-content-center align-items-center">
                                     <div class="gradient {{ $loop->first ? '' : 'right' }} position-absolute w-100 h-100"></div>
                                 </div>
@@ -26,10 +26,31 @@
                     @endif
                 @endforeach
             @else
-                <div class="col">
-                    <p class="h3 text-center">Server offline :(</p>
+
+            @foreach (range(0, 1) as $teamId)
+                @php
+                    $bgFactionClass = count($server->last_query_result->teamTags()) === 2 ? 'bg-faction-' . $server->last_query_result->teamTags()[$teamId] : null;
+                @endphp
+                <div class="col-12 col-md data-show-online {{ $server->last_query_result->online()  ? '' : 'd-none' }}">
+                    <div class="squad-flag p-md-4 d-flex justify-content-center align-items-center">
+                        <div class="ratio ratio-squad-flag data-team-tags flag bg-faction-{{ $bgFactionClass }} bg-cover bg-center" flag-class="bg-faction-{{ $bgFactionClass }}" team-id="{{ $teamId }}">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="gradient {{ $loop->first ? '' : 'right' }} position-absolute w-100 h-100"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            @endif
+
+                @if ($loop->first)
+                    <div class="col-12 col-md-auto d-flex justify-content-center align-items-center">
+                        <span class="text-primary h2">VS.</span>
+                    </div>
+                @endif
+            @endforeach
+
+            <div class="col data-show-offline {{ $server->last_query_result->online()  ? 'd-none' : '' }}">
+                <p class="h3 text-center">Server offline :(</p>
+            </div>
         </div>
     </div>
 </section>
