@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col">
             <h2 class="text-nowrap text-truncate text-center lh-0">
-                <img src="{{ asset('themes/sqms-default-theme/static-images/factions/' . \SquadMS\Foundation\Helpers\FactionHelper::getFactionTag($team->getId(), $server->last_query_result->layer()) . '.svg') }}" style="height: 1em" />
+                <img src="{{ asset('themes/sqms-default-theme/static-images/factions/' . \SquadMS\Foundation\Helpers\FactionHelper::getFactionTag($server->last_query_result->layer(), $team->getId()) . '.svg') }}" style="height: 1em" />
                 {{ $team->getName() }}
             </h2>
         </div>
