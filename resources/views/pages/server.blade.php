@@ -7,26 +7,6 @@
 <section class="bg-light bg-map-no-map {{ $server->last_query_result->online() && $server->last_query_result->level() ? 'bg-map-' . \SquadMS\Foundation\Helpers\LevelHelper::levelToClass($server->last_query_result->level()) : '' }} bg-cover bg-center" server-level-bg="{{ $server->last_query_result->online() && $server->last_query_result->level() ? 'bg-map-' . \SquadMS\Foundation\Helpers\LevelHelper::levelToClass($server->last_query_result->level()) : '' }}">
     <div class="container">
         <div class="row min-vh-50 align-items-center p-5">
-            @if ($server->last_query_result->online())
-                @foreach ($server->last_query_result->teamTags() as $teamId => $teamTag)
-                    <div class="col-12 col-md">
-                        <div class="squad-flag p-md-4 d-flex justify-content-center align-items-center">
-                            <div class="ratio ratio-squad-flag data-team-tags flag bg-faction-{{ $teamTag }} bg-cover bg-center" flag-class="bg-faction-{{ $teamTag }}" team-id="{{ $teamId }}">
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <div class="gradient {{ $loop->first ? '' : 'right' }} position-absolute w-100 h-100"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    @if ($loop->first)
-                        <div class="col-12 col-md-auto d-flex justify-content-center align-items-center">
-                            <span class="text-primary h2">VS.</span>
-                        </div>
-                    @endif
-                @endforeach
-            @else
-
             @foreach (range(0, 1) as $teamId)
                 @php
                     $bgFactionClass = count($server->last_query_result->teamTags()) === 2 ? 'bg-faction-' . $server->last_query_result->teamTags()[$teamId] : null;
