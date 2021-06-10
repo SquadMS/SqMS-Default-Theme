@@ -8,7 +8,7 @@ use SquadMS\Foundation\Facades\SquadMSRouter;
 $definitions = Config::get('sqms-default-theme.routes.def', []);
 
 $modules = [
-    'SquadMS\\Servers\\SquadMSModule' => ['server-population'],
+    '\\SquadMS\\Servers\\SquadMSModule' => ['server-population'],
 ];
 
 /* Register all definitions except those for modules */
