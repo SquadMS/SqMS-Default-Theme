@@ -13,7 +13,7 @@
                 @endphp
                 <div class="col-12 col-md data-show-online {{ $server->last_query_result->online()  ? '' : 'd-none' }}">
                     <div class="squad-flag p-md-4 d-flex justify-content-center align-items-center">
-                        <div class="ratio ratio-squad-flag data-team-tags flag bg-faction-{{ $bgFactionClass }} bg-cover bg-center" flag-class="bg-faction-{{ $bgFactionClass }}" team-id="{{ $teamId }}">
+                        <div class="ratio ratio-squad-flag data-team-tags flag {{ $bgFactionClass }} bg-cover bg-center" flag-class="{{ $bgFactionClass }}" team-id="{{ $teamId }}">
                             <div class="d-flex justify-content-center align-items-center">
                                 <div class="gradient {{ $loop->first ? '' : 'right' }} position-absolute w-100 h-100"></div>
                             </div>
