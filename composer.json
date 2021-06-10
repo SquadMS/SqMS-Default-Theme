@@ -23,6 +23,9 @@
         "livewire/livewire": "^2.4",
         "asantibanez/livewire-select": "dev-master"
     },
+    "suggest": {
+        "squadms/servers": "Squad server management module for SquadMS"
+    },
     "autoload": {
         "psr-4": {
             "SquadMS\\DefaultTheme\\": "src/"
