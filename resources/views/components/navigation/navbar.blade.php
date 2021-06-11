@@ -3,11 +3,11 @@
 <nav {{ $attributes->merge(['class' => 'navbar navbar-expand-lg navbar-light bg-light']) }}>
     <div class="{{ $container }}">
         @if ($htmlBrand)
-            <a class="navbar-brand" href="{{ route('home') }}">
+            <a class="navbar-brand" href="{{ route(Config::get('sqms.routes.def.home.name')) }}">
                 {!! $brand !!}
             </a>
         @else
-            <a class="navbar-brand" href="{{ route('home') }}">{{ $brand }}</a>
+            <a class="navbar-brand" href="{{ route(Config::get('sqms.routes.def.home.name')) }}">{{ $brand }}</a>
         @endif
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
