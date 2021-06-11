@@ -68,16 +68,6 @@
                         <form action="{{ route(Config::get('sqms.routes.def.logoutOtherDevices.name')) }}" method="POST">
                             @csrf
         
-                            <div class="mb-3">
-                                <label for="inputPassword" class="form-label">Password</label>
-                                <input type="password" class="form-control" id="inputPassword">
-                                @error('password') 
-                                    <div id="validation" class="invalid-feedback">
-                                        {{ $message }}
-                                    </div>
-                                @enderror
-                            </div>
-        
                             <button type="submit" class="btn btn-danger">Log out other devices</button>
                         </form>
                     </div>
