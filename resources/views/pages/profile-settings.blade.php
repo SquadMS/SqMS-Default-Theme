@@ -51,7 +51,7 @@
         <div class="row">
             <div class="col">
                 <form action="{{ route(Config::get('sqms.routes.def.logoutOtherDevices.name')) }}" method="POST">
-                    {{ csrf() }}
+                    @csrf
 
                     <div class="mb-3">
                         <label for="inputPassword" class="form-label">Password</label>
