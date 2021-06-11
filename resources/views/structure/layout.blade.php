@@ -6,6 +6,10 @@
 
         <title>{{ config('app.name', 'SquadMS') }}</title>
 
+        @auth
+            @wat
+        @endauth
+
         <!-- CSRF -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
