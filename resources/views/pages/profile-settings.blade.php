@@ -10,7 +10,7 @@
         </div>
 
         @if (config('session.driver') === 'database')
-        <div class="row">
+        <div class="row mb-5">
             <div class="col-12">
                 <h3>Active Sessions</h3>
             </div>
@@ -60,23 +60,28 @@
         @endif
 
         @if ($user->id === Auth::user()->id)
-        <div class="row">
+        <div class="row mb-5">
             <div class="col">
-                <form action="{{ route(Config::get('sqms.routes.def.logoutOtherDevices.name')) }}" method="POST">
-                    @csrf
-
-                    <div class="mb-3">
-                        <label for="inputPassword" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="inputPassword">
-                        @error('password') 
-                            <div id="validation" class="invalid-feedback">
-                                {{ $message }}
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Logout other devices</h5>
+                        <form action="{{ route(Config::get('sqms.routes.def.logoutOtherDevices.name')) }}" method="POST">
+                            @csrf
+        
+                            <div class="mb-3">
+                                <label for="inputPassword" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="inputPassword">
+                                @error('password') 
+                                    <div id="validation" class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
                             </div>
-                        @enderror
+        
+                            <button type="submit" class="btn btn-danger">Log out other devices</button>
+                        </form>
                     </div>
-
-                    <button type="submit" class="btn btn-warning">Log out other devices</button>
-                </form>
+                </div>
             </div>
         </div>
         @endif
