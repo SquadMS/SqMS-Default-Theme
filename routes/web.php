@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Config;
-use SquadMS\Foundation\Facades\SquadMSRouter;
+use SquadMS\Foundation\Helpers\SquadMSRouteHelper;
 
 /* Get route definitions from config */
 $definitions = Config::get('sqms-default-theme.routes.def', []);
@@ -12,12 +12,12 @@ $modules = [
 ];
 
 /* Register all definitions except those for modules */
-SquadMSRouter::webRoutes(Arr::except($definitions, Arr::flatten($modules)));
+SquadMSRouteHelper::configurableRoutes(Arr::except($definitions, Arr::flatten($modules)));
 
 foreach ($modules as $module => $definitionNames) {
     /* Check if the SquadMSModule class does exist */
     if (class_exists($module)) {
         /* Register definitions for this module */
-        SquadMSRouter::webRoutes(Arr::only($definitions, $definitionNames));
+        SquadMSRouteHelper::configurableRoutes(Arr::only($definitions, $definitionNames));
     }
 }
