@@ -13017,6 +13017,14 @@ body.webp .bg-map-fallujah {
   background-image: url(/themes/sqms-default-theme/images/fallujah.webp?483b283f1894f75aa0681e904ad6f8ee);
   background-repeat: no-repeat;
 }
+body.no-webp .bg-map-gorodok {
+  background-image: url(/themes/sqms-default-theme/images/gorodok.jpg?199c409b68c0487e8dfdbb7a333bda64);
+  background-repeat: no-repeat;
+}
+body.webp .bg-map-gorodok {
+  background-image: url(/themes/sqms-default-theme/images/gorodok.webp?4d05bc1f48e0dc1fad284c54a864d16a);
+  background-repeat: no-repeat;
+}
 
 .flag-icon-background, .flag-icon {
   background-size: contain;
