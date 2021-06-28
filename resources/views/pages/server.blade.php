@@ -4,14 +4,14 @@
 ])
 
 @section('content')
-<section class="bg-light bg-map-no-map {{ $server->last_query_result->online() && $server->last_query_result->level() ? 'bg-map-' . \SquadMS\Foundation\Helpers\LevelHelper::levelToClass($server->last_query_result->level()) : '' }} bg-cover bg-center" server-level-bg="{{ $server->last_query_result->online() && $server->last_query_result->level() ? 'bg-map-' . \SquadMS\Foundation\Helpers\LevelHelper::levelToClass($server->last_query_result->level()) : '' }}">
+<section class="bg-light bg-map-no-map {{ $server->online && $server->last_query_result->level() ? 'bg-map-' . \SquadMS\Foundation\Helpers\LevelHelper::levelToClass($server->last_query_result->level()) : '' }} bg-cover bg-center" server-level-bg="{{ $server->online && $server->last_query_result->level() ? 'bg-map-' . \SquadMS\Foundation\Helpers\LevelHelper::levelToClass($server->last_query_result->level()) : '' }}">
     <div class="container">
         <div class="row min-vh-50 align-items-center p-5">
             @foreach (range(1, 2) as $teamId)
                 @php
                     $bgFactionClass = count($server->last_query_result->teamTags()) === 2 ? 'bg-faction-' . $server->last_query_result->teamTags()[$teamId] : null;
                 @endphp
-                <div class="col-12 col-md data-show-online {{ $server->last_query_result->online()  ? '' : 'd-none' }}">
+                <div class="col-12 col-md data-show-online {{ $server->online  ? '' : 'd-none' }}">
                     <div class="squad-flag p-md-4 d-flex justify-content-center align-items-center">
                         <div class="ratio ratio-squad-flag data-team-tags flag {{ $bgFactionClass }} bg-cover bg-center" flag-class="{{ $bgFactionClass }}" team-id="{{ $teamId }}">
                             <div class="d-flex justify-content-center align-items-center">
@@ -28,7 +28,7 @@
                 @endif
             @endforeach
 
-            <div class="col data-show-offline {{ $server->last_query_result->online()  ? 'd-none' : '' }}">
+            <div class="col data-show-offline {{ $server->online  ? 'd-none' : '' }}">
                 <p class="h3 text-center">Server offline :(</p>
             </div>
         </div>
@@ -41,8 +41,8 @@
             <div class="col">
                 <h1 class="text-center text-truncate data-server-name">{{ $server->last_query_result->name() }}</h1>
                 <p class="lead text-center">
-                    <span class="data-show-online {{ $server->last_query_result->online()  ? '' : 'd-none' }}"><span class="data-count">{{ $server->last_query_result->count() }}</span>(+<span class="data-queue">{{ $server->last_query_result->queue() }}</span>)/<span class="data-slots">{{ $server->last_query_result->slots() }}</span>(+<span class="data-reserved">{{ $server->last_query_result->reserved() }}</span>) {{ __('sqms-default-theme::pages/servers.server.players') }}</span>
-                    <span class="text-danger text-truncate data-show-offline {{ $server->last_query_result->online()  ? 'd-none' : '' }}">{{ __('sqms-default-theme::pages/servers.server.offline') }}</span>
+                    <span class="data-show-online {{ $server->online  ? '' : 'd-none' }}"><span class="data-count">{{ $server->last_query_result->count() }}</span>(+<span class="data-queue">{{ $server->last_query_result->queue() }}</span>)/<span class="data-slots">{{ $server->last_query_result->slots() }}</span>(+<span class="data-reserved">{{ $server->last_query_result->reserved() }}</span>) {{ __('sqms-default-theme::pages/servers.server.players') }}</span>
+                    <span class="text-danger text-truncate data-show-offline {{ $server->online  ? 'd-none' : '' }}">{{ __('sqms-default-theme::pages/servers.server.offline') }}</span>
                 </p>
             </div>
         </div>
