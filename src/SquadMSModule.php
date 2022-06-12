@@ -25,14 +25,4 @@ class SquadMSModule extends SquadMSModuleContract {
             '--force'  => true,
         ]);
     }
-
-    static function registerMenuEntries(string $menu) : void
-    {
-        //
-    }
-
-    static function schedule(Schedule $schedule) : void
-    {
-        //
-    }
 }
