@@ -2,7 +2,6 @@
 
 namespace SquadMS\DefaultTheme;
 
-use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Support\Facades\Artisan;
 use SquadMS\Foundation\Modularity\Contracts\SquadMSModule as SquadMSModuleContract;
 
