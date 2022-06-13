@@ -28,8 +28,6 @@ mix
       require('autoprefixer'),
   ],
 })
-.js('resources/js/server-status-listener.js', 'public/js')
-.js('resources/js/webp.js', 'public/js')
 
 .version();
 
