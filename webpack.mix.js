@@ -17,13 +17,19 @@ mix.setResourceRoot('/themes/sqms-default-theme');
 /* Build SCSS/JS assets */
 mix
 /* Public assets */
-.sass('resources/scss/public/app.scss', 'css/public/')
-.sass("resources/scss/public/app-rtl.scss", "css/public/", {}, [
+.sass('resources/scss/public/app.scss', 'public/css')
+.sass("resources/scss/public/app-rtl.scss", "public/css", {}, [
   require("rtlcss")(),
 ])
-.js('resources/js/public/app.js', 'js/public/')
-.js('resources/js/public/server-status-listener.js', 'js/public/')
-.js('resources/js/public/webp.js', 'js/public/')
+.options({
+  postCss: [
+      require('postcss-import'),
+      require('tailwindcss')('./tailwind.config.js'),
+      require('autoprefixer'),
+  ],
+})
+.js('resources/js/server-status-listener.js', 'public/js')
+.js('resources/js/webp.js', 'public/js')
 
 .version();
 

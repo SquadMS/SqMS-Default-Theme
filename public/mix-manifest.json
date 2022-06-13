@@ -1,7 +1,15 @@
 {
-    "/js/public/app.js": "/js/public/app.js?id=854f030cd50c3dc18354",
-    "/js/public/server-status-listener.js": "/js/public/server-status-listener.js?id=1f2010e7c7bde2d0871f",
-    "/js/public/webp.js": "/js/public/webp.js?id=13082d62d13cfc8fb2d9",
-    "/css/public/app-rtl.css": "/css/public/app-rtl.css?id=2d433e462e5c5d9e9e7a",
-    "/css/public/app.css": "/css/public/app.css?id=ec3a46315812d8cac349"
+    "/js/server-status-listener.js": "/js/server-status-listener.js?id=2393babeb3d676092d5a2a4d8ffaf597",
+    "/js/webp.js": "/js/webp.js?id=01564507f983c55fcd43d68f0bb6e260",
+    "/css/app-rtl.css": "/css/app-rtl.css?id=40fb09746e406e5758e5cc27888c60fb",
+    "/css/app.css": "/css/app.css?id=89b0e9a7385199c2e090bbf0d5efb227",
+    "/static-images/factions/README.md": "/static-images/factions/README.md?id=42075bcf151b93c710ef976e8481261f",
+    "/static-images/factions/caf.svg": "/static-images/factions/caf.svg?id=7bb0ca367819d2244a055ecee6a6e13b",
+    "/static-images/factions/im.svg": "/static-images/factions/im.svg?id=6bee8170e67b30de04883563e216ad94",
+    "/static-images/factions/ins.svg": "/static-images/factions/ins.svg?id=94edda05b4fada53d69263fd893b7e33",
+    "/static-images/factions/mea.svg": "/static-images/factions/mea.svg?id=3c5845ec352c9817c0e4f9e7d2e03ac0",
+    "/static-images/factions/ru.svg": "/static-images/factions/ru.svg?id=6405a80ce03ba2be24b1545c9e31f700",
+    "/static-images/factions/uk.svg": "/static-images/factions/uk.svg?id=63ac98a29106099051faf3513073414e",
+    "/static-images/factions/us.svg": "/static-images/factions/us.svg?id=9b1f43067f1517877e0659c4e68942df",
+    "/static-images/factions/usmc.svg": "/static-images/factions/usmc.svg?id=92eeb2e0bbcbb6fa208f43b010414246"
 }

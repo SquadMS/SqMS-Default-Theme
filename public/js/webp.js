@@ -94,9 +94,9 @@ module.exports = index;
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
-/*!*************************************!*\
-  !*** ./resources/js/public/webp.js ***!
-  \*************************************/
+/*!******************************!*\
+  !*** ./resources/js/webp.js ***!
+  \******************************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var supports_webp__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! supports-webp */ "./node_modules/supports-webp/dist/supports-webp.common-js.js");
 /* harmony import */ var supports_webp__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(supports_webp__WEBPACK_IMPORTED_MODULE_0__);
