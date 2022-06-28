@@ -32,4 +32,4 @@ mix
 .version();
 
 /* Copy static images */
-mix.copyDirectory('resources/images/static', 'public/static-images');
+//mix.copyDirectory('resources/images/static', 'public/static-images');
