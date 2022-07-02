@@ -6,6 +6,6 @@ return [
         'middleware' => ['web'],
         'def' => [
             //
-        ]
+        ],
     ],
 ];

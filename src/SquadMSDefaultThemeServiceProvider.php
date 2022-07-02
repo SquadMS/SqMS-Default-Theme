@@ -2,40 +2,30 @@
 
 namespace SquadMS\DefaultTheme;
 
-use Illuminate\Support\ServiceProvider;
+use Spatie\LaravelPackageTools\Package;
+use SquadMS\Foundation\Contracts\SquadMSModuleServiceProvider;
 
-class SquadMSDefaultThemeServiceProvider extends ServiceProvider
+class SquadMSDefaultThemeServiceProvider extends SquadMSModuleServiceProvider
 {
+    public static string $name = 'sqms-default-theme';
+
+    public function configureModule(Package $package): void
+    {
+        $package->hasAssets()
+                ->hasConfigFile()
+                ->hasRoutes(['web']);
+    }
+
     /**
      * Register any application services.
      *
      * @return void
      */
-    public function register()
+    public function registeringModule(): void
     {
-        //
     }
 
-    /**
-     * Bootstrap any application services.
-     *
-     * @return void
-     */
-    public function boot()
+    public function bootedModule(): void
     {
-        /* Publish Assets */
-        if ($this->app->runningInConsole()) {
-            // Publish assets
-            $this->publishes([
-              __DIR__ . '/../public' => public_path('themes/sqms-default-theme'),
-            ], 'assets');
-          
-        }
-
-        /* Configuration */
-        $this->mergeConfigFrom(__DIR__ . '/../config/sqms-default-theme.php', 'sqms-default-theme');
-
-        /* Load Translations */
-        $this->loadTranslationsFrom(__DIR__ . '/../resources/lang', 'sqms-default-theme');
     }
 }
